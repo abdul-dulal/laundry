@@ -86,7 +86,7 @@ const Team = () => {
                               {team.name}
                             </h3>
                             <p className="text-[15px] text-primary/70 leading-[26px] font-medium">
-                              Ceo & Owner
+                              {team.design}
                             </p>
                           </div>
                           <div className="relative">
@@ -158,7 +158,7 @@ const Team = () => {
                                 </div>
                               </div>
 
-                              <button className="size-11 bg-white  shadow-md shadow-[#14213724] group">
+                              <button className="size-11 bg-white transition-all duration-500 hover:bg-secondary text-primary hover:text-white shadow-md shadow-[#14213724] group">
                                 <FontAwesomeIcon icon={faShareNodes} />
                               </button>
                             </div>

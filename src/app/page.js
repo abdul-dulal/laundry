@@ -5,6 +5,10 @@ import About from "@/components/ul/About";
 import Service from "@/components/ul/Service";
 import WorkProcess from "@/components/ul/WorkProcess";
 import Team from "@/components/ul/Team";
+import LaundryProcess from "@/components/ul/LaundryProcess";
+import QualitryClean from "@/components/ul/QualitryClean";
+import Testimonial from "@/components/ul/Testimonial";
+import Blog from "@/components/ul/Blog";
 
 export default function Home() {
   return (
@@ -17,6 +21,10 @@ export default function Home() {
         <Service />
         {/* <WorkProcess /> */}
         <Team />
+        <LaundryProcess />
+        <QualitryClean />
+        <Testimonial />
+        <Blog />
       </main>
     </>
   );

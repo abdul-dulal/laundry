@@ -61,3 +61,86 @@ export const teamMember = [
     design: "Ceo & Owner",
   },
 ];
+export const laundryStep = [
+  { title: "01. Schedule a wash", img: "/img/home/laundry-01.png", id: 0 },
+
+  {
+    title: "02. Cleaned with care, locally",
+    img: "/img/home/laundry-02.png",
+    id: 1,
+  },
+  {
+    title: "03. Free delivery, fresh results",
+    img: "/img/home/laundry-03.png",
+    id: 2,
+  },
+  { title: "04. Schedule a wash", img: "/img/home/laundry-01.png", id: 3 },
+  {
+    title: "05. We Clean, Folded Clothes",
+    img: "/img/home/laundry-04.png",
+    id: 4,
+  },
+];
+
+export const quality = [
+  { title: "Laundry & Fold", img: "/img/home/qc-01.png" },
+  { title: "Dry Cleaning", img: "/img/home/qc-02.png" },
+  { title: "Shirt Service", img: "/img/home/qc-03.png" },
+  { title: "Ironic", img: "/img/home/qc-04.png" },
+];
+
+export const reviews = [
+  {
+    name: "Hugh Millie-Yate",
+    design: "Ceo & Owner",
+    img: "/img/home/review-01.png",
+  },
+  {
+    name: "Spruce Spngclean",
+    design: "Businessman",
+    img: "/img/home/review-02.png",
+  },
+  {
+    name: "Gusta Purpleson",
+    design: "Chairman",
+    img: "/img/home/review-03.png",
+  },
+  {
+    name: "Malcolm Function",
+    design: "Ceo & Owner",
+    img: "/img/home/review-04.png",
+  },
+  {
+    name: "Miles Tone",
+    design: "Businessman",
+    img: "/img/home/review-05.png",
+  },
+  {
+    name: "Thomas R. Toe",
+    design: "Professional & Reliable",
+    img: "/img/home/review-05.png",
+  },
+];
+
+export const blogs = [
+  {
+    blogTitle: "Natural Laundry Detergents",
+    blogTitle2: "Explained",
+    img: "/img/home/blog-01.png",
+  },
+  {
+    blogTitle: "Complete Guide to Green & ",
+    blogTitle2: "Natural Laundry.",
+    img: "/img/home/blog-02.png",
+  },
+  {
+    blogTitle: "15 Reasons Let Experts Handle ",
+    blogTitle2: "Dry Cleaning.",
+    img: "/img/home/blog-03.png",
+  },
+  {
+    blogTitle: "Benefits of Using Professional ",
+    blogTitle2: "Dry Cleaning Services.",
+    img: "/img/home/blog-04.png",
+  },
+];

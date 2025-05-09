@@ -12,7 +12,7 @@ body {
     @apply lg:text-[54px] md:text-[45px] sm:text-[39px] text-[32px] lg:leading-[64px] md:leading-[55px] sm:leading-[49px] leading-[42px] font-semibold tracking-[-2px] text-primary;
   }
   h4 {
-    @apply text-[rgb(20,33,55)] leading-[27px] rounded-[50px] border border-[rgb(217,219,223)] px-[20px] py-0 inline-block;
+    @apply text-primary/70 leading-[27px] rounded-[50px] border border-[rgb(217,219,223)] px-[20px] py-0 inline-block;
   }
   h6 {
     @apply text-[18px] font-bold tracking-[4px] text-[#07000e] uppercase;
@@ -135,4 +135,34 @@ body {
   background-color: white;
   border-radius: 9999px;
   transform: translate(-50%, -50%);
+}
+.working_proces_area .gallery_parent .tab .overly_content_text h6 {
+  transform: translateX(-50%);
+  transform: rotate(-90deg);
+}
+
+/* marque */
+.marque {
+  animation: Scroll 40s linear infinite;
+}
+.marque_right {
+  animation: rightToLeft 40s linear infinite;
+}
+@keyframes Scroll {
+  0% {
+    transform: translateX(-50vw);
+  }
+
+  100% {
+    transform: translateX(50vw);
+  }
+}
+@keyframes rightToLeft {
+  0% {
+    transform: translateX(50vw);
+  }
+
+  100% {
+    transform: translateX(-50vw);
+  }
 }
