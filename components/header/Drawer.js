@@ -8,7 +8,7 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import Image from "next/image";
 import logo from "@/public/img/logo/logo.png";
 
-const Drawer = () => {
+const Drawer = ({ bgColor }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [home, setHome] = useState(true);
 
@@ -22,9 +22,9 @@ const Drawer = () => {
         className="relative z-[99] w-[30px] h-[20px] flex  flex-col justify-between overflow-hidden"
         onClick={toggleDrawer}
       >
-        <span className={`w-[80px] h-[2px] bg-primary`}></span>
-        <span className={`w-[80px] h-[2px] bg-primary`}></span>
-        <span className={`w-[80px] h-[2px] bg-primary`}></span>
+        <span className={`w-[80px] h-[2px] bg-${bgColor}`}></span>
+        <span className={`w-[80px] h-[2px] bg-${bgColor}`}></span>
+        <span className={`w-[80px] h-[2px] bg-${bgColor}`}></span>
       </button>
 
       {/* Drawer */}

@@ -69,7 +69,7 @@ after:z-[-1] after:rotate-[-20deg] hover:after:w-[250px] hover:after:text-white
                 <div key={index} className="relative ">
                   <div className="overflow-hidden relative">
                     <Image
-                      className="w-full transition-all duration-700 hover:scale-[1.1]"
+                      className="w-full transition-all duration-700 hover:scale-[1.2] hover:rotate-[5deg]"
                       src={blog.img}
                       width={378}
                       height={330}

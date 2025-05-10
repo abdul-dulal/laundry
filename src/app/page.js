@@ -9,6 +9,7 @@ import LaundryProcess from "@/components/ul/LaundryProcess";
 import QualitryClean from "@/components/ul/QualitryClean";
 import Testimonial from "@/components/ul/Testimonial";
 import Blog from "@/components/ul/Blog";
+import FooterOne from "@/components/footer/FooterOne";
 
 export default function Home() {
   return (
@@ -26,6 +27,7 @@ export default function Home() {
         <Testimonial />
         <Blog />
       </main>
+      <FooterOne />
     </>
   );
 }
