@@ -115,38 +115,7 @@ const HeaderOne = () => {
                       </li>
                     </ul>
                   </li>
-                  <li className="group inline-block p-0 relative">
-                    <Link
-                      className="flex items-center gap-1 px-[24px] capitalize transition-all duration-300 ease-in-out relative text-black group-hover:text-secondary   text-[18px] font-medium"
-                      href="/Team"
-                    >
-                      Team
-                      <span>
-                        <FontAwesomeIcon
-                          className="size-[16px]"
-                          icon={faAngleDown}
-                        />
-                      </span>
-                    </Link>
-                    <ul class="submenu mt-[24px] absolute left-0 top-full opacity-0 invisible z-[99999] text-left transition-all duration-300 ease-in-out  shadow-[0px_10px_20px_0px_rgba(8,0,42,0.08)] origin-top bg-white scale-y-0">
-                      <li className="float-none min-w-[210px] m-0">
-                        <Link
-                          className="block leading-[120%] px-[20px] py-[10px] text-primary border-b border-[#e3e3e3] ml-0 text-[18px] font-medium transition-all duration-400 ease-in-out  "
-                          href="/Team"
-                        >
-                          Team
-                        </Link>
-                      </li>
-                      <li className="float-none min-w-[210px] m-0">
-                        <Link
-                          className="block leading-[120%] px-[20px] py-[10px] text-primary border-b border-[#e3e3e3] ml-0 text-[18px] font-medium transition-all duration-400 ease-in-out  "
-                          href="/Team-details"
-                        >
-                          Team Details
-                        </Link>
-                      </li>
-                    </ul>
-                  </li>
+
                   <li className="group inline-block p-0 relative">
                     <Link
                       className="flex items-center gap-1 px-[24px] capitalize transition-all duration-300 ease-in-out relative text-black group-hover:text-secondary   text-[18px] font-medium"

@@ -1,8 +1,12 @@
+"use client";
 import React from "react";
 import logo from "@/public/img/logo/logo-white.png";
 import Link from "next/link";
 import Image from "next/image";
 const FooterOne = () => {
+  const hanldeSubmit = (e) => {
+    e.preventDefault();
+  };
   return (
     <footer className="bg-primary text-white pt-[127px]">
       <div className="container">
@@ -303,19 +307,25 @@ const FooterOne = () => {
             <p className="text-[16px] font-normal leading-[26px] text-white/70 mb-8">
               Sign up and receive our special offers.
             </p>
-            <div
-              className=" border border-white/15 backdrop-blur-[10px] rounded overflow-hidden mb-4"
-              style={{ boxShadow: "0px 10px 60px 0px #03061133" }}
-            >
-              <input
-                type="email"
-                placeholder="Enter your Email..."
-                className="w-full bg-transparent px-3 h-[50px]  focus:outline-none placeholder:text-[15px] placeholder:font-normal placeholder:text-white/70"
-              />
-              <button className="bg-secondary px-6 py-[13px] text-sm">
-                Subscribe
-              </button>
-            </div>
+
+            <form onSubmit={hanldeSubmit}>
+              <div
+                className=" relative backdrop-blur-[10px] rounded overflow-hidden mb-4"
+                style={{ boxShadow: "0px 10px 60px 0px #03061133" }}
+              >
+                <input
+                  type="email"
+                  placeholder="Enter your Email..."
+                  className="w-full  border border-white/15 bg-transparent px-3 h-[50px]  focus:outline-none placeholder:text-[15px] placeholder:font-normal placeholder:text-white/70"
+                />
+                <button
+                  type="submit"
+                  className="2xl:absolute 2xl:mt-0 mt-4 right-0 bottom-[2px] bg-secondary px-6 py-[13px] text-sm"
+                >
+                  Subscribe
+                </button>
+              </div>
+            </form>
             <div className=" flex items-center gap-2 mt-10">
               <Link
                 href="/"

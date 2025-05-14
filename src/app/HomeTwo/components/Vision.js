@@ -21,9 +21,7 @@ const Vision = () => {
           <div className="lg:col-span-8 col-span-12  h-full">
             <div className="flex  flex-col h-full">
               <div>
-                <h4 className="mb-[34px]">
-                  <span className="mr-2">•</span>Our Services
-                </h4>
+                <h4 className="mb-[34px]">About Our Company</h4>
                 <h2 className="mb-[70px]">
                   Laundry & Dry Cleaning <br /> Made Simple.
                 </h2>
@@ -105,7 +103,7 @@ const Vision = () => {
               <Image
                 src={play}
                 alt="Laundry play"
-                className="h-full w-full object-cover"
+                className="lg:h-full h-[550px] w-full object-cover"
               />
               <div className="absolute inset-0 flex items-center justify-center">
                 <button

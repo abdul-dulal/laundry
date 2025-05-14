@@ -56,8 +56,8 @@ const Hero = () => {
                             <div class=" z-[10]">
                               <div class="">
                                 <h2 className="font-semibold lg:text-[100px] md:text-[70px] sm:text-[55px] text-[40px] leading-[110%] tracking-[-0.02em] text-white">
-                                  {item.title}{" "}
-                                  <br className="sm:block hidden" />{" "}
+                                  {item.title}
+                                  <br className="sm:block hidden" />
                                   {item.titleTwo}
                                 </h2>
                               </div>
