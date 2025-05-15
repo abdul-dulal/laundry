@@ -133,6 +133,22 @@ const HeaderOne = () => {
                       <li className="float-none min-w-[210px] m-0">
                         <Link
                           className="block leading-[120%] px-[20px] py-[10px] text-primary border-b border-[#e3e3e3] ml-0 text-[18px] font-medium transition-all duration-400 ease-in-out  "
+                          href="/Team"
+                        >
+                          Team
+                        </Link>
+                      </li>
+                      <li className="float-none min-w-[210px] m-0">
+                        <Link
+                          className="block leading-[120%] px-[20px] py-[10px] text-primary border-b border-[#e3e3e3] ml-0 text-[18px] font-medium transition-all duration-400 ease-in-out  "
+                          href="/Team-details"
+                        >
+                          Team Details
+                        </Link>
+                      </li>
+                      <li className="float-none min-w-[210px] m-0">
+                        <Link
+                          className="block leading-[120%] px-[20px] py-[10px] text-primary border-b border-[#e3e3e3] ml-0 text-[18px] font-medium transition-all duration-400 ease-in-out  "
                           href="/Faq"
                         >
                           FAQ

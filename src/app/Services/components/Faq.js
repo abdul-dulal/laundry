@@ -1,100 +1,63 @@
-// components/FaqSection.tsx
-"use client";
-
-import { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPlus, faMinus } from "@fortawesome/free-solid-svg-icons";
-
-const faqData = [
-  {
-    question: "What types of cleaning services do you offer?",
-    answer:
-      "Consectetur adipiscing eiusmod tempor incididunt labore magna aliquamaet consectetur adipiscing elit nunc faucibus nisl id dapibus finibus enim diam interdum nulla sed laoreet risus lectus feugiat. Our mission is simple: to make laundry day hassle free. With our easy-to-use service, you can enjoy the convenience of professional dry cleaning and laundry.",
-  },
-  {
-    question: "How often should I schedule cleaning services?",
-    answer:
-      "Consectetur adipiscing eiusmod tempor incididunt labore magna aliquamaet consectetur adipiscing elit nunc faucibus nisl id dapibus finibus enim diam interdum nulla sed laoreet risus lectus feugiat. Our mission is simple: to make laundry day hassle free. With our easy-to-use service, you can enjoy the convenience of professional dry cleaning and laundry.",
-  },
-  {
-    question: "What is included in a standard cleaning service?",
-    answer:
-      "Consectetur adipiscing eiusmod tempor incididunt labore magna aliquamaet consectetur adipiscing elit nunc faucibus nisl id dapibus finibus enim diam interdum nulla sed laoreet risus lectus feugiat. Our mission is simple: to make laundry day hassle free. With our easy-to-use service, you can enjoy the convenience of professional dry cleaning and laundry.",
-  },
-  {
-    question: "How do I prepare my home for a cleaning service?",
-    answer:
-      "Consectetur adipiscing eiusmod tempor incididunt labore magna aliquamaet consectetur adipiscing elit nunc faucibus nisl id dapibus finibus enim diam interdum nulla sed laoreet risus lectus feugiat. Our mission is simple: to make laundry day hassle free. With our easy-to-use service, you can enjoy the convenience of professional dry cleaning and laundry.",
-  },
-  {
-    question: "What if I am not satisfied with the cleaning service?",
-    answer:
-      "Consectetur adipiscing eiusmod tempor incididunt labore magna aliquamaet consectetur adipiscing elit nunc faucibus nisl id dapibus finibus enim diam interdum nulla sed laoreet risus lectus feugiat. Our mission is simple: to make laundry day hassle free. With our easy-to-use service, you can enjoy the convenience of professional dry cleaning and laundry.",
-  },
-];
+import Link from "next/link";
+import FaqContent from "./FaqContent";
 
 const Faq = () => {
-  const [openIndex, setOpenIndex] = useState(1);
-
-  const toggleIndex = (index) => {
-    setOpenIndex((prev) => (prev === index ? null : index));
-  };
-
   return (
     <section className="lg:py-[150px] md:py-[100px] py-20">
       <div className="container">
-        <div className="grid grid-cols-12  lg:gap-[70px]">
-          <div className="lg:col-span-4 col-span-12">
-            <div className="bg-[#F2F6FF] p-10  rounded">
-              <h2 className="text-5xl font-bold text-[#111827] mb-10">FAQ</h2>
-              <p className="text-lg font-semibold text-[#111827] mb-4">
-                Having Another Question?
-              </p>
-              <button className="flex items-center bg-[#111827] text-white px-5 py-2 rounded-full text-sm hover:bg-black transition">
-                Send A Message
-                <span className="ml-2 bg-white text-[#111827] rounded-full w-5 h-5 flex items-center justify-center text-xs">
-                  →
-                </span>
-              </button>
+        <div className="grid grid-cols-12 lg:gap-[70px] items-stretch">
+          {/* Left Column */}
+          <div className="lg:col-span-5 col-span-12 h-full w-full">
+            <div className="bg-[#F2F6FF] sm:p-10 p-7 h-full rounded flex flex-col justify-between">
+              <div>
+                <h2 className="">FAQ</h2>
+                <h3 className="md:text-[30px] text-[26px] font-semibold text-primary -tracking-[2%] sm:my-11 my-5">
+                  Having Another Question?
+                </h3>
+              </div>
+
+              <div className="group mt-auto">
+                <Link
+                  href="/Contact"
+                  className="block rounded-[100px] 2xl:w-[56%] lg:w-[80%] sm:w-[50%] w-full bg-primary relative overflow-hidden transition-all duration-[0.7s] ease-in-out z-10 text-center leading-[54px] before:content-[''] before:absolute before:top-[-80px] before:right-[-60px] before:w-0 before:h-[200px] before:bg-secondary before:transition-all before:duration-[1.2s] before:ease-in-out before:z-[-1] before:rotate-[-20deg] after:content-[''] after:absolute after:top-[-70px] after:left-[-60px] after:w-0 after:h-[200px] after:bg-secondary after:transition-all after:duration-[1.2s] after:ease-in-out after:z-[-1] after:rotate-[-20deg] group-hover:after:w-full group-hover:before:w-full"
+                >
+                  <div className="flex  gap-[16px] justify-between items-center pl-6 text-white group-hover:text-white group-hover:delay-300 group-hover:transition-all text-[15px] font-medium transition-all duration-[.4s]">
+                    <span> Send a Message</span>
+                    <span className="grid place-content-center size-[34px] bg-white transition-all duration-500 group-hover:bg-white rounded-full mr-[10px]">
+                      <svg
+                        width="19"
+                        height="18"
+                        viewBox="0 0 19 18"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="text-primary transition-all duration-500 group-hover:text-primary group-hover:rotate-[45deg]"
+                      >
+                        <path
+                          d="M4.75757 13.7577L13.2429 5.27241"
+                          stroke="currentColor"
+                          strokeWidth="1.5"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                        <path
+                          d="M13.9497 13.0503V4.56501H5.46442"
+                          stroke="currentColor"
+                          strokeWidth="1.5"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
+                    </span>
+                  </div>
+                </Link>
+              </div>
             </div>
           </div>
 
-          <div className="lg:col-span-8 col-span-12">
-            <div className=" pb-[50px]">
-              {faqData.map((item, index) => {
-                const isOpen = openIndex === index;
-
-                return (
-                  <div key={index} className="border-b pb-10 overflow-hidden">
-                    <div
-                      onClick={() => toggleIndex(index)}
-                      className="flex justify-between items-center cursor-pointer "
-                    >
-                      <h5 className="text-xl font-medium leading-[100%] text-primary mt-10">
-                        {item.question}
-                      </h5>
-                      <div className="pr-10">
-                        <FontAwesomeIcon
-                          icon={isOpen ? faMinus : faPlus}
-                          className="text-[12px] text-primary"
-                        />
-                      </div>
-                    </div>
-
-                    <div
-                      className={`transition-all duration-500 ease-in-out overflow-hidden ${
-                        isOpen
-                          ? "max-h-[200px] opacity-100"
-                          : "max-h-0 opacity-0"
-                      }`}
-                    >
-                      <p className="text-base font-normal leading-[26px] text-primary/70 mt-10">
-                        {item.answer}
-                      </p>
-                    </div>
-                  </div>
-                );
-              })}
+          {/* Right Column */}
+          <div className="lg:col-span-7 col-span-12 h-full w-full">
+            <div className="h-full pb-[50px]">
+              <FaqContent />
             </div>
           </div>
         </div>
