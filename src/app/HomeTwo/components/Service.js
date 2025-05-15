@@ -3,18 +3,22 @@ import React from "react";
 
 import Link from "next/link";
 import { services } from "../data";
-const Service = () => {
+const Service = ({ showItem }) => {
+  console.log(showItem);
+  const sliceService = services.slice(0, showItem);
   return (
-    <section className="lg:pb-[150px] md:pb-[100px] pb-20">
+    <section className="lg:py-[150px] md:py-[100px] py-20">
       <div className="container">
-        <div class="text-center">
-          <h4 className="mb-[34px]">Premium Laundry Service</h4>
-          <h2 className=" block m-auto mb-[64px]">
-            Pro Laundry & Dry Cleaning Free <br /> Collection & Return.
-          </h2>
-        </div>
+        {showItem == 4 && (
+          <div class="text-center">
+            <h4 className="mb-[34px]">Premium Laundry Service</h4>
+            <h2 className=" block m-auto mb-[64px]">
+              Pro Laundry & Dry Cleaning Free <br /> Collection & Return.
+            </h2>
+          </div>
+        )}
         <div className="grid xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 gap-[29px]">
-          {services.map((service, index) => {
+          {sliceService.map((service, index) => {
             return (
               <div
                 key={index}

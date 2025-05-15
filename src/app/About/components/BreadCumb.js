@@ -2,14 +2,14 @@ import React from "react";
 import bg from "@/public/img/about/breadcumb-bg.png";
 import Image from "next/image";
 import Link from "next/link";
-const BreadCumb = () => {
+const BreadCumb = ({ currentPage }) => {
   return (
     <section className="relative">
       <div className="relative w-full  overflow-hidden bg-[url('/img/about/breadcumb-bg.png')] bg-cover bg-no-repeat h-[370px] flex items-center">
         <div className="container">
           <div className=" relative z-[99]">
             <h2 className="text-[60px] text-white font-semibold leading-[110px] -tracking-[2%] mb-[34px]">
-              About Us
+              {currentPage}
             </h2>
             <div className="inline-block">
               <div className="flex items-center gap-2 py-[9px] px-4 bg-white/10 backdrop-blur-[14px]  rounded-full">
@@ -41,9 +41,9 @@ const BreadCumb = () => {
                 <span className="mr-2 text-white">•</span>
                 <Link
                   className="text-[16px] font-medium leading-[110%] text-white flex gap-2 transition-all duration-500 ease-in  hover:text-secondary"
-                  href="/"
+                  href=""
                 >
-                  About Us
+                  {currentPage}
                 </Link>
               </div>
             </div>

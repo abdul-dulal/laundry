@@ -15,7 +15,7 @@ const AboutUs = () => {
       <HeaderTop />
       <HeaderOne />
       <main>
-        <BreadCumb />
+        <BreadCumb currentPage="About Us" />
         <About />
         <Service />
         {/* <Price /> */}

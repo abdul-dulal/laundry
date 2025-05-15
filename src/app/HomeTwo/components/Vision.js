@@ -15,7 +15,7 @@ const Vision = () => {
     e.stopPropagation();
   };
   return (
-    <section class="overflow-hidden lg:py-[150px] md:py-[100px] py-20">
+    <section class="overflow-hidden lg:pt-[150px] md:pt-[100px] pt-20">
       <div class="container">
         <div className="grid grid-cols-12 2xl:gap-[87px] sm:gap-10 gap-0 items-stretch">
           <div className="lg:col-span-8 col-span-12  h-full">

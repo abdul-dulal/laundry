@@ -24,6 +24,10 @@ export const services = [
   },
   { title: "Ironing", icon: "/img/homeTwo/servcie-icon-03.png" },
   { title: "Free Pickup", icon: "/img/homeTwo/servcie-icon-04.png" },
+  { title: "Fabric Softening", icon: "/img/homeTwo/servcie-icon-05.png" },
+  { title: "Deep Cleaning", icon: "/img/homeTwo/servcie-icon-06.png" },
+  { title: "Stain Removal", icon: "/img/homeTwo/servcie-icon-07.png" },
+  { title: "Wear Cleaning", icon: "/img/homeTwo/servcie-icon-08.png" },
 ];
 
 export const collectSlider = [

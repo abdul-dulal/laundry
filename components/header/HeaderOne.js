@@ -86,7 +86,7 @@ const HeaderOne = () => {
                   <li className="group inline-block p-0 relative">
                     <Link
                       className="flex  items-center gap-1 px-[24px] capitalize transition-all duration-300 ease-in-out relative text-black group-hover:text-secondary   text-[18px] font-medium"
-                      href="/Service"
+                      href="/Services"
                     >
                       Service
                       <span>
@@ -100,7 +100,7 @@ const HeaderOne = () => {
                       <li className="float-none min-w-[210px] m-0">
                         <Link
                           className="block leading-[120%] px-[20px] py-[10px] text-primary border-b border-[#e3e3e3] ml-0 text-[18px] font-medium transition-all duration-400 ease-in-out  "
-                          href="/Service"
+                          href="/Services"
                         >
                           Service
                         </Link>

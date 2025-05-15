@@ -18,7 +18,7 @@ const HomeTwo = () => {
       <main>
         <Hero />
         <Vision />
-        <Service />
+        <Service showItem={4} />
         <Collect />
         <Production />
         <Team />
