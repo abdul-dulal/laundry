@@ -4,14 +4,14 @@ import Image from "next/image";
 import HeroContent from "./HeroContent";
 const Hero = () => {
   return (
-    <section class="lg:py-[150px] md:py-[120px] py-20 ">
-      <div class="container">
-        <div class="">
-          <div class="text-center">
-            <div class="">
+    <section className="lg:py-[150px] md:py-[120px] py-20 ">
+      <div className="container">
+        <div className="">
+          <div className="text-center">
+            <div className="">
               <h2>The Principles That Define Us</h2>
             </div>
-            <div class=" lg:mt-11 mt-7 lg:mb-[70px] mb-8">
+            <div className=" lg:mt-11 mt-7 lg:mb-[70px] mb-8">
               <p className="block m-auto text-base font-normal leading-[26px] text-primary/70 max-w-[646px]">
                 Revolutionized the way you think about dry cleaning and laundry.
                 Our mission is simple: to make laundry day hassle-free. With our
@@ -20,10 +20,10 @@ const Hero = () => {
               </p>
             </div>
           </div>
-          <div class="grid grid-cols-12 lg:gap-[30px] items-stretch">
-            <div class="lg:col-span-8 col-span-12">
-              <div class="h-full">
-                <div class="principle_img_wrapper h-full">
+          <div className="grid grid-cols-12 lg:gap-[30px] items-stretch">
+            <div className="lg:col-span-8 col-span-12">
+              <div className="h-full">
+                <div className="principle_img_wrapper h-full">
                   <Image
                     src={team}
                     alt="Laundry Team"
@@ -33,8 +33,8 @@ const Hero = () => {
               </div>
             </div>
 
-            <div class="lg:col-span-4 col-span-12 lg:mt-0 mt-[30px]">
-              <div class="bg-primary 2xl:py-[50px] py-10 sm:px-10 px-5 h-full flex flex-col justify-center">
+            <div className="lg:col-span-4 col-span-12 lg:mt-0 mt-[30px]">
+              <div className="bg-primary 2xl:py-[50px] py-10 sm:px-10 px-5 h-full flex flex-col justify-center">
                 <HeroContent
                   title="Customer First"
                   subTtile="- Your satisfaction is our

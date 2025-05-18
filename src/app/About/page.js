@@ -17,9 +17,9 @@ const AboutUs = () => {
       <main>
         <BreadCumb currentPage="About Us" />
         <About />
-        <Service />
-        {/* <Price /> */}
-        <Contact />
+        <Service showItem={4} />
+        <Price />
+        <Contact showBottom={true} showTop={true} />
       </main>
       <FooterOne />
     </>

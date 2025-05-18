@@ -22,7 +22,7 @@ const HomeTwo = () => {
         <Collect />
         <Production />
         <Team />
-        {/* <Price /> */}
+        <Price />
         <Testimonial />
         <Trends />
       </main>

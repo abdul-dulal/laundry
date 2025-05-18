@@ -13,10 +13,13 @@ const TeamContent = ({ showItem }) => {
             key={index}
             className="group border border-primary/15 py-11 xl:px-10 px-5 bg-transparent transition-all ease-out duration-[.4s] hover:bg-[#EBEFF3] hover:-mt-3"
           >
-            <h3 className="text-[18px] font-semibold leading-[100%] mb-[17px] ">
+            <Link
+              href="/Team-details"
+              className="text-[18px] font-semibold leading-[100%] "
+            >
               {team.name}
-            </h3>
-            <p className="text-[15px] text-primary/70 font-medium leading-[26px]">
+            </Link>
+            <p className="mt-[17px]  text-[15px] text-primary/70 font-medium leading-[26px]">
               {team.design}
             </p>
             <p className="lg:mt-[34px] mt-6 text-[16px] font-medium text-primary/60">

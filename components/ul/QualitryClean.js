@@ -7,10 +7,10 @@ const QualitryClean = () => {
   return (
     <section className="lg:pt-[150px] md:pt-[100px] pt-20">
       <div className="container">
-        <div class="text-center">
-          <h4 className="mb-[34px]">
+        <div className="text-center">
+          <h5 className="mb-[34px] text-primary/70 leading-[27px]  border border-[rgb(217,219,223)] px-[20px] py-0 inline-block">
             <span className="mr-2">•</span>Our Services
-          </h4>
+          </h5>
           <h2 className=" block m-auto mb-[70px]">
             High-Quality Laundry <br /> & Dry Cleaning.
           </h2>
@@ -201,18 +201,18 @@ const QualitryClean = () => {
             Free Collection & Delivery $20 Minimum <br /> Order No Service Fee.
           </h3>
           <div className="flex gap-5 items-center justify-center mt-[34px]">
-            <div class=" text-center leading-[54px] transition-all duration-400 ease-in-out relative h-[54px] w-[212px] bg-[#142137] z-[1] overflow-hidden cursor-pointer before:content-[''] before:absolute before:w-full before:h-[200px] before:top-[-80px] before:right-[-60px] before:bg-[#4375e7] before:transition-all before:duration-[1200ms] before:ease-in-out before:z-[-1] before:rotate-[-20deg]  after:content-[''] after:absolute after:w-full after:h-[200px] after:top-[-70px] after:left-[-60px] after:bg-[#4375e7] after:transition-all after:duration-[1200ms] after:ease-in-out after:z-[-1] after:rotate-[-20deg] hover:after:w-0 hover:before:w-0">
+            <div className=" text-center leading-[54px] transition-all duration-400 ease-in-out relative h-[54px] w-[212px] bg-[#142137] z-[1] overflow-hidden cursor-pointer before:content-[''] before:absolute before:w-full before:h-[200px] before:top-[-80px] before:right-[-60px] before:bg-[#4375e7] before:transition-all before:duration-[1200ms] before:ease-in-out before:z-[-1] before:rotate-[-20deg]  after:content-[''] after:absolute after:w-full after:h-[200px] after:top-[-70px] after:left-[-60px] after:bg-[#4375e7] after:transition-all after:duration-[1200ms] after:ease-in-out after:z-[-1] after:rotate-[-20deg] hover:after:w-0 hover:before:w-0">
               <Link
                 className="font-medium text-[15px] text-white transition-all duration-500 ease-in-out"
-                href="/"
+                href="/Contact"
               >
                 Book a Pick Up
               </Link>
             </div>
-            <div class=" text-center leading-[54px] transition-all duration-400 ease-in-out relative h-[54px] w-[212px] bg-[#142137] z-[1] overflow-hidden cursor-pointer before:content-[''] before:absolute before:w-full before:h-[200px] before:top-[-80px] before:right-[-60px] before:bg-[#4375e7] before:transition-all before:duration-[1200ms] before:ease-in-out before:z-[-1] before:rotate-[-20deg]  after:content-[''] after:absolute after:w-full after:h-[200px] after:top-[-70px] after:left-[-60px] after:bg-[#4375e7] after:transition-all after:duration-[1200ms] after:ease-in-out after:z-[-1] after:rotate-[-20deg] hover:after:w-0 hover:before:w-0">
+            <div className=" text-center leading-[54px] transition-all duration-400 ease-in-out relative h-[54px] w-[212px] bg-[#142137] z-[1] overflow-hidden cursor-pointer before:content-[''] before:absolute before:w-full before:h-[200px] before:top-[-80px] before:right-[-60px] before:bg-[#4375e7] before:transition-all before:duration-[1200ms] before:ease-in-out before:z-[-1] before:rotate-[-20deg]  after:content-[''] after:absolute after:w-full after:h-[200px] after:top-[-70px] after:left-[-60px] after:bg-[#4375e7] after:transition-all after:duration-[1200ms] after:ease-in-out after:z-[-1] after:rotate-[-20deg] hover:after:w-0 hover:before:w-0">
               <Link
                 className="font-medium text-[15px] text-white transition-all duration-500 ease-in-out"
-                href="/"
+                href="/Contact"
               >
                 Get a Price Estimation
               </Link>

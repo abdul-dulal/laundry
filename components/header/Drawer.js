@@ -11,6 +11,9 @@ import logo from "@/public/img/logo/logo.png";
 const Drawer = ({ bgColor }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [home, setHome] = useState(true);
+  const [service, setService] = useState(true);
+  const [page, setPage] = useState(true);
+  const [blog, setBlog] = useState(true);
 
   const toggleDrawer = () => {
     setIsOpen(!isOpen);
@@ -81,7 +84,7 @@ const Drawer = ({ bgColor }) => {
                       href="/homeOne"
                       className={`capitalize text-[16px] leading-[50px] font-normal text-primary  border-b  border-solid border-[#00000036]  flex items-center justify-between`}
                     >
-                      Home One
+                      Home 01
                     </Link>
                   </li>
                   <li>
@@ -89,41 +92,156 @@ const Drawer = ({ bgColor }) => {
                       href="/homeTwo"
                       className={`capitalize text-[16px] leading-[50px] font-normal text-primary  border-b  border-solid border-[#00000036] flex items-center justify-between`}
                     >
-                      Home Two
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/homeThree"
-                      className={`capitalize text-[16px] leading-[50px] font-normal text-primary  border-b  border-solid border-[#00000036] flex items-center justify-between`}
-                    >
-                      Home Three
+                      Home 02
                     </Link>
                   </li>
                 </ul>
               </li>
               <li className="mt-3 border-b  border-solid border-[#00000036] pb-5">
-                <Link href="/aboutUs">About</Link>
+                <Link href="/about">About</Link>
               </li>
               <li className="relative  mt-3">
                 <Link
-                  href="/services"
+                  href="javascript:void(0)"
                   className="flex justify-between items-center border-b  border-solid border-[#00000036] pb-5"
                 >
                   Service
+                  <span
+                    onClick={() => setService(!service)}
+                    className={`text-center h-[35px] w-[35px] border border-solid border-[rgba(255,255,255,0.079)] rounded-[3px] font-normal text-2xl duration-500 ${
+                      service ? "" : "bg-primary text-white"
+                    }`}
+                  >
+                    {service ? "+" : "-"}
+                  </span>
                 </Link>
+                <ul
+                  className={`transition-all duration-500 bg-transparent  ease-in-out overflow-hidden px-3   ${
+                    service ? "max-h-0" : "max-h-40"
+                  } `}
+                >
+                  <li>
+                    <Link
+                      href="/Services"
+                      className={`capitalize text-[16px] leading-[50px] font-normal text-primary  border-b  border-solid border-[#00000036]  flex items-center justify-between`}
+                    >
+                      Service
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/Service-details"
+                      className={`capitalize text-[16px] leading-[50px] font-normal text-primary  border-b  border-solid border-[#00000036] flex items-center justify-between`}
+                    >
+                      Service Details
+                    </Link>
+                  </li>
+                </ul>
               </li>
 
               <li className="relative  mt-3">
                 <Link
-                  href="/blog"
+                  href="javascript:void(0)"
+                  className="flex justify-between items-center border-b  border-solid border-[#00000036] pb-5"
+                >
+                  Pages
+                  <span
+                    onClick={() => setPage(!page)}
+                    className={`text-center h-[35px] w-[35px] border border-solid border-[rgba(255,255,255,0.079)] rounded-[3px] font-normal text-2xl duration-500 ${
+                      page ? "" : "bg-primary text-white"
+                    }`}
+                  >
+                    {page ? "+" : "-"}
+                  </span>
+                </Link>
+                <ul
+                  className={`transition-all duration-500 bg-transparent  ease-in-out overflow-hidden px-3   ${
+                    page ? "max-h-0" : "max-h-[260px]"
+                  } `}
+                >
+                  <li>
+                    <Link
+                      href="/Team"
+                      className={`capitalize text-[16px] leading-[50px] font-normal text-primary  border-b  border-solid border-[#00000036]  flex items-center justify-between`}
+                    >
+                      Team
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/Team-details"
+                      className={`capitalize text-[16px] leading-[50px] font-normal text-primary  border-b  border-solid border-[#00000036] flex items-center justify-between`}
+                    >
+                      Team Details
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/Faq"
+                      className={`capitalize text-[16px] leading-[50px] font-normal text-primary  border-b  border-solid border-[#00000036] flex items-center justify-between`}
+                    >
+                      FAQ
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/Price"
+                      className={`capitalize text-[16px] leading-[50px] font-normal text-primary  border-b  border-solid border-[#00000036] flex items-center justify-between`}
+                    >
+                      Price Packages
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/*"
+                      className={`capitalize text-[16px] leading-[50px] font-normal text-primary  border-b  border-solid border-[#00000036] flex items-center justify-between`}
+                    >
+                      Page Not Found
+                    </Link>
+                  </li>
+                </ul>
+              </li>
+
+              <li className="relative  mt-3">
+                <Link
+                  href="javascript:void(0)"
                   className="flex justify-between items-center border-b  border-solid border-[#00000036] pb-5"
                 >
                   Blog
+                  <span
+                    onClick={() => setBlog(!blog)}
+                    className={`text-center h-[35px] w-[35px] border border-solid border-[rgba(255,255,255,0.079)] rounded-[3px] font-normal text-2xl duration-500 ${
+                      blog ? "" : "bg-primary text-white"
+                    }`}
+                  >
+                    {blog ? "+" : "-"}
+                  </span>
                 </Link>
+                <ul
+                  className={`transition-all duration-500 bg-transparent  ease-in-out overflow-hidden px-3   ${
+                    blog ? "max-h-0" : "max-h-40"
+                  } `}
+                >
+                  <li>
+                    <Link
+                      href="/Blog"
+                      className={`capitalize text-[16px] leading-[50px] font-normal text-primary  border-b  border-solid border-[#00000036]  flex items-center justify-between`}
+                    >
+                      Blog
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/Blog-details"
+                      className={`capitalize text-[16px] leading-[50px] font-normal text-primary  border-b  border-solid border-[#00000036] flex items-center justify-between`}
+                    >
+                      Blog Details
+                    </Link>
+                  </li>
+                </ul>
               </li>
               <li className="mt-3 border-b  border-solid border-[#00000036] pb-5">
-                <Link href="/contact">Contact</Link>
+                <Link href="/Contact">Contact</Link>
               </li>
             </ul>
 

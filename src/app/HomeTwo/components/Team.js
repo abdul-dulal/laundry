@@ -9,7 +9,7 @@ const Team = () => {
     <section className="lg:pb-[150px] md:pb-[100px] pb-20">
       <div className="container">
         <div className="flex flex-wrap gap-10 justify-between items-end">
-          <div class="">
+          <div className="">
             <h4 className="mb-[34px]">Team Members</h4>
             <h2 className=" ">
               The Experts in Clean <br className="md:block hidden" /> & Fresh.
@@ -17,8 +17,8 @@ const Team = () => {
           </div>
           <div>
             <Link
-              href="/"
-              class="block group  rounded-[100px] w-[238px]  bg-white relative overflow-hidden transition-all duration-[0.7s] ease-in-out z-10 text-center leading-[54px] border border-primary/15 before:content-[''] before:absolute before:top-[-80px] before:right-[-60px] before:w-0 before:h-[200px] before:bg-[#142137] before:transition-all before:duration-[1.2s] before:ease-in-out before:z-[-1] before:rotate-[-20deg] after:content-[''] after:absolute after:top-[-70px] after:left-[-60px] after:w-0 after:h-[200px] after:bg-[#142137] after:transition-all after:duration-[1.2s] after:ease-in-out after:z-[-1] after:rotate-[-20deg] hover:after:w-full hover:before:w-full"
+              href="/Team"
+              className="block group  rounded-[100px] w-[238px]  bg-white relative overflow-hidden transition-all duration-[0.7s] ease-in-out z-10 text-center leading-[54px] border border-primary/15 before:content-[''] before:absolute before:top-[-80px] before:right-[-60px] before:w-0 before:h-[200px] before:bg-[#142137] before:transition-all before:duration-[1.2s] before:ease-in-out before:z-[-1] before:rotate-[-20deg] after:content-[''] after:absolute after:top-[-70px] after:left-[-60px] after:w-0 after:h-[200px] after:bg-[#142137] after:transition-all after:duration-[1.2s] after:ease-in-out after:z-[-1] after:rotate-[-20deg] hover:after:w-full hover:before:w-full"
             >
               <span className="flex items-center justify-between gap-[10px] pl-6 pr-[10px] text-[#142137] group-hover:text-white group-hover:delay-300 group-hover:transition-all text-[15px] font-medium transition-all duration-[.5s]">
                 All Team Members
@@ -34,16 +34,16 @@ const Team = () => {
                     <path
                       d="M4.75757 13.7576L13.2429 5.27229"
                       stroke="currentColor"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                     <path
                       d="M13.9497 13.0503V4.56501H5.46442"
                       stroke="currentColor"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                   </svg>
                 </span>

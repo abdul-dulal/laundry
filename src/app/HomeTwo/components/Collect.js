@@ -71,7 +71,7 @@ const Collect = () => {
                         width={960}
                         height={950}
                         src={item.img}
-                        alt="hello"
+                        alt={item.title}
                       />
                     </div>
                     <div className="h-full w-full 2xl:py-[125px] py-20 2xl:pl-[123px] xl:pl-20 pl-10 2xl:pr-[150px] lg:pr-10 pr-5 bg-[#181D4C]">
@@ -106,8 +106,8 @@ const Collect = () => {
                           utmost care.
                         </p>
                         <Link
-                          href="/"
-                          class="block group 2xl:mt-[170px] sm:mt-20 mt-16  rounded-[100px] w-[217px] bg-white relative overflow-hidden transition-all duration-[0.7s] ease-in-out z-10 text-center leading-[54px] border border-transparent before:content-[''] before:absolute before:top-[-80px] before:right-[-60px] before:w-0 before:h-[200px] before:bg-[#142137] before:transition-all before:duration-[1.2s] before:ease-in-out before:z-[-1] before:rotate-[-20deg] after:content-[''] after:absolute after:top-[-70px] after:left-[-60px] after:w-0 after:h-[200px] after:bg-[#142137] after:transition-all after:duration-[1.2s] after:ease-in-out after:z-[-1] after:rotate-[-20deg] hover:after:w-full hover:before:w-full"
+                          href="/Services"
+                          className="block group 2xl:mt-[170px] sm:mt-20 mt-16  rounded-[100px] w-[217px] bg-white relative overflow-hidden transition-all duration-[0.7s] ease-in-out z-10 text-center leading-[54px] border border-transparent before:content-[''] before:absolute before:top-[-80px] before:right-[-60px] before:w-0 before:h-[200px] before:bg-[#142137] before:transition-all before:duration-[1.2s] before:ease-in-out before:z-[-1] before:rotate-[-20deg] after:content-[''] after:absolute after:top-[-70px] after:left-[-60px] after:w-0 after:h-[200px] after:bg-[#142137] after:transition-all after:duration-[1.2s] after:ease-in-out after:z-[-1] after:rotate-[-20deg] hover:after:w-full hover:before:w-full"
                         >
                           <span className="flex items-center justify-between gap-[10px] pl-6 pr-[10px] text-[#142137] group-hover:text-white group-hover:delay-300 group-hover:transition-all text-[15px] font-medium transition-all duration-[.5s]">
                             Get Service Now
@@ -123,16 +123,16 @@ const Collect = () => {
                                 <path
                                   d="M4.75757 13.7576L13.2429 5.27229"
                                   stroke="currentColor"
-                                  stroke-width="1.5"
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
+                                  strokeWidth="1.5"
+                                  strokeLinecap="round"
+                                  strokeLinejoin="round"
                                 />
                                 <path
                                   d="M13.9497 13.0503V4.56501H5.46442"
                                   stroke="currentColor"
-                                  stroke-width="1.5"
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
+                                  strokeWidth="1.5"
+                                  strokeLinecap="round"
+                                  strokeLinejoin="round"
                                 />
                               </svg>
                             </span>

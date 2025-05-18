@@ -26,7 +26,7 @@ export default function LaundrySlider() {
         el: ".custom-pagination",
         clickable: true,
         renderBullet: (index, className) => {
-          return `<span class="${className}">${index + 1}</span>`;
+          return `<span className="${className}">${index + 1}</span>`;
         },
       }}
       className="w-full h-[100vh] flex"

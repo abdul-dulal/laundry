@@ -24,7 +24,7 @@ const Hero = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <section class="hero_section_area w-full relative overflow-hidden">
+    <section className="hero_section_area w-full relative overflow-hidden">
       <div>
         <Swiper
           onSwiper={(swiper) => (swiperRef.current = swiper)}
@@ -52,29 +52,29 @@ const Hero = () => {
             return (
               <SwiperSlide key={index}>
                 <div
-                  class={` inline-block w-full bg-cover bg-center bg-no-repeat`}
+                  className={` inline-block w-full bg-cover bg-center bg-no-repeat`}
                   style={{ backgroundImage: `url(${slider.img})` }}
                 >
-                  <div class=" w-full h-full [background:linear-gradient(90deg,_rgb(20,_33,_55)_0%,_rgba(20,_33,_55,_0.1)_89.82%)] -z-10">
-                    <div class="container">
-                      <div class=" md:block hidden absolute top-[49%] left-[110px] z-[100]">
+                  <div className=" w-full h-full [background:linear-gradient(90deg,_rgb(20,_33,_55)_0%,_rgba(20,_33,_55,_0.1)_89.82%)] -z-10">
+                    <div className="container">
+                      <div className=" md:block hidden absolute top-[49%] left-[110px] z-[100]">
                         <Image src={line} alt="Laundry line" />
                       </div>
 
-                      <div class=" z-[999] relative">
-                        <div class=" md:h-[840px] h-fit md:py-0 py-[60px] flex flex-col justify-center items-start gap-12">
-                          <div class="heading_area">
-                            <div class="sub_heading ">
-                              <h4 className="inline-block backdrop-blur-[14px] bg-[rgba(255,255,255,0.14)] font-[500] text-[16px] text-[rgba(255,255,255,0.7)] px-[10px] text-center mb-[24px] h-[29px] leading-[29px]">
+                      <div className=" z-[999] relative">
+                        <div className=" md:h-[840px] h-fit md:py-0 py-[60px] flex flex-col justify-center items-start gap-12">
+                          <div className="">
+                            <div className="">
+                              <h5 className="border border-[rgb(217,219,223)] py-0 inline-block backdrop-blur-[14px] bg-[rgba(255,255,255,0.14)] font-[500] text-[16px] text-[rgba(255,255,255,0.7)] px-[10px] text-center mb-[35px] h-[29px] leading-[29px]">
                                 <span className="mr-2">•</span>Dry Clean Experts
-                              </h4>
+                              </h5>
                             </div>
-                            <div class="heading">
+                            <div className="">
                               <h3 className="font-semibold lg:text-[100px] md:text-[60px]  sm:text-[42px] text-[35px] lg:leading-[110%]  md:leading-[66px] sm:leading-[48px] leading-[39px] tracking-[-0.02em] text-white">
                                 {slider.title} <br /> {slider.titleTwo}
                               </h3>
                             </div>
-                            <div class="description style_1 mt-8">
+                            <div className="mt-8">
                               <p className="text-[rgba(255,255,255,0.7)]">
                                 Our services are designed for convenience and
                                 efficiency, offering doorstep pickup & <br />
@@ -83,8 +83,8 @@ const Hero = () => {
                               </p>
                             </div>
                           </div>
-                          <div class="hero_user_info z-10 flex flex-row justify-start items-center flex-wrap gap-[34px]">
-                            <div class=" text-center leading-[54px] transition-all duration-400 ease-in-out relative h-[54px] w-[212px] bg-[#142137] z-[1] overflow-hidden cursor-pointer before:content-[''] before:absolute before:w-full before:h-[200px] before:top-[-80px] before:right-[-60px] before:bg-[#4375e7] before:transition-all before:duration-[1200ms] before:ease-in-out before:z-[-1] before:rotate-[-20deg]  after:content-[''] after:absolute after:w-full after:h-[200px] after:top-[-70px] after:left-[-60px] after:bg-[#4375e7] after:transition-all after:duration-[1200ms] after:ease-in-out after:z-[-1] after:rotate-[-20deg] hover:after:w-0 hover:before:w-0">
+                          <div className="z-10 flex flex-row justify-start items-center flex-wrap gap-[34px]">
+                            <div className=" text-center leading-[54px] transition-all duration-400 ease-in-out relative h-[54px] w-[212px] bg-[#142137] z-[1] overflow-hidden cursor-pointer before:content-[''] before:absolute before:w-full before:h-[200px] before:top-[-80px] before:right-[-60px] before:bg-[#4375e7] before:transition-all before:duration-[1200ms] before:ease-in-out before:z-[-1] before:rotate-[-20deg]  after:content-[''] after:absolute after:w-full after:h-[200px] after:top-[-70px] after:left-[-60px] after:bg-[#4375e7] after:transition-all after:duration-[1200ms] after:ease-in-out after:z-[-1] after:rotate-[-20deg] hover:after:w-0 hover:before:w-0">
                               <Link
                                 className="font-medium text-[15px] text-white transition-all duration-500 ease-in-out"
                                 href="/"
@@ -92,8 +92,8 @@ const Hero = () => {
                                 Book Laundry Now!
                               </Link>
                             </div>
-                            <div class=" flex flex-wrap flex-row justify-start items-center gap-[18px]">
-                              <div class=" flex relative h-[54px] w-[143px]">
+                            <div className=" flex flex-wrap flex-row justify-start items-center gap-[18px]">
+                              <div className=" flex relative h-[54px] w-[143px]">
                                 <Image
                                   className="absolute left-0"
                                   src={client}
@@ -115,7 +115,7 @@ const Hero = () => {
                                   alt="Laundry client"
                                 />
                               </div>
-                              <div class="review_card_wapper flex flex-col justify-center items-start gap-[3px]">
+                              <div className="flex flex-col justify-center items-start gap-[3px]">
                                 <ul className="flex flex-row justify-start items-start gap-[3px] m-0 p-0">
                                   <li>
                                     <svg

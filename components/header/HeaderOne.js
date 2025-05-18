@@ -23,30 +23,27 @@ const HeaderOne = () => {
   }, []);
   return (
     <header
-      class={`header-1 w-full z-[999] py-[18px] ${
+      className={`w-full z-[999]  ${
         isSticky
-          ? "fixed top-0 left-0  bg-white  is_sticky mt-0"
-          : "bg-transparent relative  "
+          ? "fixed top-0 left-0  bg-white  is_sticky mt-0 shadow-lg xl:py-0 py-[34px] "
+          : "bg-transparent relative xl:py-0 py-[34px]"
       }`}
     >
-      <div class="container">
-        <div class="header-wrap flex items-center justify-between">
-          <div class="logo">
-            <a class="primary-logo" href="index.html">
+      <div className="container">
+        <div className="flex items-center justify-between">
+          <div className="logo">
+            <Link className="primary-logo" href="/">
               <Image src={logo} alt="logo" />
-            </a>
-            {/* <a class="sticky-logo" href="index.html">
-                <img src="./images/logo/logo.png" alt="logo" />
-              </a> */}
+            </Link>
           </div>
-          <div class="main-menu-wrap xl:block hidden">
-            <div class="main-menu">
-              <nav id="mobile-menu">
-                <ul className=" m-0 p-0 relative">
-                  <li class="group has-dropdown menu-thumb inline-block p-0 relative">
+          <div className="xl:block hidden">
+            <div className="main-menu">
+              <nav id="">
+                <ul className="relative">
+                  <li className="inline-block  relative">
                     <Link
-                      className="flex items-center gap-1 px-[24px] capitalize transition-all duration-300 ease-in-out relative text-black group-hover:text-secondary  text-[18px] font-medium"
-                      href="/"
+                      className="flex items-center gap-1 px-[24px] capitalize transition-all duration-300 ease-in-out relative text-black group-hover:text-secondary  text-[18px] font-medium py-[34px]"
+                      href="javascript:void(0)"
                     >
                       Home
                       <span>
@@ -56,7 +53,7 @@ const HeaderOne = () => {
                         />
                       </span>
                     </Link>
-                    <ul class="submenu mt-[24px] absolute left-0 top-full opacity-0 invisible z-[99999] text-left transition-all duration-300 ease-in-out  shadow-[0px_10px_20px_0px_rgba(8,0,42,0.08)] origin-top bg-white scale-y-0">
+                    <ul className="absolute left-0 top-full opacity-0 invisible z-[99999] text-left transition-all duration-300 ease-in-out  shadow-[0px_10px_20px_0px_rgba(8,0,42,0.08)] origin-top bg-white scale-y-0">
                       <li className="float-none min-w-[210px] m-0">
                         <Link
                           className="block leading-[120%] px-[20px] py-[10px] text-primary border-b border-[#e3e3e3] ml-0 text-[18px] font-medium transition-all duration-400 ease-in-out  "
@@ -75,18 +72,18 @@ const HeaderOne = () => {
                       </li>
                     </ul>
                   </li>
-                  <li class="group has-dropdown inline-block p-0 relative">
+                  <li className=" inline-block p-0 relative">
                     <Link
-                      className="block px-[24px] capitalize transition-all duration-300 ease-in-out relative text-black group-hover:text-secondary   text-[18px] font-medium"
-                      href="/About"
+                      className="block px-[24px] capitalize transition-all duration-300 ease-in-out relative text-black group-hover:text-secondary   text-[18px] font-medium py-[34px]"
+                      href="/about"
                     >
                       About Us
                     </Link>
                   </li>
                   <li className="group inline-block p-0 relative">
                     <Link
-                      className="flex  items-center gap-1 px-[24px] capitalize transition-all duration-300 ease-in-out relative text-black group-hover:text-secondary   text-[18px] font-medium"
-                      href="/Services"
+                      className="flex  items-center gap-1 px-[24px] capitalize transition-all duration-300 ease-in-out relative text-black group-hover:text-secondary   text-[18px] font-medium py-[34px]"
+                      href="javascript:void(0)"
                     >
                       Service
                       <span>
@@ -96,7 +93,7 @@ const HeaderOne = () => {
                         />
                       </span>
                     </Link>
-                    <ul class="submenu mt-[24px] absolute left-0 top-full opacity-0 invisible z-[99999] text-left transition-all duration-300 ease-in-out  shadow-[0px_10px_20px_0px_rgba(8,0,42,0.08)] origin-top bg-white scale-y-0">
+                    <ul className="submenu  absolute left-0 top-full opacity-0 invisible z-[99999] text-left transition-all duration-300 ease-in-out  shadow-[0px_10px_20px_0px_rgba(8,0,42,0.08)] origin-top bg-white scale-y-0">
                       <li className="float-none min-w-[210px] m-0">
                         <Link
                           className="block leading-[120%] px-[20px] py-[10px] text-primary border-b border-[#e3e3e3] ml-0 text-[18px] font-medium transition-all duration-400 ease-in-out  "
@@ -118,8 +115,8 @@ const HeaderOne = () => {
 
                   <li className="group inline-block p-0 relative">
                     <Link
-                      className="flex items-center gap-1 px-[24px] capitalize transition-all duration-300 ease-in-out relative text-black group-hover:text-secondary   text-[18px] font-medium"
-                      href=""
+                      className="flex items-center gap-1 px-[24px] capitalize transition-all duration-300 ease-in-out relative text-black group-hover:text-secondary   text-[18px] font-medium py-[34px]"
+                      href="javascript:void(0)"
                     >
                       Pages
                       <span>
@@ -129,7 +126,7 @@ const HeaderOne = () => {
                         />
                       </span>
                     </Link>
-                    <ul class="submenu mt-[24px] absolute left-0 top-full opacity-0 invisible z-[99999] text-left transition-all duration-300 ease-in-out  shadow-[0px_10px_20px_0px_rgba(8,0,42,0.08)] origin-top bg-white scale-y-0">
+                    <ul className="submenu  absolute left-0 top-full opacity-0 invisible z-[99999] text-left transition-all duration-300 ease-in-out  shadow-[0px_10px_20px_0px_rgba(8,0,42,0.08)] origin-top bg-white scale-y-0">
                       <li className="float-none min-w-[210px] m-0">
                         <Link
                           className="block leading-[120%] px-[20px] py-[10px] text-primary border-b border-[#e3e3e3] ml-0 text-[18px] font-medium transition-all duration-400 ease-in-out  "
@@ -174,8 +171,8 @@ const HeaderOne = () => {
                   </li>
                   <li className="group inline-block p-0 relative">
                     <Link
-                      className="flex items-center gap-1 px-[24px] capitalize transition-all duration-300 ease-in-out relative text-black group-hover:text-secondary   text-[18px] font-medium"
-                      href="/Blog"
+                      className="flex items-center gap-1 px-[24px] capitalize transition-all duration-300 ease-in-out relative text-black group-hover:text-secondary   text-[18px] font-medium py-[34px]"
+                      href="javascript:void(0)"
                     >
                       Blog
                       <span>
@@ -185,7 +182,7 @@ const HeaderOne = () => {
                         />
                       </span>
                     </Link>
-                    <ul class="submenu mt-[24px] absolute left-0 top-full opacity-0 invisible z-[99999] text-left transition-all duration-300 ease-in-out  shadow-[0px_10px_20px_0px_rgba(8,0,42,0.08)] origin-top bg-white scale-y-0">
+                    <ul className="submenu  absolute left-0 top-full opacity-0 invisible z-[99999] text-left transition-all duration-300 ease-in-out  shadow-[0px_10px_20px_0px_rgba(8,0,42,0.08)] origin-top bg-white scale-y-0">
                       <li className="float-none min-w-[210px] m-0">
                         <Link
                           className="block leading-[120%] px-[20px] py-[10px] text-primary border-b border-[#e3e3e3] ml-0  text-[18px] font-medium transition-all duration-400 ease-in-out  "
@@ -206,7 +203,7 @@ const HeaderOne = () => {
                   </li>
                   <li className="group inline-block p-0 relative">
                     <Link
-                      className="block px-[24px] capitalize transition-all duration-300 ease-in-out relative text-black group-hover:text-secondary   text-[18px] font-medium"
+                      className="block px-[24px] capitalize transition-all duration-300 ease-in-out relative text-black group-hover:text-secondary   text-[18px] font-medium py-[34px]"
                       href="/Contact"
                     >
                       Contact
@@ -216,20 +213,41 @@ const HeaderOne = () => {
               </nav>
             </div>
           </div>
-          <div class="header-right xxl:flex hidden items-center ">
-            <div class="btn_wrapper ">
+          <div className="xxl:flex hidden items-center ">
+            <div className=" ">
               <Link
-                className=" font-medium text-[15px] text-[#142137] border border-[rgba(20,33,55,0.14)] w-[220px] h-[44px] leading-[44px] block text-center"
+                className="flex items-center gap-2 justify-center font-medium text-[15px] text-[#142137] border border-[rgba(20,33,55,0.14)] w-[220px] h-[44px] leading-[44px]  text-center"
                 href="/Contact"
               >
                 Schedule a Pickup
                 <span>
-                  <i class="fa-solid fa-arrow-right"></i>
+                  <svg
+                    width="15"
+                    height="14"
+                    viewBox="0 0 15 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1 7.00056L13 7.00056"
+                      stroke="#142137"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                    <path
+                      d="M8 13.0002L14 7.00016L8 1.00016"
+                      stroke="#142137"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
                 </span>
               </Link>
             </div>
           </div>
-          <Drawer />
+          <Drawer bgColor="primary" />
         </div>
       </div>
     </header>

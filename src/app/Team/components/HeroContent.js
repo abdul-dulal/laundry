@@ -2,7 +2,7 @@ import React from "react";
 
 const HeroContent = ({ title, subTtile }) => {
   return (
-    <div class="flex gap-1 2xl:mb-10 mb-6">
+    <div className="flex gap-1 2xl:mb-10 mb-6">
       <span className="mt-1">
         <svg
           width="24"
@@ -20,9 +20,9 @@ const HeroContent = ({ title, subTtile }) => {
           <path
             d="M16.5451 8.27295L10.9201 14.0484L8.36328 11.4232"
             stroke="white"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
           <defs>
             <filter
@@ -32,7 +32,7 @@ const HeroContent = ({ title, subTtile }) => {
               width="24"
               height="24"
               filterUnits="userSpaceOnUse"
-              color-interpolation-filters="sRGB"
+              colorInterpolationFilters="sRGB"
             >
               <feFlood flood-opacity="0" result="BackgroundImageFix" />
               <feColorMatrix

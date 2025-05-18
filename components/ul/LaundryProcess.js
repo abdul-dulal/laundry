@@ -6,13 +6,13 @@ import icon from "@/public/img/home/work-icon.png";
 const LaundryProcess = () => {
   const [active, setActive] = useState(3);
   return (
-    <section className="working_proces_area ">
+    <section className="">
       <div className="container">
         <div className="flex items-end justify-between border-b border-solid border-primary/15">
-          <div class="">
-            <h4 className="mb-[34px]">
-              <span className="mr-2">•</span>Our Services
-            </h4>
+          <div className="">
+            <h5 className="mb-[34px] text-primary/70 leading-[27px]  border border-[rgb(217,219,223)] px-[20px] py-0 inline-block">
+              <span className="mr-2">•</span>How It Works
+            </h5>
             <h2 className="">
               Take back your time. Leave the <br /> Laundry to us.
             </h2>
@@ -25,17 +25,17 @@ const LaundryProcess = () => {
           </div>
         </div>
         <div>
-          <div class="gallery_parent mt-[60px]    flex w-full overflow-hidden h-[600px]">
+          <div className="mt-[60px]    flex w-full overflow-hidden h-[600px]">
             {laundryStep.map((item, index) => {
               return (
                 <div
                   key={index}
-                  class={`tab relative  transition-all duration-[.5s] ease-in-out cursor-pointer overflow-hidden border border-[#d9dbdf] ${
+                  className={` relative  transition-all duration-[.5s] ease-in-out cursor-pointer overflow-hidden border border-[#d9dbdf] ${
                     index == active ? "w-full " : " relative w-[150px] "
                   }`}
                   onClick={() => setActive(item.id)}
                 >
-                  <div class="overly_content_text absolute top-0 md:-left-5 -left-10 w-full h-full">
+                  <div className=" absolute top-0 md:-left-5 -left-10 w-full h-full headng-rotate ">
                     <h6
                       className={`w-[800px] h-[800px] leading-[140px] -mt-[250px] transform -translate-x-1/2 -rotate-90 font-medium text-[30px] tracking-[-0.02em] text-[#142137]
                         ${index == active ? "hidden" : "block"}
@@ -45,14 +45,14 @@ const LaundryProcess = () => {
                     </h6>
                   </div>
                   <div
-                    class={`content  ${
+                    className={`  ${
                       index == active
                         ? "w-full h-full visible opacity-100 transition-all duration-500 ease-in-out flex  md:flex-row flex-col justify-start items-center gap-[60px]"
                         : "hidden opacity-0"
                     }`}
                   >
                     <div
-                      class={`working_proces_img ${
+                      className={`${
                         index == active ? "w-[320px] h-[500px] float-right" : ""
                       }`}
                     >
@@ -64,14 +64,14 @@ const LaundryProcess = () => {
                       />
                     </div>
                     <div
-                      class={`how_it_work_contains ${
+                      className={` ${
                         active == index
                           ? "flex flex-col justify-center items-start gap-[50px]"
                           : ""
                       }`}
                     >
                       <span
-                        class={`icon ${
+                        className={`icon ${
                           active
                             ? "cursor-pointer transition-all duration-[400ms] ease-[ease] size-[100px] grid place-content-center  bg-[#142137]  rounded-full text-center leading-[100px] hover:bg-secondary"
                             : ""
@@ -94,7 +94,7 @@ const LaundryProcess = () => {
                         cleaning <br />
                         methods and eco-friendly detergents.
                       </p>
-                      <div class="check_list_area">
+                      <div className="">
                         <ul className="p-0 flex flex-col justify-center items-start gap-[14px]">
                           <li className="flex items-center gap-[10px] text-base font-medium text-primary">
                             <span className="text-secondary">

@@ -6,30 +6,30 @@ import sd3 from "@/public/img/service-details/service-details-03.png";
 import Image from "next/image";
 import Link from "next/link";
 import FaqContent from "../../Services/components/FaqContent";
+import Category from "./Category";
 const Details = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
   };
   return (
-    <section class="lg:py-[150px] md:py-[120px] py-20">
-      <div class="container">
-        <div class="grid grid-cols-12 lg:gap-[65px]">
-          <div class="2xl:col-span-9 lg:col-span-8 col-span-12">
-            <div class="">
-              <div class="pb-[38px]">
-                <div class="">
+    <section className="lg:py-[150px] md:py-[120px] py-20">
+      <div className="container">
+        <div className="grid grid-cols-12 lg:gap-[65px]">
+          <div className="2xl:col-span-9 lg:col-span-8 col-span-12">
+            <div className="">
+              <div className="pb-[38px]">
+                <div className="">
                   <Image src={sd1} alt="Laundry service details" />
                 </div>
-                <div class="pt-[2px]">
+                <div className="pt-[2px]">
                   <h3
-                    href="/"
                     className="mt-[60px] text-[34px] font-semibold leading-[119%] tracking-[-0.02em] text-[#142137] mb-[14px] transition-all duration-[400ms] ease-[ease]
 "
                   >
                     Smooth Laundry Experience
                   </h3>
 
-                  <div class="">
+                  <div className="">
                     <p
                       className="text-[16px] font-normal  text-[#142137b3]
 "
@@ -44,7 +44,7 @@ const Details = () => {
                       preferences. your service, and we'll make sure
                     </p>
                     <p
-                      class="mt-[25px] text-[16px] font-normal  text-[#142137b3]
+                      className="mt-[25px] text-[16px] font-normal  text-[#142137b3]
 "
                     >
                       Our expert staff follows industry-standard procedures to
@@ -57,7 +57,7 @@ const Details = () => {
                       material?
                     </p>
                   </div>
-                  <div class=" mt-10">
+                  <div className=" mt-10">
                     <ul
                       className="p-0 flex flex-col justify-center items-start gap-[13px]
 "
@@ -81,9 +81,9 @@ const Details = () => {
                             <path
                               d="M15.5 8L9.3125 14L6.5 11.2727"
                               stroke="white"
-                              stroke-width="2"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
+                              strokeWidth="2"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
                             />
                           </svg>
                         </span>
@@ -113,9 +113,9 @@ const Details = () => {
                             <path
                               d="M15.5 8L9.3125 14L6.5 11.2727"
                               stroke="white"
-                              stroke-width="2"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
+                              strokeWidth="2"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
                             />
                           </svg>
                         </span>
@@ -145,9 +145,9 @@ const Details = () => {
                             <path
                               d="M15.5 8L9.3125 14L6.5 11.2727"
                               stroke="white"
-                              stroke-width="2"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
+                              strokeWidth="2"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
                             />
                           </svg>
                         </span>
@@ -177,9 +177,9 @@ const Details = () => {
                             <path
                               d="M15.5 8L9.3125 14L6.5 11.2727"
                               stroke="white"
-                              stroke-width="2"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
+                              strokeWidth="2"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
                             />
                           </svg>
                         </span>
@@ -209,9 +209,9 @@ const Details = () => {
                             <path
                               d="M15.5 8L9.3125 14L6.5 11.2727"
                               stroke="white"
-                              stroke-width="2"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
+                              strokeWidth="2"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
                             />
                           </svg>
                         </span>
@@ -226,16 +226,16 @@ const Details = () => {
                   </div>
                 </div>
               </div>
-              <div class=" mt-[60px]">
-                <div class=" grid sm:grid-cols-2 gap-[30px]">
-                  <div class="">
+              <div className=" mt-[60px]">
+                <div className=" grid sm:grid-cols-2 gap-[30px]">
+                  <div className="">
                     <Image
                       className="w-full"
                       src={sd2}
                       alt="Laundry service details"
                     />
                   </div>
-                  <div class="">
+                  <div className="">
                     <Image
                       className="w-full"
                       src={sd3}
@@ -243,7 +243,7 @@ const Details = () => {
                     />
                   </div>
                 </div>
-                <div class="pt-33">
+                <div className="pt-33">
                   <h2
                     className="mt-[60px] text-[34px] font-semibold leading-[119%] tracking-[-0.02em] text-[#142137] mb-[14px] transition-all duration-[400ms] ease-[ease]
 "
@@ -278,27 +278,27 @@ const Details = () => {
             {/* faq */}
             <FaqContent />
           </div>
-          <div class="2xl:col-span-3 lg:col-span-4 col-span-12 lg:mt-0 mt-14">
+          <div className="2xl:col-span-3 lg:col-span-4 col-span-12 lg:mt-0 mt-14">
             <div
-              class="flex lg:flex-col lg:flex-nowrap flex-row flex-wrap justify-center gap-[30px]  w-full
+              className="flex lg:flex-col lg:flex-nowrap flex-row flex-wrap justify-center gap-[30px]  w-full
 "
             >
               <div
-                class="bg-[#ebeff3] w-full max-w-[380px] xs:px-[30px] px-[15px] pt-[30px] pb-[40px]
+                className="bg-[#ebeff3] w-full max-w-[380px] xs:px-[30px] px-[15px] pt-[30px] pb-[40px]
 "
               >
-                <div class="">
+                <div className="">
                   <h5
-                    class="font-semibold text-[24px] leading-[142%] tracking-[-0.02em] text-[#142137]
+                    className="font-semibold text-[24px] leading-[142%] tracking-[-0.02em] text-[#142137]
 "
                   >
                     Search
                   </h5>
                 </div>
-                <div class="">
+                <div className="">
                   <form
                     onSubmit={handleSubmit}
-                    class="mt-[24px] w-full h-[44px] flex flex-row justify-between items-center
+                    className="mt-[24px] w-full h-[44px] flex flex-row justify-between items-center
 "
                   >
                     <input
@@ -322,113 +322,35 @@ const Details = () => {
                         <path
                           d="M8.11109 15.2222C12.0384 15.2222 15.2222 12.0384 15.2222 8.1111C15.2222 4.18375 12.0384 1 8.11109 1C4.18375 1 1 4.18375 1 8.1111C1 12.0384 4.18375 15.2222 8.11109 15.2222Z"
                           stroke="white"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                          strokeWidth="1.5"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                         />
                         <path
                           d="M16.9995 16.9995L13.1328 13.1328"
                           stroke="white"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                          strokeWidth="1.5"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                         />
                       </svg>
                     </button>
                   </form>
                 </div>
               </div>
+              <Category />
               <div
-                class="bg-[#ebeff3] w-full max-w-[380px] xs:px-[30px] px-[15px] pt-[30px] pb-[40px]
-"
-              >
-                <div class="">
-                  <h5
-                    class="font-semibold text-[24px] leading-[142%] tracking-[-0.02em] text-[#142137]
-"
-                  >
-                    Categories
-                  </h5>
-                </div>
-                <div class="mt-7">
-                  <ul>
-                    <li className="w-full">
-                      <Link
-                        className="border border-[#1421371a] w-full font-[Poppins] font-medium text-[15px] text-[#142137b3] flex flex-row justify-between items-center px-[20px] py-[10px]
-"
-                        href="/"
-                      >
-                        <span>
-                          <span class="mr-[6px]">•</span>Laundry Services
-                        </span>
-                        <span>(6)</span>
-                      </Link>
-                    </li>
-                    <li className="w-full">
-                      <Link
-                        className="border border-[#1421371a] w-full font-[Poppins] font-medium text-[15px] text-[#142137b3] flex flex-row justify-between items-center px-[20px] py-[10px]
-"
-                        href="/"
-                      >
-                        <span>
-                          <span class=" mr-[6px]">•</span>Professional Dry
-                          Cleaning
-                        </span>
-                        <span>(8)</span>
-                      </Link>
-                    </li>
-                    <li className="w-full">
-                      <Link
-                        className="border border-[#1421371a] w-full font-[Poppins] font-medium text-[15px] text-[#142137b3] flex flex-row justify-between items-center px-[20px] py-[10px]
-"
-                        href="/"
-                      >
-                        <span>
-                          <span class="mr-[6px]">•</span>Coats & Jackets
-                          Cleaning
-                        </span>
-                        <span>(3)</span>
-                      </Link>
-                    </li>
-                    <li className="w-full">
-                      <Link
-                        className="border border-[#1421371a] w-full font-[Poppins] font-medium text-[15px] text-[#142137b3] flex flex-row justify-between items-center px-[20px] py-[10px]
-"
-                        href="/"
-                      >
-                        <span>
-                          <span class="mr-[6px]">•</span>Carpet & Rug Cleaning
-                        </span>
-                        <span>(5)</span>
-                      </Link>
-                    </li>
-                    <li className="w-full">
-                      <Link
-                        className="border border-[#1421371a] w-full font-[Poppins] font-medium text-[15px] text-[#142137b3] flex flex-row justify-between items-center px-[20px] py-[10px]
-"
-                        href=""
-                      >
-                        <span>
-                          <span class="mr-[6px]">•</span>Shoe & Sneaker Cleaning
-                        </span>
-                        <span>(7)</span>
-                      </Link>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div
-                class=" bg-secondary mb-[30px] w-full max-w-[380px] xs:px-[30px] px-[15px] pt-[30px] pb-[40px]
+                className=" bg-secondary mb-[30px] w-full max-w-[380px] xs:px-[30px] px-[15px] pt-[30px] pb-[40px]
 "
               >
                 <div
-                  class="footer_contact_wrapper flex flex-row justify-start items-center gap-[14px] bg-[#4375e7]
+                  className="footer_contact_wrapper flex flex-row justify-start items-center gap-[14px] bg-[#4375e7]
 "
                 >
-                  <div class="">
+                  <div className="">
                     <Link
                       className="grid place-content-center size-[50px] bg-white rounded-full"
-                      href="tel:(629) 555-0129"
+                      href="tel:(629)555-0129"
                     >
                       <svg
                         width="26"
@@ -438,32 +360,32 @@ const Details = () => {
                         xmlns="http://www.w3.org/2000/svg"
                       >
                         <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
+                          fillRule="evenodd"
+                          clipRule="evenodd"
                           d="M1.61888 3.99812C2.01845 3.33526 4.22128 0.928967 5.79103 1.00161C6.26066 1.04182 6.6758 1.32461 7.0131 1.6541H7.01439C7.78759 2.41166 10.006 5.27067 10.1305 5.87256C10.438 7.34877 8.67755 8.19973 9.21593 9.6876C10.5885 13.046 12.9535 15.4108 16.3135 16.7819C17.8002 17.3216 18.6513 15.5626 20.1276 15.8687C20.7296 15.9945 23.5901 18.2114 24.3465 18.9859V18.9859C24.6747 19.3218 24.9601 19.7382 24.999 20.2078C25.0574 21.8617 22.5017 24.0942 22.0035 24.3796C20.8282 25.2215 19.2947 25.2059 17.4253 24.3368C12.2088 22.1666 3.87231 13.9878 1.66169 8.57461C0.815843 6.71574 0.758762 5.17208 1.61888 3.99812Z"
                           stroke="#142137"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                          strokeWidth="1.5"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                         />
                         <path
                           d="M16.2383 1.31641C20.9145 1.83556 24.6067 5.52399 25.1322 10.1989"
                           stroke="#142137"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                          strokeWidth="1.5"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                         />
                         <path
                           d="M16.2383 5.79102C18.4741 6.22681 20.221 7.97375 20.6568 10.2095"
                           stroke="#142137"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                          strokeWidth="1.5"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                         />
                       </svg>
                     </Link>
                   </div>
-                  <div class="number">
+                  <div className="number">
                     <p
                       className=" font-medium text-[15px] leading-[173%] uppercase text-[#ffffffb3]
 "
@@ -481,7 +403,7 @@ const Details = () => {
                 </div>
               </div>
               <div
-                class="widget bg-[#ebeff3] w-full max-w-[380px] px-[30px] pt-[30px] pb-[40px]
+                className="widget bg-[#ebeff3] w-full max-w-[380px] px-[30px] pt-[30px] pb-[40px]
 "
               >
                 <h5
@@ -490,7 +412,7 @@ const Details = () => {
                 >
                   Company profile
                 </h5>
-                <div class="style_1 mt-7">
+                <div className="style_1 mt-7">
                   <ul className="flex flex-col justify-start items-start gap-[20px]">
                     <li className="w-full ">
                       <Link
@@ -499,7 +421,7 @@ const Details = () => {
                         href=""
                       >
                         <span className="flex gap-[10px] group-hover:text-white transition-all duration-500 ease-out">
-                          <span class="">
+                          <span className="">
                             <svg
                               width="23"
                               height="26"
@@ -528,7 +450,7 @@ const Details = () => {
                           </span>
                           Download PDF
                         </span>
-                        <span class="download_btn">
+                        <span className="download_btn">
                           <svg
                             width="17"
                             height="14"
@@ -556,7 +478,7 @@ const Details = () => {
                         href=""
                       >
                         <span className="flex gap-[10px] group-hover:text-white transition-all duration-500 ease-out">
-                          <span class="">
+                          <span className="">
                             <svg
                               width="23"
                               height="26"
@@ -585,7 +507,7 @@ const Details = () => {
                           </span>
                           Download PDF
                         </span>
-                        <span class="download_btn">
+                        <span className="download_btn">
                           <svg
                             width="17"
                             height="14"

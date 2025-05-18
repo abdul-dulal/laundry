@@ -1,22 +1,15 @@
-import {
-  faFacebookF,
-  faLinkedinIn,
-  faPinterest,
-  faTwitter,
-} from "@fortawesome/free-brands-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 import React from "react";
 
 const HeaderTop = () => {
   return (
-    <div class="md:block hidden overflow-hidden">
-      <div class=" bg-secondary">
-        <div class="container">
-          <div class="">
-            <div class=" flex flex-row justify-between items-center min-h-[38px] flex-wrap ">
-              <div class="">
-                <div class=" flex gap-[21px] items-center">
+    <div className="lg:block hidden overflow-hidden">
+      <div className=" bg-secondary">
+        <div className="container">
+          <div className="">
+            <div className=" flex flex-row justify-between items-center min-h-[38px] flex-wrap ">
+              <div className="">
+                <div className=" flex gap-[21px] items-center">
                   <span className="text-base font-medium text-white">
                     Follow Us :
                   </span>
@@ -101,9 +94,9 @@ const HeaderTop = () => {
                 </div>
               </div>
 
-              <div class="">
-                <div class=" flex flex-row justify-end items-center gap-[18px]">
-                  <div class="flex items-center gap-2">
+              <div className="">
+                <div className=" flex flex-row justify-end items-center gap-[18px]">
+                  <div className="flex items-center gap-2">
                     <Link
                       href="https://www.google.com/maps?q=2464+Royal+Ln,+Mesa,+New+Jersey+45463"
                       target="_blank"
@@ -136,7 +129,7 @@ const HeaderTop = () => {
                       Holland, London 7QU UK
                     </Link>
                   </div>
-                  <div class=" flex flex-row justify-center items-center gap-2 style_1 border-l border-r border-white/35 px-[18px] h-[18px]">
+                  <div className=" flex flex-row justify-center items-center gap-2 style_1 border-l border-r border-white/35 px-[18px] h-[18px]">
                     <Link href="tel:(629)555-0129" className="opacity-100">
                       <span>
                         <svg
@@ -160,7 +153,7 @@ const HeaderTop = () => {
                       (234) 987 - 354 - 3670
                     </Link>
                   </div>
-                  <div class="_wrapper flex flex-row justify-center items-center gap-2">
+                  <div className="_wrapper flex flex-row justify-center items-center gap-2">
                     <Link href="mailto:info@example.com">
                       <span>
                         <svg

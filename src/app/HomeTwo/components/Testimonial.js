@@ -26,13 +26,13 @@ const Testimonial = () => {
   return (
     <section className="lg:pt-[150px] md:pt-[100px] pt-10 pb-[150px] ">
       <div className="container">
-        <div class="">
-          <div class="">
+        <div className="">
+          <div className="">
             <h4 className=" py-1 mb-[34px] text-primary/70">
               Clients Testimonials!
             </h4>
           </div>
-          <div class="mb-[43px] ">
+          <div className="mb-[43px] ">
             <h2 className="text-primary max-w-[576px]">
               Customers Reviews & Experiences.
             </h2>

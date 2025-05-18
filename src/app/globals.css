@@ -18,12 +18,9 @@ body {
     @apply text-[18px] font-bold tracking-[4px] text-[#07000e] uppercase;
   }
 }
-.swiper-pagination-bullet {
-  @apply w-8 h-8 flex items-center justify-center rounded-full border border-white text-white text-sm opacity-50 transition-all duration-300;
-}
 
-.swiper-pagination-bullet-active {
-  @apply bg-white text-black opacity-100;
+#smooth-content {
+  will-change: transform;
 }
 
 .container {
@@ -51,11 +48,11 @@ body {
   color: #fff;
 }
 
-.hero_section_area .hero_contains .sub_heading {
+/* .hero_section_area .hero_contains .sub_heading {
   opacity: 0;
   transform: translateX(200px);
   transition: 0.6s ease-in-out;
-}
+} */
 
 .is_sticky {
   animation: 0.95s ease-in-out 0s normal none 1 running fadeInDown;
@@ -72,8 +69,6 @@ body {
     transform: translateY(0);
   }
 }
-
-/* slider start */
 
 .btn_wrapper_area.style_5:hover::after {
   width: 100%;
@@ -107,6 +102,8 @@ body {
   transform: rotate(-20deg);
   transition: 1.2s;
 }
+
+/* slider start */
 
 .custom-bullet {
   width: 26px;
@@ -144,7 +141,8 @@ body {
   border-radius: 9999px;
   transform: translate(-50%, -50%);
 }
-.working_proces_area .gallery_parent .tab .overly_content_text h6 {
+
+.headng-rotate h6 {
   transform: translateX(-50%);
   transform: rotate(-90deg);
 }
@@ -203,27 +201,21 @@ body {
     box-shadow: 0 0 0 0 rgba(10, 165, 205, 0);
   }
 }
-.counting_section_area .counting_info_wrapper .counting_info::after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 350px;
-  left: -100px;
-  background-color: #4375e7;
-  border-radius: 50%;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  opacity: 0;
-  visibility: hidden;
-  z-index: 10;
+
+.move-right {
+  animation: moveright 1.5s ease forwards;
 }
-.counting_section_area .counting_info_wrapper .counting_info:hover::after {
-  top: 0;
-  left: 0;
-  transition: all 0.6s ease;
-  visibility: visible;
-  opacity: 1;
+
+@keyframes moveright {
+  0% {
+    clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    opacity: 1;
+  }
 }

@@ -30,27 +30,27 @@ const FooterOne = () => {
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
+                      fillRule="evenodd"
+                      clipRule="evenodd"
                       d="M1.46416 3.24859C1.76384 2.75144 3.41596 0.946726 4.59327 1.00121C4.94549 1.03137 5.25685 1.24346 5.50982 1.49057H5.5108C6.09069 2.05874 7.7545 4.203 7.8479 4.65442C8.0785 5.76158 6.75816 6.39979 7.16195 7.5157C8.19137 10.0345 9.96511 11.8081 12.4851 12.8365C13.6002 13.2412 14.2385 11.9219 15.3457 12.1515C15.7972 12.2459 17.9426 13.9086 18.5099 14.4894V14.4894C18.756 14.7414 18.9701 15.0537 18.9993 15.4059C19.043 16.6463 17.1263 18.3207 16.7526 18.5347C15.8711 19.1661 14.7211 19.1544 13.319 18.5026C9.40662 16.8749 3.15423 10.7408 1.49627 6.68096C0.861882 5.2868 0.819071 4.12906 1.46416 3.24859Z"
                       stroke="white"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                     <path
                       d="M12.4287 1.23828C15.9359 1.62765 18.705 4.39397 19.0991 7.90018"
                       stroke="white"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                     <path
                       d="M12.4287 4.5918C14.1056 4.91864 15.4158 6.22885 15.7426 7.90569"
                       stroke="white"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                   </svg>
                 </div>
@@ -81,34 +81,34 @@ const FooterOne = () => {
                     <path
                       d="M1 5.70588C1 2.41176 2.88235 1 5.70588 1H15.1176C17.9412 1 19.8235 2.41176 19.8235 5.70588V12.2941C19.8235 15.5882 17.9412 17 15.1176 17H5.70588"
                       stroke="white"
-                      stroke-width="1.5"
-                      stroke-miterlimit="10"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="1.5"
+                      strokeMiterlimit="10"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                     <path
                       d="M15.117 6.17578L12.1711 8.52844C11.2017 9.30011 9.61114 9.30011 8.64173 8.52844L5.70526 6.17578"
                       stroke="white"
-                      stroke-width="1.5"
-                      stroke-miterlimit="10"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="1.5"
+                      strokeMiterlimit="10"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                     <path
                       d="M1 13.2354H6.64706"
                       stroke="white"
-                      stroke-width="1.5"
-                      stroke-miterlimit="10"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="1.5"
+                      strokeMiterlimit="10"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                     <path
                       d="M1 9.46973H3.82353"
                       stroke="white"
-                      stroke-width="1.5"
-                      stroke-miterlimit="10"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="1.5"
+                      strokeMiterlimit="10"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                   </svg>
                 </div>
@@ -137,7 +137,7 @@ const FooterOne = () => {
             <ul className="text-[16px] font-medium leading-[44px] text-white/70">
               <li className="">
                 <Link
-                  href="/"
+                  href="/Services"
                   className="transition-all duration-500 hover:ml-[13px]"
                 >
                   Laundry Service
@@ -145,7 +145,7 @@ const FooterOne = () => {
               </li>
               <li>
                 <Link
-                  href="/"
+                  href="/Services"
                   className="transition-all duration-500 hover:ml-[13px]"
                 >
                   Dry Cleaning
@@ -153,7 +153,7 @@ const FooterOne = () => {
               </li>
               <li>
                 <Link
-                  href="/"
+                  href="/Services"
                   className="transition-all duration-500 hover:ml-[13px]"
                 >
                   Ironing
@@ -161,7 +161,7 @@ const FooterOne = () => {
               </li>
               <li>
                 <Link
-                  href="/"
+                  href="/Services"
                   className="transition-all duration-500 hover:ml-[13px]"
                 >
                   Alteration & Repairs
@@ -169,7 +169,7 @@ const FooterOne = () => {
               </li>
               <li>
                 <Link
-                  href="/"
+                  href="/Services"
                   className="transition-all duration-500 hover:ml-[13px]"
                 >
                   Dry Cleaners
@@ -177,7 +177,7 @@ const FooterOne = () => {
               </li>
               <li>
                 <Link
-                  href="/"
+                  href="/Services"
                   className="transition-all duration-500 hover:ml-[13px]"
                 >
                   Shirt Service
@@ -193,7 +193,7 @@ const FooterOne = () => {
             <ul className="text-[16px] font-medium leading-[44px] text-white/70">
               <li>
                 <Link
-                  href="/About"
+                  href="/about"
                   className="transition-all duration-500 hover:ml-[13px]"
                 >
                   About Us
@@ -201,7 +201,7 @@ const FooterOne = () => {
               </li>
               <li>
                 <Link
-                  href="/"
+                  href="/Price"
                   className="transition-all duration-500 hover:ml-[13px]"
                 >
                   Pricing
@@ -209,7 +209,7 @@ const FooterOne = () => {
               </li>
               <li>
                 <Link
-                  href="/Service"
+                  href="/Services"
                   className="transition-all duration-500 hover:ml-[13px]"
                 >
                   Our Services
@@ -217,7 +217,7 @@ const FooterOne = () => {
               </li>
               <li>
                 <Link
-                  href="/"
+                  href="/Faq"
                   className="transition-all duration-500 hover:ml-[13px]"
                 >
                   FAQs
@@ -249,7 +249,7 @@ const FooterOne = () => {
             <ul className="text-[16px] font-medium leading-[44px] text-white/70">
               <li>
                 <Link
-                  href="/"
+                  href="/Services"
                   className="transition-all duration-500 hover:ml-[13px]"
                 >
                   Airbnb Laundry
@@ -257,7 +257,7 @@ const FooterOne = () => {
               </li>
               <li>
                 <Link
-                  href="/"
+                  href="/Services"
                   className="transition-all duration-500 hover:ml-[13px]"
                 >
                   Restaurant Laundry
@@ -265,7 +265,7 @@ const FooterOne = () => {
               </li>
               <li>
                 <Link
-                  href="/"
+                  href="/Services"
                   className="transition-all duration-500 hover:ml-[13px]"
                 >
                   Workwear Laundry
@@ -273,7 +273,7 @@ const FooterOne = () => {
               </li>
               <li>
                 <Link
-                  href="/"
+                  href="/Services"
                   className="transition-all duration-500 hover:ml-[13px]"
                 >
                   Cafe Laundry
@@ -281,7 +281,7 @@ const FooterOne = () => {
               </li>
               <li>
                 <Link
-                  href="/"
+                  href="/Services"
                   className="transition-all duration-500 hover:ml-[13px]"
                 >
                   Hotel Laundry
@@ -289,7 +289,7 @@ const FooterOne = () => {
               </li>
               <li>
                 <Link
-                  href="/"
+                  href="/Services"
                   className="transition-all duration-500 hover:ml-[13px]"
                 >
                   Gym Laundry

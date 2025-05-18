@@ -11,21 +11,21 @@ const Hero = () => {
   const [swiperInstance, setSwiperInstance] = useState(null);
   const [activeIndex, setActiveIndex] = useState(1);
   return (
-    <section class="relatvie bg-[#0b103e] relative overflow-hidden w-full bg-[url('/img/homeTwo/rounded-circle-02.png')]">
-      <div class=" bg-center bg-no-repeat bg-cover relative">
-        <div class=" w-full h-full absolute left-0 top-0 bg-no-repeat bg-[url('/img/homeTwo/rounded-circle.png')] "></div>
+    <section className="relatvie bg-[#0b103e] relative overflow-hidden w-full bg-[url('/img/homeTwo/rounded-circle-02.png')]">
+      <div className=" bg-center bg-no-repeat bg-cover relative">
+        <div className=" w-full h-full absolute left-0 top-0 bg-no-repeat bg-[url('/img/homeTwo/rounded-circle.png')] "></div>
         <div
-          class=" w-full h-full bg-no-repeat"
+          className=" w-full h-full bg-no-repeat"
           style={{
             background:
               "linear-gradient(90deg, #142137 0%, rgba(20, 33, 55, 0.1) 89.82%)",
           }}
         >
           <div>
-            <div class=" absolute top-[-245px] left-[-445px] w-[1502px] h-[1502px] rounded-full bg-[#ffffff08] overflow-hidden"></div>
-            <div class=" absolute top-1/2 left-[0px] w-[812px] h-[812px] rounded-full bg-[#ffffff08] translate-y-[-50%]"></div>
+            <div className=" absolute top-[-245px] left-[-445px] w-[1502px] h-[1502px] rounded-full bg-[#ffffff08] overflow-hidden"></div>
+            <div className=" absolute top-1/2 left-[0px] w-[812px] h-[812px] rounded-full bg-[#ffffff08] translate-y-[-50%]"></div>
           </div>
-          <div class="container relative">
+          <div className="container relative">
             <Swiper
               modules={[Navigation]}
               onSwiper={(swiper) => {
@@ -40,10 +40,10 @@ const Hero = () => {
               {heroSlider.map((item, index) => {
                 return (
                   <SwiperSlide key={index}>
-                    <div class="">
-                      <div class="">
-                        <div class="  relative z-[100]">
-                          <div class="absolute right-0 bottom-0">
+                    <div className="">
+                      <div className="">
+                        <div className="  relative z-[100]">
+                          <div className="absolute right-0 bottom-0">
                             <Image
                               className="block"
                               src={item.img}
@@ -52,16 +52,16 @@ const Hero = () => {
                               alt="Laundry hero"
                             />
                           </div>
-                          <div class=" lg:h-[840px] md:h-[740px] h-[650px] flex flex-col justify-center items-start gap-[48px]">
-                            <div class=" z-[10]">
-                              <div class="">
+                          <div className=" lg:h-[840px] md:h-[740px] h-[650px] flex flex-col justify-center items-start gap-[48px]">
+                            <div className=" z-[10]">
+                              <div className="">
                                 <h2 className="font-semibold lg:text-[100px] md:text-[70px] sm:text-[55px] text-[40px] leading-[110%] tracking-[-0.02em] text-white">
                                   {item.title}
                                   <br className="sm:block hidden" />
                                   {item.titleTwo}
                                 </h2>
                               </div>
-                              <div class=" mt-8">
+                              <div className=" mt-8">
                                 <p className="font-medium md:text-[18px] text-[16px]  leading-[167%] text-[#ffffffb3] mt-[12px] ">
                                   Nonstop Laundry & Dry Cleaning, we provide
                                   fast, reliable, and hassle-free laundry{" "}
@@ -74,10 +74,10 @@ const Hero = () => {
                                 </p>
                               </div>
                             </div>
-                            <div class=" flex flex-wrap flex-row justify-start items-center gap-[10px] z-10">
+                            <div className=" flex flex-wrap flex-row justify-start items-center gap-[10px] z-10">
                               <Link
                                 href="/"
-                                class=" group  rounded-[100px] bg-white relative overflow-hidden transition-all duration-[0.7s] ease-in-out z-10 text-center leading-[54px] border border-transparent before:content-[''] before:absolute before:top-[-80px] before:right-[-60px] before:w-0 before:h-[200px] before:bg-[#142137] before:transition-all before:duration-[1.2s] before:ease-in-out before:z-[-1] before:rotate-[-20deg] after:content-[''] after:absolute after:top-[-70px] after:left-[-60px] after:w-0 after:h-[200px] after:bg-[#142137] after:transition-all after:duration-[1.2s] after:ease-in-out after:z-[-1] after:rotate-[-20deg] hover:after:w-full hover:before:w-full"
+                                className=" group  rounded-[100px] bg-white relative overflow-hidden transition-all duration-[0.7s] ease-in-out z-10 text-center leading-[54px] border border-transparent before:content-[''] before:absolute before:top-[-80px] before:right-[-60px] before:w-0 before:h-[200px] before:bg-[#142137] before:transition-all before:duration-[1.2s] before:ease-in-out before:z-[-1] before:rotate-[-20deg] after:content-[''] after:absolute after:top-[-70px] after:left-[-60px] after:w-0 after:h-[200px] after:bg-[#142137] after:transition-all after:duration-[1.2s] after:ease-in-out after:z-[-1] after:rotate-[-20deg] hover:after:w-full hover:before:w-full"
                               >
                                 <span className="flex items-center gap-[10px] px-6 text-[#142137] group-hover:text-white group-hover:delay-300 group-hover:transition-all text-[15px] font-medium transition-all duration-[.4s]">
                                   <span>
@@ -112,7 +112,7 @@ const Hero = () => {
                               </Link>
                               <Link
                                 href="/"
-                                class=" group  rounded-[100px] bg-primary relative overflow-hidden transition-all duration-[0.7s] ease-in-out z-10 text-center leading-[54px] border border-transparent before:content-[''] before:absolute before:top-[-80px] before:right-[-60px] before:w-0 before:h-[200px] before:bg-white before:transition-all before:duration-[1.2s] before:ease-in-out before:z-[-1] before:rotate-[-20deg] after:content-[''] after:absolute after:top-[-70px] after:left-[-60px] after:w-0 after:h-[200px] after:bg-white after:transition-all after:duration-[1.2s] after:ease-in-out after:z-[-1] after:rotate-[-20deg] hover:after:w-full hover:before:w-full"
+                                className=" group  rounded-[100px] bg-primary relative overflow-hidden transition-all duration-[0.7s] ease-in-out z-10 text-center leading-[54px] border border-transparent before:content-[''] before:absolute before:top-[-80px] before:right-[-60px] before:w-0 before:h-[200px] before:bg-white before:transition-all before:duration-[1.2s] before:ease-in-out before:z-[-1] before:rotate-[-20deg] after:content-[''] after:absolute after:top-[-70px] after:left-[-60px] after:w-0 after:h-[200px] after:bg-white after:transition-all after:duration-[1.2s] after:ease-in-out after:z-[-1] after:rotate-[-20deg] hover:after:w-full hover:before:w-full"
                               >
                                 <span className="flex gap-[10px] items-center px-6 text-white group-hover:text-primary group-hover:delay-300 group-hover:transition-all text-[15px] font-medium transition-all duration-[.4s]">
                                   <span>
@@ -125,14 +125,14 @@ const Hero = () => {
                                       className="transition-all duration-500 text-white group-hover:text-primary"
                                     >
                                       <path
-                                        fill-rule="evenodd"
-                                        clip-rule="evenodd"
+                                        fillRule="evenodd"
+                                        clipRule="evenodd"
                                         d="M15.7203 17.16C16.3195 16.26 16.543 15.8 17 14.79C13.6282 13.53 13.09 8.79999 16.4211 6.98999C15.4055 5.72999 13.9735 5 12.6228 5C11.6478 5 10.9775 5.25001 10.3783 5.48001C9.87053 5.67001 9.41351 5.84 8.84478 5.84C8.23542 5.84 7.69716 5.65001 7.12843 5.45001C6.50891 5.23001 5.85893 5 5.04645 5C3.53322 5 1.91843 5.91 0.892679 7.47C-0.549464 9.67 -0.295563 13.79 2.03015 17.31C2.86293 18.57 3.98009 19.98 5.43238 20C6.04174 20.01 6.43782 19.83 6.87453 19.64C7.37217 19.42 7.91043 19.18 8.85493 19.18C9.79943 19.17 10.3275 19.42 10.8252 19.64C11.2517 19.83 11.6377 20.01 12.2369 20C13.7095 19.98 14.8876 18.42 15.7203 17.16Z"
                                         fill="currentColor"
                                       />
                                       <path
-                                        fill-rule="evenodd"
-                                        clip-rule="evenodd"
+                                        fillRule="evenodd"
+                                        clipRule="evenodd"
                                         d="M12.4095 0C12.572 1.1 12.115 2.19001 11.5158 2.95001C10.876 3.77001 9.75884 4.41 8.68231 4.37C8.48935 3.31 8.98699 2.21999 9.59635 1.48999C10.2768 0.68999 11.4244 0.07 12.4095 0Z"
                                         fill="currentColor"
                                       />
@@ -171,16 +171,16 @@ const Hero = () => {
                   <path
                     d="M1 7H13"
                     stroke="white"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                   <path
                     d="M7 1L13 7L7 13"
                     stroke="white"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                 </svg>
               </span>

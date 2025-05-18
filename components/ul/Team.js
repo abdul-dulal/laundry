@@ -18,10 +18,10 @@ const Team = () => {
   return (
     <section className="lg:py-[140px] md:py-[100px] py-20">
       <div className="container">
-        <div class="text-center">
-          <h4 className="mb-[34px]">
-            <span className="mr-2">•</span>Our Services
-          </h4>
+        <div className="text-center">
+          <h5 className="text-primary/70 leading-[27px]  border border-[rgb(217,219,223)] px-[20px] py-0 inline-block mb-[34px]">
+            <span className="mr-2">•</span>Meet Cleaning Expert!
+          </h5>
           <h2 className="max-w-[774px] block m-auto mb-[70px]">
             Meet The Professional Behind Our Clean Services!
           </h2>
@@ -82,9 +82,12 @@ const Team = () => {
                       <div className="p-7 bg-[#ECF2FE]">
                         <div className="flex justify-between">
                           <div>
-                            <h3 className="text-[18px] text-primary font-semibold leading-[100%] mb-[10px]">
+                            <Link
+                              href="/Team-details"
+                              className="text-[18px] text-primary font-semibold leading-[100%] mb-[10px]"
+                            >
                               {team.name}
-                            </h3>
+                            </Link>
                             <p className="text-[15px] text-primary/70 leading-[26px] font-medium">
                               {team.design}
                             </p>
