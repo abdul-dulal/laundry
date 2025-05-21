@@ -7,74 +7,79 @@ import Posts from "./Posts";
 import Category from "../../Service-details/components/Category";
 import Tag from "./Tag";
 import Link from "next/link";
+import FadeUpAnimationProvider from "@/components/ul/FadeUpAnimationProvider ";
 const SideBar = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
   };
 
   return (
-    <div className=" flex lg:flex-col lg:flex-nowrap flex-row flex-wrap justify-center gap-[30px]  w-full">
-      <div
-        className="bg-[#ebeff3] w-full max-w-[380px] xs:px-[30px] px-[15px] pt-[30px] pb-[40px]
+    <div className="flex lg:flex-col lg:flex-nowrap flex-row flex-wrap justify-center gap-[30px]  w-full">
+      <FadeUpAnimationProvider>
+        <div
+          className="bg-[#ebeff3] w-full max-w-[380px] xs:px-[30px] px-[15px] pt-[30px] pb-[40px]
 "
-      >
-        <div className="">
-          <h5
-            className="font-semibold text-[24px] leading-[142%] tracking-[-0.02em] text-[#142137]
-"
-          >
-            Search
-          </h5>
-        </div>
-        <div className="">
-          <form
-            onSubmit={handleSubmit}
-            className="mt-[24px] w-full h-[44px] flex flex-row justify-between items-center
-"
-          >
-            <input
-              className="w-[calc(100%-44px)] h-[44px] outline-none px-[20px] border border-[#1421371a] bg-[#ebeff3]
-"
-              type="text"
-              placeholder="Search Here..."
-            />
-            <button
-              type="submit"
-              className=" size-11 grid place-content-center  text-center leading-[44px] bg-[#4375e7] text-white
+        >
+          <div className="">
+            <h5
+              className="font-semibold text-[24px] leading-[142%] tracking-[-0.02em] text-[#142137]
 "
             >
-              <svg
-                width="18"
-                height="18"
-                viewBox="0 0 18 18"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
+              Search
+            </h5>
+          </div>
+          <div className="">
+            <form
+              onSubmit={handleSubmit}
+              className="mt-[24px] w-full h-[44px] flex flex-row justify-between items-center
+"
+            >
+              <input
+                className="w-[calc(100%-44px)] h-[44px] outline-none px-[20px] border border-[#1421371a] bg-[#ebeff3]
+"
+                type="text"
+                placeholder="Search Here..."
+              />
+              <button
+                type="submit"
+                className="size-11 grid place-content-center  text-center leading-[44px] bg-[#4375e7] text-white
+"
               >
-                <path
-                  d="M8.11109 15.2222C12.0384 15.2222 15.2222 12.0384 15.2222 8.1111C15.2222 4.18375 12.0384 1 8.11109 1C4.18375 1 1 4.18375 1 8.1111C1 12.0384 4.18375 15.2222 8.11109 15.2222Z"
-                  stroke="white"
-                  strokeWidth="1.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-                <path
-                  d="M16.9995 16.9995L13.1328 13.1328"
-                  stroke="white"
-                  strokeWidth="1.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-            </button>
-          </form>
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 18 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.11109 15.2222C12.0384 15.2222 15.2222 12.0384 15.2222 8.1111C15.2222 4.18375 12.0384 1 8.11109 1C4.18375 1 1 4.18375 1 8.1111C1 12.0384 4.18375 15.2222 8.11109 15.2222Z"
+                    stroke="white"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                  <path
+                    d="M16.9995 16.9995L13.1328 13.1328"
+                    stroke="white"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </button>
+            </form>
+          </div>
         </div>
-      </div>
+      </FadeUpAnimationProvider>
 
       <div className="bg-[#ebeff3] w-full max-w-[380px] xs:px-[30px] px-[15px] pt-[30px] pb-[40px]">
         <div className="">
-          <h5 className="font-semibold text-[24px] leading-[142%] tracking-[-0.02em] text-[#142137]">
-            Recent Posts
-          </h5>
+          <FadeUpAnimationProvider>
+            <h5 className="font-semibold text-[24px] leading-[142%] tracking-[-0.02em] text-[#142137]">
+              Recent Posts
+            </h5>
+          </FadeUpAnimationProvider>
         </div>
         <div className="pt-6 flex flex-col justify-start items-center gap-6">
           <Posts img={post} title="Natural Laundry Detergents Explained." />
@@ -92,11 +97,11 @@ const SideBar = () => {
             className="font-semibold text-[24px] leading-[142%] tracking-[-0.02em] text-[#142137]
 "
           >
-            Categories
+            Popular Tags
           </h5>
         </div>
         <div className="mt-11">
-          <ul className="flex flex-wrap items-center gap-[10px]">
+          <div className="flex flex-wrap items-center gap-[10px]">
             <Tag tagTitle=" Fresh" />
             <Tag tagTitle="Flawless" />
             <Tag tagTitle="Clean" />
@@ -105,7 +110,7 @@ const SideBar = () => {
             <Tag tagTitle="Fresh Clothes" />
             <Tag tagTitle="Flawless" />
             <Tag tagTitle=" Our Care" />
-          </ul>
+          </div>
         </div>
       </div>
       <div
@@ -113,12 +118,15 @@ const SideBar = () => {
 "
       >
         <div className="">
-          <h5
-            className="font-semibold text-[24px] leading-[142%] tracking-[-0.02em] text-[#142137]
+          <FadeUpAnimationProvider>
+            {" "}
+            <h5
+              className="font-semibold text-[24px] leading-[142%] tracking-[-0.02em] text-[#142137]
 "
-          >
-            Follow Us
-          </h5>
+            >
+              Follow Us
+            </h5>
+          </FadeUpAnimationProvider>
         </div>
         <div className="mt-11">
           <ul className="flex items-center gap-[10px]">

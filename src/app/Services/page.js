@@ -8,6 +8,7 @@ import Collect from "../HomeTwo/components/Collect";
 import QualitryClean from "@/components/ul/QualitryClean";
 import Testimonial from "@/components/ul/Testimonial";
 import Faq from "./components/Faq";
+import SmoothScrollerProvider from "@/utils/SmoothScrollWrapper";
 
 const Services = () => {
   return (
@@ -15,14 +16,16 @@ const Services = () => {
       <HeaderTop />
       <HeaderOne />
       <main>
-        <BreadCumb currentPage="Service" />
-        <Service showItem={8} />
-        <Collect />
-        <QualitryClean />
-        <Testimonial />
-        <Faq />
+        <SmoothScrollerProvider>
+          <BreadCumb currentPage="Service" />
+          <Service showItem={8} showTop={true} />
+          <Collect />
+          <QualitryClean />
+          <Testimonial />
+          <Faq />
+          <FooterOne />
+        </SmoothScrollerProvider>
       </main>
-      <FooterOne />
     </>
   );
 };

@@ -1,33 +1,15 @@
 "use client";
 import Image from "next/image";
-import React, { useEffect, useState } from "react";
 import logo from "@/public/img/logo/logo.png";
 import Link from "next/link";
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Drawer from "./Drawer";
+
 const HeaderOne = () => {
-  const [isSticky, setIsSticky] = useState(false);
-  const handleScroll = () => {
-    if (window.scrollY > 10) {
-      setIsSticky(true);
-    } else {
-      setIsSticky(false);
-    }
-  };
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
   return (
     <header
-      className={`w-full z-[999]  ${
-        isSticky
-          ? "fixed top-0 left-0  bg-white  is_sticky mt-0 shadow-lg xl:py-0 py-[34px] "
-          : "bg-transparent relative xl:py-0 py-[34px]"
-      }`}
+      className={`w-full z-[999] bg-white sticky top-0 xl:py-0 py-[34px] shadow-lg`}
     >
       <div className="container">
         <div className="flex items-center justify-between">
@@ -72,10 +54,10 @@ const HeaderOne = () => {
                       </li>
                     </ul>
                   </li>
-                  <li className=" inline-block p-0 relative">
+                  <li className="inline-block p-0 relative">
                     <Link
                       className="block px-[24px] capitalize transition-all duration-300 ease-in-out relative text-black group-hover:text-secondary   text-[18px] font-medium py-[34px]"
-                      href="/about"
+                      href="/About"
                     >
                       About Us
                     </Link>
@@ -214,7 +196,7 @@ const HeaderOne = () => {
             </div>
           </div>
           <div className="xxl:flex hidden items-center ">
-            <div className=" ">
+            <div className="">
               <Link
                 className="flex items-center gap-2 justify-center font-medium text-[15px] text-[#142137] border border-[rgba(20,33,55,0.14)] w-[220px] h-[44px] leading-[44px]  text-center"
                 href="/Contact"

@@ -2,7 +2,7 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import SmoothScrollWrapper from "@/utils/SmoothScrollWrapper";
 
-export const poping = Poppins({
+export const popin = Poppins({
   weight: ["300", "400", "500", "600", "700"],
   style: ["normal", "italic"],
   subsets: ["latin"],
@@ -15,10 +15,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={poping.className}>
-        <SmoothScrollWrapper>{children}</SmoothScrollWrapper>
-      </body>
+    <html lang="en" suppressHydrationWarning>
+      <body className={popin.className}>{children}</body>
     </html>
   );
 }

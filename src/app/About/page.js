@@ -8,6 +8,7 @@ import Service from "../HomeTwo/components/Service";
 import About from "@/components/ul/About";
 import Price from "../HomeTwo/components/Price";
 import Contact from "./components/Contact";
+import SmoothScrollerProvider from "@/utils/SmoothScrollWrapper";
 
 const AboutUs = () => {
   return (
@@ -15,13 +16,15 @@ const AboutUs = () => {
       <HeaderTop />
       <HeaderOne />
       <main>
-        <BreadCumb currentPage="About Us" />
-        <About />
-        <Service showItem={4} />
-        <Price />
-        <Contact showBottom={true} showTop={true} />
+        <SmoothScrollerProvider>
+          <BreadCumb currentPage="About Us" />
+          <About />
+          <Service showItem={4} />
+          <Price />
+          <Contact showBottom={true} showTop={true} />
+          <FooterOne />
+        </SmoothScrollerProvider>
       </main>
-      <FooterOne />
     </>
   );
 };

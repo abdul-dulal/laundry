@@ -1,28 +1,34 @@
-import React from "react";
-import hello from "@/public/img/homeTwo/treand-01.png";
+"use client";
+import { useRef, useEffect } from "react";
+
 import Image from "next/image";
 import icon from "@/public/img/homeTwo/calender-icon.png";
 import Link from "next/link";
 import { trends } from "../data";
+import FadeUpAnimationProvider from "@/components/ul/FadeUpAnimationProvider ";
+import AnimatedHeading from "@/components/ul/AnimatedHeading";
+import gsap from "gsap";
+import ScrollTrigger from "@/utils/libs/gsap/ScrollSmoother.min.js";
+
 const Trends = () => {
   return (
-    <section className=" relative bg-[#EBEFF3] lg:py-[120px] md:py-20 py-[60px]">
+    <section className="relative bg-[#EBEFF3] lg:py-[120px] md:py-20 py-[60px]">
       <div className="container relative">
         <div className="grid md:grid-cols-2 2xl:gap-[118px] gap-12  overflow-hidden relative">
-          <div className="sticky top-0">
-            <div className="sticky top-0">
+          <div className="">
+            <FadeUpAnimationProvider>
               <h4 className="mb-[34px]">News & Blog</h4>
-              <h2 className=" ">Explore The Latest Trends & Updates.</h2>
+            </FadeUpAnimationProvider>
+            <div className="">
+              <AnimatedHeading text="Explore The Latest Trends & Updates." />
             </div>
           </div>
-          <div className="overflow-y-auto">
+
+          <div className="overflow-y-auto scrollbar-hide max-h-[100vh]">
             {trends.map((trend, index) => {
               return (
-                <div className="">
-                  <div
-                    key={index}
-                    className="flex sm:flex-nowrap  flex-wrap  2xl:gap-10 gap-7 mb-10 border border-primary/20"
-                  >
+                <div key={index} className="">
+                  <div className="flex lg:flex-nowrap  md:flex-wrap sm:flex-nowrap flex-wrap 2xl:gap-10 gap-7 mb-10 border border-primary/20">
                     <Image
                       src={trend.img}
                       className="w-full  "
@@ -32,7 +38,7 @@ const Trends = () => {
                     />
                     <div className="py-10 2xl:pr-[62px] pr-5 xl:ml-0 lg:ml-10 ml-5">
                       <div className="mb-6 px-[18px] py-[9px] border border-primary/15 rounded-full">
-                        <div className="flex flex-wrap items-center gap-[18px]">
+                        <div className="flex flex-wrap justify-center items-center gap-[18px]">
                           <Link
                             className="flex gap-[7px] items-center"
                             href="/"

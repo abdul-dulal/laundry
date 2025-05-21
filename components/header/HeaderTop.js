@@ -3,13 +3,13 @@ import React from "react";
 
 const HeaderTop = () => {
   return (
-    <div className="lg:block hidden overflow-hidden">
-      <div className=" bg-secondary">
+    <div className="lg:block hidden overflow-hidden z-[999] sticky top-0 ">
+      <div className="bg-secondary">
         <div className="container">
           <div className="">
-            <div className=" flex flex-row justify-between items-center min-h-[38px] flex-wrap ">
+            <div className="flex flex-row justify-between items-center min-h-[38px] flex-wrap ">
               <div className="">
-                <div className=" flex gap-[21px] items-center">
+                <div className="flex gap-[21px] items-center">
                   <span className="text-base font-medium text-white">
                     Follow Us :
                   </span>
@@ -95,7 +95,7 @@ const HeaderTop = () => {
               </div>
 
               <div className="">
-                <div className=" flex flex-row justify-end items-center gap-[18px]">
+                <div className="flex flex-row justify-end items-center gap-[18px]">
                   <div className="flex items-center gap-2">
                     <Link
                       href="https://www.google.com/maps?q=2464+Royal+Ln,+Mesa,+New+Jersey+45463"
@@ -129,7 +129,7 @@ const HeaderTop = () => {
                       Holland, London 7QU UK
                     </Link>
                   </div>
-                  <div className=" flex flex-row justify-center items-center gap-2 style_1 border-l border-r border-white/35 px-[18px] h-[18px]">
+                  <div className="flex flex-row justify-center items-center gap-2 style_1 border-l border-r border-white/35 px-[18px] h-[18px]">
                     <Link href="tel:(629)555-0129" className="opacity-100">
                       <span>
                         <svg

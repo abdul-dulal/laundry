@@ -1,55 +1,103 @@
+import hero01 from "@/public/img/homeTwo/hero-01.png";
+import hero02 from "@/public/img/homeTwo/hero-02.png";
+import hero03 from "@/public/img/homeTwo/hero-03.png";
+
+import servce01 from "@/public/img/homeTwo/servcie-icon-01.png";
+import servce02 from "@/public/img/homeTwo/servcie-icon-02.png";
+import servce03 from "@/public/img/homeTwo/servcie-icon-03.png";
+import servce04 from "@/public/img/homeTwo/servcie-icon-04.png";
+import servce05 from "@/public/img/homeTwo/servcie-icon-05.png";
+import servce06 from "@/public/img/homeTwo/servcie-icon-06.png";
+import servce07 from "@/public/img/homeTwo/servcie-icon-07.png";
+import servce08 from "@/public/img/homeTwo/servcie-icon-08.png";
+
+import collect01 from "@/public/img/homeTwo/collect-01.png";
+import collect02 from "@/public/img/homeTwo/collect-02.png";
+import collect03 from "@/public/img/homeTwo/collect-03.png";
+import collect04 from "@/public/img/homeTwo/collect-04.png";
+
+import team01 from "@/public/img/homeTwo/member-01.jpg";
+import team02 from "@/public/img/homeTwo/member-02.jpg";
+import team03 from "@/public/img/homeTwo/member-03.jpg";
+import team04 from "@/public/img/homeTwo/member-04.jpg";
+import team05 from "@/public/img/homeTwo/member-05.jpg";
+import team06 from "@/public/img/homeTwo/member-06.jpg";
+import team07 from "@/public/img/homeTwo/member-07.jpg";
+import team08 from "@/public/img/homeTwo/member-08.jpg";
+
+import author01 from "@/public/img/homeTwo/author-01.png";
+import author02 from "@/public/img/homeTwo/author-02.png";
+import review01 from "@/public/img/homeTwo/review-bg-01.png";
+import review02 from "@/public/img/homeTwo/review-bg-02.png";
+
+import blog01 from "@/public/img/homeTwo/treand-01.png";
+import blog02 from "@/public/img/homeTwo/trend-02.png";
+import blog03 from "@/public/img/homeTwo/trend-03.png";
+
 export const heroSlider = [
   {
     title: "Nonstop Laundry & ",
     titleTwo: "Dry Cleaning.",
-    img: "/img/homeTwo/hero-01.png",
+    img: hero01,
   },
   {
     title: "Nonstop Laundry & ",
     titleTwo: "Dry Cleaning.",
-    img: "/img/homeTwo/hero-02.png",
+    img: hero02,
   },
   {
     title: "Nonstop Laundry & ",
     titleTwo: "Dry Cleaning.",
-    img: "/img/homeTwo/hero-03.png",
+    img: hero03,
   },
 ];
 
 export const services = [
-  { title: "Dry Clean", icon: "/img/homeTwo/servcie-icon-01.png" },
+  { id: 1, title: "Dry Clean", icon: servce01 },
   {
+    id: 2,
     title: "Wash, Dry & Fold",
-    icon: "/img/homeTwo/servcie-icon-02.png",
+    icon: servce02,
   },
-  { title: "Ironing", icon: "/img/homeTwo/servcie-icon-03.png" },
-  { title: "Free Pickup", icon: "/img/homeTwo/servcie-icon-04.png" },
-  { title: "Fabric Softening", icon: "/img/homeTwo/servcie-icon-05.png" },
-  { title: "Deep Cleaning", icon: "/img/homeTwo/servcie-icon-06.png" },
-  { title: "Stain Removal", icon: "/img/homeTwo/servcie-icon-07.png" },
-  { title: "Wear Cleaning", icon: "/img/homeTwo/servcie-icon-08.png" },
+  { id: 3, title: "Ironing", icon: servce03 },
+  { id: 4, title: "Free Pickup", icon: servce04 },
+  {
+    id: 5,
+    title: "Fabric Softening",
+    icon: servce05,
+  },
+  { id: 6, title: "Deep Cleaning", icon: servce06 },
+  { id: 7, title: "Stain Removal", icon: servce07 },
+  { id: 8, title: "Wear Cleaning", icon: servce08 },
+];
+
+export const production = [
+  { id: 1, count: 50, sufix: "k", title: "Shirts Washed" },
+  { id: 2, count: 45, sufix: "+", title: "Washing machines" },
+  { id: 3, count: 14, sufix: "k", title: "Dry Cleaned items" },
+  { id: 4, count: 99, sufix: "%", title: "Happy Customers" },
 ];
 
 export const collectSlider = [
   {
     title: "Collect all your laundry",
     title2: "  For cleaning.",
-    img: "/img/homeTwo/collect-01.png",
+    img: collect01,
   },
   {
     title: "Collect all your laundry",
     title2: "  For cleaning.",
-    img: "/img/homeTwo/collect-02.png",
+    img: collect02,
   },
   {
     title: "Collect all your laundry",
     title2: " For cleaning.",
-    img: "/img/homeTwo/collect-03.png",
+    img: collect03,
   },
   {
     title: "Collect all your laundry",
     title2: " For cleaning.",
-    img: "/img/homeTwo/collect-04.png",
+    img: collect04,
   },
 ];
 
@@ -57,7 +105,7 @@ export const teams = [
   {
     name: "Lurch Schpellchek",
     design: "Laundry Manager",
-    img: "/img/homeTwo/member-01.jpg",
+    img: team01,
     icon: (
       <svg
         width="16"
@@ -86,7 +134,7 @@ export const teams = [
   {
     name: "Cecil Hipplington",
     design: "Store Manager",
-    img: "/img/homeTwo/member-02.jpg",
+    img: team02,
     icon: (
       <svg
         width="14"
@@ -107,7 +155,7 @@ export const teams = [
   {
     name: "Ravi O'Leigh",
     design: "Delivery Driver",
-    img: "/img/homeTwo/member-03.jpg",
+    img: team03,
     icon: (
       <svg
         width="15"
@@ -133,7 +181,7 @@ export const teams = [
   {
     name: "Dominic L. Emen",
     design: "Sales Associate",
-    img: "/img/homeTwo/member-04.jpg",
+    img: team04,
     icon: (
       <svg
         width="9"
@@ -154,7 +202,7 @@ export const teams = [
   {
     name: "Bartholomew Shoe",
     design: "Operations Manager",
-    img: "/img/homeTwo/member-05.jpg",
+    img: team05,
     icon: (
       <svg
         width="15"
@@ -180,7 +228,7 @@ export const teams = [
   {
     name: "Phillip Anthropy",
     design: "Laundry Attendant",
-    img: "/img/homeTwo/member-06.jpg",
+    img: team06,
     icon: (
       <svg
         width="9"
@@ -201,7 +249,7 @@ export const teams = [
   {
     name: "Abraham Pigeon",
     design: "Fabric Care Specialist",
-    img: "/img/homeTwo/member-07.jpg",
+    img: team07,
     icon: (
       <svg
         width="16"
@@ -230,7 +278,7 @@ export const teams = [
   {
     name: "Valentino Morose",
     design: "Route Supervisor",
-    img: "/img/homeTwo/member-08.jpg",
+    img: team08,
     icon: (
       <svg
         width="14"
@@ -252,66 +300,74 @@ export const teams = [
 
 export const testimolials = [
   {
+    id: 1,
     author: "Lurch Schpelichek",
     design: " CEO & OWNER",
-    img: "/img/homeTwo/author-01.png",
-    bigImage: "/img/homeTwo/review-bg-01.png",
+    img: author01,
+    bigImage: review01,
   },
   {
+    id: 2,
     author: "Lurch Schpelichek",
     design: "CTO",
-    img: "/img/homeTwo/author-02.png",
-    bigImage: "/img/homeTwo/review-bg-02.png",
+    img: author02,
+    bigImage: review02,
   },
   {
+    id: 3,
     author: "Lurch Schpelichek",
     design: " CEO & OWNER",
-    img: "/img/homeTwo/author-01.png",
-    bigImage: "/img/homeTwo/review-bg-01.png",
+    img: author01,
+    bigImage: review01,
   },
   {
+    id: 4,
     author: "Lurch Schpelichek",
     design: "CTO",
-    img: "/img/homeTwo/author-02.png",
-    bigImage: "/img/homeTwo/review-bg-02.png",
+    img: author02,
+    bigImage: review02,
   },
   {
+    id: 5,
     author: "Lurch Schpelichek",
     design: " CEO & OWNER",
-    img: "/img/homeTwo/author-01.png",
-    bigImage: "/img/homeTwo/review-bg-01.png",
+    img: author01,
+    bigImage: review01,
   },
   {
+    id: 6,
     author: "Lurch Schpelichek",
     design: "CTO",
-    img: "/img/homeTwo/author-02.png",
-    bigImage: "/img/homeTwo/review-bg-02.png",
+    img: author02,
+    bigImage: review02,
   },
   {
+    id: 7,
     author: "Lurch Schpelichek",
     design: " CEO & OWNER",
-    img: "/img/homeTwo/author-01.png",
-    bigImage: "/img/homeTwo/review-bg-01.png",
+    img: author01,
+    bigImage: review01,
   },
   {
+    id: 8,
     author: "Lurch Schpelichek",
     design: "CTO",
-    img: "/img/homeTwo/author-02.png",
-    bigImage: "/img/homeTwo/review-bg-02.png",
+    img: author02,
+    bigImage: review02,
   },
 ];
 
 export const trends = [
   {
     title: "How to Keep Your Garments Fresh & Clean Laundry Tips.",
-    img: "/img/homeTwo/treand-01.png",
+    img: blog01,
   },
   {
     title: "Expert Tips for Keeping Your Clothes Fresh & Clean.",
-    img: "/img/homeTwo/trend-02.png",
+    img: blog02,
   },
   {
     title: "Stain Removal to Fabric Care Laundry & Dry Cleaning Tips.",
-    img: "/img/homeTwo/trend-03.png",
+    img: blog03,
   },
 ];

@@ -1,31 +1,15 @@
 "use client";
 import Image from "next/image";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import logo from "@/public/img/logo/logo-white.png";
 import Link from "next/link";
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Drawer from "./Drawer";
 const HeaderTwo = () => {
-  const [isSticky, setIsSticky] = useState(false);
-  const handleScroll = () => {
-    if (window.scrollY > 10) {
-      setIsSticky(true);
-    } else {
-      setIsSticky(false);
-    }
-  };
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
   return (
     <header
-      className={` w-full bg-[#0b103e]   z-[999]  ${
-        isSticky ? "fixed top-0 left-0    is_sticky mt-0" : " relative  "
-      }`}
+      className={`w-full bg-[#0b103e] fixed top-0 left-0 xl:py-0 py-[34px] z-[999] `}
     >
       <div className="container">
         <div className="flex items-center justify-between">
@@ -37,7 +21,7 @@ const HeaderTwo = () => {
           <div className="xl:block hidden">
             <div className="main-menu">
               <nav>
-                <ul className=" m-0 p-0 relative">
+                <ul className="m-0 p-0 relative">
                   <li className="group inline-block p-0 relative">
                     <Link
                       className="flex items-center gap-1 px-[24px] capitalize transition-all duration-300 ease-in-out relative text-white group-hover:text-[#ffc107]  text-[18px] font-medium py-[34px]"
@@ -51,7 +35,7 @@ const HeaderTwo = () => {
                         />
                       </span>
                     </Link>
-                    <ul className="  absolute left-0 top-full opacity-0 invisible z-[99999] text-left transition-all duration-300 ease-in-out  shadow-[0px_10px_20px_0px_rgba(8,0,42,0.08)] origin-top bg-white scale-y-0">
+                    <ul className=" absolute left-0 top-full opacity-0 invisible z-[99999] text-left transition-all duration-300 ease-in-out  shadow-[0px_10px_20px_0px_rgba(8,0,42,0.08)] origin-top bg-white scale-y-0">
                       <li className="float-none min-w-[210px] m-0">
                         <Link
                           className="block leading-[120%] px-[20px] py-[10px] text-primary border-b border-[#e3e3e3] ml-0 text-[18px] font-medium transition-all duration-400 ease-in-out  "
@@ -73,7 +57,7 @@ const HeaderTwo = () => {
                   <li className="group  inline-block p-0 relative">
                     <Link
                       className="block px-[24px] capitalize transition-all duration-300 ease-in-out relative text-white group-hover:text-[#ffc107]   text-[18px] font-medium  py-[34px]"
-                      href="/about"
+                      href="/About"
                     >
                       About Us
                     </Link>
@@ -91,7 +75,7 @@ const HeaderTwo = () => {
                         />
                       </span>
                     </Link>
-                    <ul className="  absolute left-0 top-full opacity-0 invisible z-[99999] text-left transition-all duration-300 ease-in-out  shadow-[0px_10px_20px_0px_rgba(8,0,42,0.08)] origin-top bg-white scale-y-0">
+                    <ul className=" absolute left-0 top-full opacity-0 invisible z-[99999] text-left transition-all duration-300 ease-in-out  shadow-[0px_10px_20px_0px_rgba(8,0,42,0.08)] origin-top bg-white scale-y-0">
                       <li className="float-none min-w-[210px] m-0">
                         <Link
                           className="block leading-[120%] px-[20px] py-[10px] text-primary border-b border-[#e3e3e3] ml-0 text-[18px] font-medium transition-all duration-400 ease-in-out  "
@@ -124,7 +108,7 @@ const HeaderTwo = () => {
                         />
                       </span>
                     </Link>
-                    <ul className="  absolute left-0 top-full opacity-0 invisible z-[99999] text-left transition-all duration-300 ease-in-out  shadow-[0px_10px_20px_0px_rgba(8,0,42,0.08)] origin-top bg-white scale-y-0">
+                    <ul className=" absolute left-0 top-full opacity-0 invisible z-[99999] text-left transition-all duration-300 ease-in-out  shadow-[0px_10px_20px_0px_rgba(8,0,42,0.08)] origin-top bg-white scale-y-0">
                       <li className="float-none min-w-[210px] m-0">
                         <Link
                           className="block leading-[120%] px-[20px] py-[10px] text-primary border-b border-[#e3e3e3] ml-0 text-[18px] font-medium transition-all duration-400 ease-in-out  "
@@ -180,7 +164,7 @@ const HeaderTwo = () => {
                         />
                       </span>
                     </Link>
-                    <ul className="  absolute left-0 top-full opacity-0 invisible z-[99999] text-left transition-all duration-300 ease-in-out  shadow-[0px_10px_20px_0px_rgba(8,0,42,0.08)] origin-top bg-white scale-y-0">
+                    <ul className=" absolute left-0 top-full opacity-0 invisible z-[99999] text-left transition-all duration-300 ease-in-out  shadow-[0px_10px_20px_0px_rgba(8,0,42,0.08)] origin-top bg-white scale-y-0">
                       <li className="float-none min-w-[210px] ">
                         <Link
                           className="block leading-[120%] px-[20px] py-[10px] text-primary border-b border-[#e3e3e3] ml-0  text-[18px] font-medium transition-all duration-400 ease-in-out  "
@@ -212,8 +196,8 @@ const HeaderTwo = () => {
             </div>
           </div>
           <div className="header-right xl:block hidden items-center ">
-            <div className=" flex gap-[34px] items-center">
-              <div className=" flex gap-[14px] items-center">
+            <div className="flex gap-[34px] items-center">
+              <div className="flex gap-[14px] items-center">
                 <Link
                   href="/"
                   className="grid place-content-center size-11 border border-white/15 rounded-full"

@@ -9,7 +9,7 @@ const Button = ({ title, path }) => {
     >
       <div className="flex  gap-[16px] justify-between items-center pl-6  text-white group-hover:text-primary group-hover:delay-300 group-hover:transition-all text-[15px] font-medium transition-all duration-[.4s]">
         <span> {title}</span>
-        <span className=" grid place-content-center size-[34px] bg-white transition-all duration-500 group-hover:bg-primary mr-2 rounded-full">
+        <span className="grid place-content-center size-[34px] bg-white transition-all duration-500 group-hover:bg-primary mr-2 rounded-full">
           <svg
             width="19"
             height="18"

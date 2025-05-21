@@ -57,7 +57,7 @@ const Drawer = ({ bgColor }) => {
             </div>
           </div>
 
-          <div className=" px-[35px] pb-5">
+          <div className="px-[35px] pb-5">
             <ul className="relative">
               <li className="relative  ">
                 <Link

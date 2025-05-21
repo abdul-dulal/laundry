@@ -12,6 +12,8 @@ import "swiper/css/scrollbar";
 import "swiper/css/autoplay";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { teamMember } from "@/utils/data";
+import AnimatedHeading from "./AnimatedHeading";
+import FadeUpAnimationProvider from "./FadeUpAnimationProvider ";
 
 const Team = () => {
   const swiperRef = useRef(null);
@@ -19,12 +21,14 @@ const Team = () => {
     <section className="lg:py-[140px] md:py-[100px] py-20">
       <div className="container">
         <div className="text-center">
-          <h5 className="text-primary/70 leading-[27px]  border border-[rgb(217,219,223)] px-[20px] py-0 inline-block mb-[34px]">
-            <span className="mr-2">•</span>Meet Cleaning Expert!
-          </h5>
-          <h2 className="max-w-[774px] block m-auto mb-[70px]">
-            Meet The Professional Behind Our Clean Services!
-          </h2>
+          <FadeUpAnimationProvider>
+            <h5 className="text-primary/70 leading-[27px]  border border-[rgb(217,219,223)] px-[20px] py-0 inline-block mb-[34px]">
+              <span className="mr-2">•</span>Meet Cleaning Expert!
+            </h5>
+          </FadeUpAnimationProvider>
+          <div className="max-w-[774px] block m-auto mb-[70px]">
+            <AnimatedHeading text="Meet The Professional Behind Our Clean Services!" />
+          </div>
         </div>
         <div className="">
           <div>
@@ -99,7 +103,7 @@ const Team = () => {
                                   <Link
                                     href="https://www.facebook.com/"
                                     target="_blank"
-                                    className=" size-11 bg-white  grid place-content-center mb-2 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 delay-300"
+                                    className="size-11 bg-white  grid place-content-center mb-2 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 delay-300"
                                   >
                                     <svg
                                       width="10"
@@ -117,7 +121,7 @@ const Team = () => {
                                   <Link
                                     href="https://x.com/i/flow/login?mx=2"
                                     target="_blank"
-                                    className=" size-11 bg-white  grid place-content-center mb-2 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 delay-300"
+                                    className="size-11 bg-white  grid place-content-center mb-2 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 delay-300"
                                   >
                                     <svg
                                       width="16"
@@ -135,7 +139,7 @@ const Team = () => {
                                   <Link
                                     href="https://www.instagram.com/"
                                     target="_blank"
-                                    className=" size-11 bg-white  grid place-content-center mb-2 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 delay-300"
+                                    className="size-11 bg-white  grid place-content-center mb-2 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 delay-300"
                                   >
                                     <svg
                                       width="16"

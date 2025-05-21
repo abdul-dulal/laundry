@@ -1,13 +1,20 @@
+"use client";
+import React from "react";
 import Button from "@/components/ul/Button";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
-
+import { useInView } from "react-intersection-observer";
+import FadeUpAnimationProvider from "@/components/ul/FadeUpAnimationProvider ";
 const AuthorDetails = ({ author, name, title, showButton }) => {
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.8,
+  });
+  const words = title.split(" ");
   return (
     <div className="">
       <div
-        className={` pt-5 flex flex-row justify-start items-center flex-wrap gap-5 mt-[18px] ${
+        className={`pt-5 flex flex-row justify-start items-center flex-wrap gap-5 mt-[18px] ${
           showButton && "sm:pl-10 pl-0"
         }`}
       >
@@ -152,28 +159,40 @@ const AuthorDetails = ({ author, name, title, showButton }) => {
             3 Comment
           </Link>
         </div>
-        <h3 className="">
-          <Link
-            className="font-semibold md:text-[34px] sm:text-[28px] text-2xl leading-[119%] tracking-[-0.02em] text-[#142137] mb-[14px] transition-all duration-400 ease-in-out"
-            href="/Blog-details"
-          >
-            {title}
-          </Link>
-        </h3>
+
+        <div ref={ref}>
+          {inView && (
+            <Link
+              href="/Blog-details"
+              className={`font-semibold md:text-[34px] sm:text-[28px] text-2xl leading-[119%] tracking-[-0.02em] text-[#142137] mb-[14px] transition-all duration-400 ease-in-out move-right`}
+            >
+              {words.map((word, index) => (
+                <span key={index} className="inline-block mr-1">
+                  {word}
+                </span>
+              ))}
+            </Link>
+          )}
+        </div>
+
         <div className="lg:pt-[34px] pt-3">
-          <p className="text-base font-normal leading-[26px] text-primary/70">
-            Cleaning is more than just visiting places—it's about creating
-            lasting memories, discovering new cultures, and experiencing the
-            extrinary. From breathtaking landscapes to immersive local
-            adventures, we curate seamless travel experiences tailored to your
-            dreams. Whether you seek relaxation, adventure, or cultural
-            exploration.
-          </p>
+          <FadeUpAnimationProvider>
+            <p className="text-base font-normal leading-[26px] text-primary/70">
+              Cleaning is more than just visiting places—it's about creating
+              lasting memories, discovering new cultures, and experiencing the
+              extrinary. From breathtaking landscapes to immersive local
+              adventures, we curate seamless travel experiences tailored to your
+              dreams. Whether you seek relaxation, adventure, or cultural
+              exploration.
+            </p>
+          </FadeUpAnimationProvider>
 
           {showButton && (
-            <div className="mt-[50px]">
-              <Button title="Read More" path="Blog-details" />
-            </div>
+            <FadeUpAnimationProvider>
+              <div className="mt-[50px]">
+                <Button title="Read More" path="Blog-details" />
+              </div>
+            </FadeUpAnimationProvider>
           )}
         </div>
       </div>

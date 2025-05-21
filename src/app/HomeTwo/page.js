@@ -10,23 +10,26 @@ import Price from "./components/Price";
 import FooterOne from "@/components/footer/FooterOne";
 import Testimonial from "./components/Testimonial";
 import Trends from "./components/Trends";
+import SmoothScrollerProvider from "@/utils/SmoothScrollWrapper";
 
 const HomeTwo = () => {
   return (
     <>
       <HeaderTwo />
       <main>
-        <Hero />
-        <Vision />
-        <Service showItem={4} />
-        <Collect />
-        <Production />
-        <Team />
-        <Price />
-        <Testimonial />
-        <Trends />
+        <SmoothScrollerProvider>
+          <Hero />
+          <Vision />
+          <Service showItem={4} showTop={false} />
+          <Collect />
+          <Production />
+          <Team />
+          <Price />
+          <Testimonial />
+          <Trends />
+          <FooterOne />
+        </SmoothScrollerProvider>
       </main>
-      <FooterOne />
     </>
   );
 };

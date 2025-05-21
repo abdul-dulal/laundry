@@ -1,4 +1,5 @@
 "use client";
+import FadeUpAnimationProvider from "@/components/ul/FadeUpAnimationProvider ";
 import { faMinus, faPlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
@@ -42,31 +43,35 @@ const FaqContent = () => {
         const isOpen = openIndex === index;
 
         return (
-          <div key={index} className="border-b pb-10 overflow-hidden">
-            <div
-              onClick={() => toggleIndex(index)}
-              className="flex justify-between items-center cursor-pointer"
-            >
-              <h5 className="sm:text-xl text-lg font-medium leading-[100%] text-primary mt-10">
-                {item.question}
-              </h5>
-              <div className="sm:pr-10 pr-5">
-                <FontAwesomeIcon
-                  icon={isOpen ? faMinus : faPlus}
-                  className="text-[12px] text-primary"
-                />
-              </div>
-            </div>
+          <div key={index}>
+            <FadeUpAnimationProvider>
+              <div className="border-b pb-10 overflow-hidden">
+                <div
+                  onClick={() => toggleIndex(index)}
+                  className="flex justify-between items-center cursor-pointer"
+                >
+                  <h5 className="sm:text-xl text-lg font-medium leading-[100%] text-primary mt-10">
+                    {item.question}
+                  </h5>
+                  <div className="sm:pr-10 pr-5">
+                    <FontAwesomeIcon
+                      icon={isOpen ? faMinus : faPlus}
+                      className="text-[12px] text-primary"
+                    />
+                  </div>
+                </div>
 
-            <div
-              className={`transition-all duration-500 ease-in-out overflow-hidden ${
-                isOpen ? "max-h-[200px] opacity-100" : "max-h-0 opacity-0"
-              }`}
-            >
-              <p className="text-base font-normal 2xl:pr-16 sm:pr-12 pr-6 leading-[26px] text-primary/70 mt-10">
-                {item.answer}
-              </p>
-            </div>
+                <div
+                  className={`transition-all duration-500 ease-in-out overflow-hidden ${
+                    isOpen ? "max-h-[200px] opacity-100" : "max-h-0 opacity-0"
+                  }`}
+                >
+                  <p className="text-base font-normal 2xl:pr-16 sm:pr-12 pr-6 leading-[26px] text-primary/70 mt-10">
+                    {item.answer}
+                  </p>
+                </div>
+              </div>
+            </FadeUpAnimationProvider>
           </div>
         );
       })}

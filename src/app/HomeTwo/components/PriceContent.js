@@ -5,20 +5,20 @@ import React from "react";
 const PriceContent = ({ img, title, price }) => {
   return (
     <div
-      className="price_packages_card_wrapper border border-[#ffffff24] max-w-[378px] w-full h-[320px] backdrop-blur-[90px] bg-[#181D4CB2]/70 p-[40px] shadow-md"
+      className="border border-[#ffffff24]  w-full h-[320px] backdrop-blur-[90px] bg-[#181D4CB2]/70 p-[40px] shadow-md"
       style={{ backdropFilter: "blur(50px)" }}
     >
-      <div className="price_icon flex flex-row justify-between items-center pb-[36px]">
+      <div className="flex flex-row justify-between items-center pb-[36px]">
         <Image src={img} alt="Laundry price" />
-        <b className="font-semibold text-[30px] leading-[213%] tracking-[-0.02em] text-center text-white">
+        <b className="font-semibold xs:text-[30px] text-[25px] leading-[213%] tracking-[-0.02em] text-center text-white">
           {price}
         </b>
       </div>
-      <h5 className="text-2xl font-semibold text-white">{title}</h5>
+      <h5 className="xs:text-2xl text-xl font-semibold text-white">{title}</h5>
       <p className="font-medium text-[16px] leading-[162%] text-[#ffffffb3] mt-[7px]">
         Washed & Pressed
       </p>
-      <div className="price_package_btn mt-[37px]">
+      <div className="mt-[37px]">
         <Link
           href="/"
           className="group border border-[#ffffff24] rounded-[50px] w-[161px] h-[44px] flex justify-between items-center pl-[30px] pr-[5px] font-poppins font-medium text-[15px] text-white bg-transparent transition-all duration-500 hover:bg-white hover:text-primary"

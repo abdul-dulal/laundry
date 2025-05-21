@@ -1,14 +1,12 @@
 import React from "react";
-import bg from "@/public/img/about/breadcumb-bg.png";
-import Image from "next/image";
 import Link from "next/link";
 const BreadCumb = ({ currentPage }) => {
   return (
-    <section className="relative">
+    <section className="relative pt-[120px]">
       <div className="relative w-full  overflow-hidden bg-[url('/img/about/breadcumb-bg.png')] bg-cover bg-no-repeat h-[370px] flex items-center">
         <div className="container">
-          <div className=" relative z-[99]">
-            <h2 className="text-[60px] text-white font-semibold leading-[110px] -tracking-[2%] mb-[34px]">
+          <div className="relative z-[99]">
+            <h2 className="lg:text-[60px] md:text-[45px] sm:text-[39px] text-[32px] text-white font-semibold leading-[110px] -tracking-[2%] mb-[34px]">
               {currentPage}
             </h2>
             <div className="inline-block">

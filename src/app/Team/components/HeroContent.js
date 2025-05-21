@@ -34,7 +34,7 @@ const HeroContent = ({ title, subTtile }) => {
               filterUnits="userSpaceOnUse"
               colorInterpolationFilters="sRGB"
             >
-              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feFlood floodOpacity="0" result="BackgroundImageFix" />
               <feColorMatrix
                 in="SourceAlpha"
                 type="matrix"
@@ -68,8 +68,8 @@ const HeroContent = ({ title, subTtile }) => {
               y2="27.5"
               gradientUnits="userSpaceOnUse"
             >
-              <stop offset="0.124731" stop-color="#22E17F" />
-              <stop offset="0.809861" stop-color="#0EAC60" />
+              <stop offset="0.124731" stopColor="#22E17F" />
+              <stop offset="0.809861" stopColor="#0EAC60" />
             </linearGradient>
           </defs>
         </svg>

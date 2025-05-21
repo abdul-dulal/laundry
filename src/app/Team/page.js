@@ -5,6 +5,7 @@ import BreadCumb from "../About/components/BreadCumb";
 import FooterOne from "@/components/footer/FooterOne";
 import Hero from "./components/Hero";
 import Team from "./components/Team";
+import SmoothScrollerProvider from "@/utils/SmoothScrollWrapper";
 
 const OurTeam = () => {
   return (
@@ -12,11 +13,13 @@ const OurTeam = () => {
       <HeaderTop />
       <HeaderOne />
       <main>
-        <BreadCumb currentPage="Team" />
-        <Hero />
-        <Team />
+        <SmoothScrollerProvider>
+          <BreadCumb currentPage="Team" />
+          <Hero />
+          <Team />
+          <FooterOne />
+        </SmoothScrollerProvider>
       </main>
-      <FooterOne />
     </>
   );
 };

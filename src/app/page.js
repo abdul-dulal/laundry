@@ -10,6 +10,7 @@ import QualitryClean from "@/components/ul/QualitryClean";
 import Testimonial from "@/components/ul/Testimonial";
 import Blog from "@/components/ul/Blog";
 import FooterOne from "@/components/footer/FooterOne";
+import SmoothScrollerProvider from "@/utils/SmoothScrollWrapper";
 
 export default function Home() {
   return (
@@ -17,17 +18,19 @@ export default function Home() {
       <HeaderTop />
       <HeaderOne />
       <main>
-        <Hero />
-        <About />
-        <Service />
-        <WorkProcess />
-        <Team />
-        <LaundryProcess />
-        <QualitryClean />
-        <Testimonial />
-        <Blog />
+        <SmoothScrollerProvider>
+          <Hero />
+          <About />
+          <Service />
+          <WorkProcess />
+          <Team />
+          <LaundryProcess />
+          <QualitryClean />
+          <Testimonial />
+          <Blog />
+          <FooterOne />
+        </SmoothScrollerProvider>
       </main>
-      <FooterOne />
     </>
   );
 }

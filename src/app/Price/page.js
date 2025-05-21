@@ -6,6 +6,7 @@ import FooterOne from "@/components/footer/FooterOne";
 import Price from "../HomeTwo/components/Price";
 import Trends from "../HomeTwo/components/Trends";
 import Clean from "./components/Clean";
+import SmoothScrollerProvider from "@/utils/SmoothScrollWrapper";
 
 const PricePackage = () => {
   return (
@@ -13,12 +14,14 @@ const PricePackage = () => {
       <HeaderTop />
       <HeaderOne />
       <main>
-        <BreadCumb currentPage="Price Packages" />
-        <Clean />
-        <Price />
-        <Trends />
+        <SmoothScrollerProvider>
+          <BreadCumb currentPage="Price Packages" />
+          <Clean />
+          <Price />
+          <Trends />
+          <FooterOne />
+        </SmoothScrollerProvider>
       </main>
-      <FooterOne />
     </>
   );
 };

@@ -1,36 +1,60 @@
+"use client";
 import React from "react";
 import team from "@/public/img/team/team.png";
 import Image from "next/image";
 import HeroContent from "./HeroContent";
+import AnimatedHeading from "@/components/ul/AnimatedHeading";
+import FadeUpAnimationProvider from "@/components/ul/FadeUpAnimationProvider ";
+import { useInView } from "react-intersection-observer";
 const Hero = () => {
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.4,
+  });
   return (
     <section className="lg:py-[150px] md:py-[120px] py-20 ">
       <div className="container">
         <div className="">
           <div className="text-center">
             <div className="">
-              <h2>The Principles That Define Us</h2>
+              <div>
+                <AnimatedHeading text="The Principles That Define Us" />
+              </div>
             </div>
-            <div className=" lg:mt-11 mt-7 lg:mb-[70px] mb-8">
-              <p className="block m-auto text-base font-normal leading-[26px] text-primary/70 max-w-[646px]">
-                Revolutionized the way you think about dry cleaning and laundry.
-                Our mission is simple: to make laundry day hassle-free. With our
-                easy-to-use service, you can enjoy the convenience of
-                professional dry cleaning and laundry.
-              </p>
-            </div>
+            <FadeUpAnimationProvider>
+              <div className="lg:mt-11 mt-7 lg:mb-[70px] mb-8">
+                <p className="block m-auto text-base font-normal leading-[26px] text-primary/70 max-w-[646px]">
+                  Revolutionized the way you think about dry cleaning and
+                  laundry. Our mission is simple: to make laundry day
+                  hassle-free. With our easy-to-use service, you can enjoy the
+                  convenience of professional dry cleaning and laundry.
+                </p>
+              </div>
+            </FadeUpAnimationProvider>
           </div>
           <div className="grid grid-cols-12 lg:gap-[30px] items-stretch">
-            <div className="lg:col-span-8 col-span-12">
-              <div className="h-full">
-                <div className="principle_img_wrapper h-full">
-                  <Image
-                    src={team}
-                    alt="Laundry Team"
-                    className="h-full w-full object-cover"
-                  />
+            <div ref={ref} className="lg:col-span-8 col-span-12">
+              {inView ? (
+                <div className="h-full revealToptoBottom">
+                  <div className="h-full">
+                    <Image
+                      src={team}
+                      alt="Laundry Team"
+                      className="h-full w-full object-cover"
+                    />
+                  </div>
                 </div>
-              </div>
+              ) : (
+                <div className="h-full">
+                  <div className="h-full">
+                    <Image
+                      src={team}
+                      alt="Laundry Team"
+                      className="h-full w-full object-cover"
+                    />
+                  </div>
+                </div>
+              )}
             </div>
 
             <div className="lg:col-span-4 col-span-12 lg:mt-0 mt-[30px]">

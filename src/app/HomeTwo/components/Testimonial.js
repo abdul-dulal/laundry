@@ -1,6 +1,6 @@
 "use client";
 import { useRef, useState } from "react";
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+import { Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -13,10 +13,8 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import author from "@/public/img/homeTwo/author-01.png";
-import author2 from "@/public/img/homeTwo/author-02.png";
 import Image from "next/image";
-import reviewbg from "@/public/img/homeTwo/review-bg-01.png";
+
 import { testimolials } from "../data";
 
 const Testimonial = () => {
@@ -28,7 +26,7 @@ const Testimonial = () => {
       <div className="container">
         <div className="">
           <div className="">
-            <h4 className=" py-1 mb-[34px] text-primary/70">
+            <h4 className="py-1 mb-[34px] text-primary/70">
               Clients Testimonials!
             </h4>
           </div>
@@ -82,18 +80,32 @@ const Testimonial = () => {
               },
             }}
           >
-            {testimolials.map((item, index) => {
+            {testimolials.map((item) => {
               return (
-                <SwiperSlide key={index}>
+                <SwiperSlide key={item.id}>
                   <div className="grid xl:grid-cols-2 gap-[29px]">
                     <div className="border border-primary/15 pt-10 pb-[49px]  sm:pl-[34px] pl-6 sm:pr-11 pr-6">
                       <div className="flex gap-[5px] mb-[30px]">
-                        {[...Array(5)].map((_, i) => (
-                          <FontAwesomeIcon
-                            className="size-4 text-[#F7931A]"
-                            icon={faStar}
-                          />
-                        ))}
+                        <FontAwesomeIcon
+                          className="size-4 text-[#F7931A]"
+                          icon={faStar}
+                        />
+                        <FontAwesomeIcon
+                          className="size-4 text-[#F7931A]"
+                          icon={faStar}
+                        />
+                        <FontAwesomeIcon
+                          className="size-4 text-[#F7931A]"
+                          icon={faStar}
+                        />
+                        <FontAwesomeIcon
+                          className="size-4 text-[#F7931A]"
+                          icon={faStar}
+                        />
+                        <FontAwesomeIcon
+                          className="size-4 text-[#F7931A]"
+                          icon={faStar}
+                        />
                       </div>
                       <p className="text-base font-medium leading-[28px] text-primary/60">
                         we are proud to have a dedicated team of laundry and dry
@@ -127,7 +139,7 @@ const Testimonial = () => {
                         width={378}
                         height={460}
                         alt="Laundry author"
-                        className=" w-full h-full"
+                        className="w-full h-full"
                       />
 
                       <div
@@ -140,12 +152,26 @@ const Testimonial = () => {
 
                       <div className="absolute bottom-[50px] left-7 right-7 text-white z-10">
                         <div className="flex space-x-1 mb-3">
-                          {[...Array(5)].map((_, i) => (
-                            <FontAwesomeIcon
-                              className="size-4 text-[#F7931A]"
-                              icon={faStar}
-                            />
-                          ))}
+                          <FontAwesomeIcon
+                            className="size-4 text-[#F7931A]"
+                            icon={faStar}
+                          />
+                          <FontAwesomeIcon
+                            className="size-4 text-[#F7931A]"
+                            icon={faStar}
+                          />
+                          <FontAwesomeIcon
+                            className="size-4 text-[#F7931A]"
+                            icon={faStar}
+                          />
+                          <FontAwesomeIcon
+                            className="size-4 text-[#F7931A]"
+                            icon={faStar}
+                          />
+                          <FontAwesomeIcon
+                            className="size-4 text-[#F7931A]"
+                            icon={faStar}
+                          />
                         </div>
 
                         <div className="flex items-start justify-between">
@@ -157,7 +183,7 @@ const Testimonial = () => {
                               {item.design}
                             </p>
                           </div>
-                          <div className=" z-10">
+                          <div className="z-10">
                             <button className="size-[50px] rounded-full bg-white flex items-center justify-center ">
                               <svg
                                 width="11"
@@ -198,12 +224,11 @@ const Testimonial = () => {
           <button
             onClick={() => swiperRef.current?.slideNext()}
             disabled={isEnd}
-            className={` 
-      absolute xs:right-0 sm:-top-[105px] right-0 top-[103%]   size-[60]   rounded-full cursor-pointer  z-10 ${
-        isEnd
-          ? "border border-primary/15  text-primary"
-          : " text-white bg-secondary"
-      }`}
+            className={`absolute xs:right-0 sm:-top-[105px] right-0 top-[103%]   size-[60]   rounded-full cursor-pointer  z-10 ${
+              isEnd
+                ? "border border-primary/15  text-primary"
+                : " text-white bg-secondary"
+            }`}
           >
             <FontAwesomeIcon icon={faArrowRight} />
           </button>

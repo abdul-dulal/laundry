@@ -1,6 +1,8 @@
 "use client";
 import React from "react";
 import Address from "./Address";
+import FadeUpAnimationProvider from "@/components/ul/FadeUpAnimationProvider ";
+import AnimatedHeading from "@/components/ul/AnimatedHeading";
 
 const Contact = ({ showBottom, showTop }) => {
   const handleSubmit = (e) => {
@@ -18,24 +20,28 @@ const Contact = ({ showBottom, showTop }) => {
         <div className="grid lg:grid-cols-2 xl:gap-20 gap-10">
           <div>
             <div className="inline-block">
-              <div className="flex items-center gap-2 py-[9px] px-[14px] border border-primary/15">
-                <span className="mr-2 text-primary">•</span>{" "}
-                <h5 className="text-[16px] text-primary/70 font-medium leading-[100%] ">
-                  Contact Us
-                </h5>
-              </div>
+              <FadeUpAnimationProvider>
+                <div className="flex items-center gap-2 py-[9px] px-[14px] border border-primary/15">
+                  <span className="mr-2 text-primary">•</span>
+                  <h5 className="text-[16px] text-primary/70 font-medium leading-[100%] ">
+                    Contact Us
+                  </h5>
+                </div>
+              </FadeUpAnimationProvider>
             </div>
             <div>
-              <h2 className="max-w-[621px] text-primary mt-[34px]">
-                Write us what you want to know.
-              </h2>
-              <p className="mt-11 text-[16px] font-normal leading-[26px] text-primary/70 ">
-                We make it easy for you to keep your clothes fresh and clean.
-                Simply collect all your laundry, and we’ll take care of the
-                rest. With hassle pickup & professional cleaningo{" "}
-                <br className="lg:block hidden" /> garments will be treated with
-                the utmost care.
-              </p>
+              <div className="max-w-[621px] text-primary mt-[34px]">
+                <AnimatedHeading text="Write us what you want to know." />
+              </div>
+              <FadeUpAnimationProvider>
+                <p className="mt-11 text-[16px] font-normal leading-[26px] text-primary/70 ">
+                  We make it easy for you to keep your clothes fresh and clean.
+                  Simply collect all your laundry, and we’ll take care of the
+                  rest. With hassle pickup & professional cleaningo{" "}
+                  <br className="lg:block hidden" /> garments will be treated
+                  with the utmost care.
+                </p>
+              </FadeUpAnimationProvider>
             </div>
             <div className="2xl:mt-[75px] mt-[30px]">
               <Address
@@ -121,70 +127,82 @@ const Contact = ({ showBottom, showTop }) => {
               />
             </div>
           </div>
-          <div className="border border-primary/15 2xl:p-[60px] p-8">
-            <h2>Ready To Get Service?</h2>
+          <div className="border border-primary/15 2xl:p-[60px] xs:p-8 p-4">
+            <div>
+              <AnimatedHeading text="Ready To Get Service?" />
+            </div>
             <form onSubmit={handleSubmit}>
-              <div className="mt-[50px] grid sm:grid-cols-2 xl:gap-[30px] gap-5 mb-[30px]">
-                <input
-                  type="text"
-                  required
-                  className="h-[60px] w-full border border-primary/15 placeholder:text-[16px] placeholder:font-normal placeholder:leading-[26px] placeholder:text-primary/70 focus:outline-none 2xl:pl-[30px] pl-5"
-                  placeholder="Your Name"
-                />
-                <input
-                  type="number"
-                  className="h-[60px] w-full border border-primary/15 placeholder:text-[16px] placeholder:font-normal placeholder:leading-[26px] placeholder:text-primary/70 focus:outline-none 2xl:pl-[30px] pl-5"
-                  placeholder="Phone Number"
-                />
-              </div>
-              <div className="mt-[50px] grid sm:grid-cols-2 xl:gap-[30px] gap-5 mb-[30px]">
-                <input
-                  type="date"
-                  required
-                  className="h-[60px] w-full border border-primary/15 placeholder:text-[16px] placeholder:font-normal placeholder:leading-[26px] placeholder:text-primary/70 focus:outline-none 2xl:pl-[30px] pl-5"
-                  placeholder="Date Pickup"
-                />
-                <input
-                  type="text"
-                  className="h-[60px] w-full border border-primary/15 placeholder:text-[16px] placeholder:font-normal placeholder:leading-[26px] placeholder:text-primary/70 focus:outline-none 2xl:pl-[30px] pl-5"
-                  placeholder="Time Pickup"
-                />
-              </div>
-              <textarea
-                placeholder="message"
-                className="h-[170px] w-full border border-primary/15 placeholder:text-[16px] placeholder:font-normal placeholder:leading-[26px] placeholder:text-primary/70 focus:outline-none 2xl:pl-[30px] pl-5 pt-[25px]"
-              ></textarea>
-              <button
-                type="submit"
-                className="mt-10 group border border-[#ffffff24] rounded-[50px] w-[165px] h-[44px] flex justify-between items-center pl-[30px] pr-[5px] font-poppins font-medium text-[15px] bg-primary text-white hover:border hover:border-primary/70 hover:bg-white hover:text-primary  transition-all duration-500 ease-out "
-              >
-                Order Now
-                <span className="rounded-[50px] grid place-content-center w-[34px] h-[34px] bg-white transition-all duration-500  border border-white text-[#142137] leading-[34px] text-center  group-hover:border group-hover:border-primary/70  ">
-                  <svg
-                    width="19"
-                    height="18"
-                    viewBox="0 0 19 18"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="text-primary group-hover:rotate-[45deg]"
-                  >
-                    <path
-                      d="M4.90405 13.5967L13.3893 5.1114"
-                      stroke="currentColor"
-                      strokeWidth="1.5"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                    <path
-                      d="M14.0962 12.8892V4.40388H5.61091"
-                      stroke="currentColor"
-                      strokeWidth="1.5"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-                </span>
-              </button>
+              <FadeUpAnimationProvider>
+                <div className="mt-[50px] grid sm:grid-cols-2 xl:gap-[30px] gap-5 mb-[30px]">
+                  <input
+                    type="text"
+                    required
+                    className="h-[60px] w-full border border-primary/15 placeholder:text-[16px] placeholder:font-normal placeholder:leading-[26px] placeholder:text-primary/70 focus:outline-none 2xl:pl-[30px] pl-5"
+                    placeholder="Your Name"
+                  />
+                  <input
+                    type="number"
+                    className="h-[60px] w-full border border-primary/15 placeholder:text-[16px] placeholder:font-normal placeholder:leading-[26px] placeholder:text-primary/70 focus:outline-none 2xl:pl-[30px] pl-5"
+                    placeholder="Phone Number"
+                  />
+                </div>
+              </FadeUpAnimationProvider>
+              <FadeUpAnimationProvider>
+                {" "}
+                <div className="mt-[50px] grid sm:grid-cols-2 xl:gap-[30px] gap-5 mb-[30px]">
+                  <input
+                    type="date"
+                    required
+                    className="h-[60px] w-full border border-primary/15 placeholder:text-[16px] placeholder:font-normal placeholder:leading-[26px] placeholder:text-primary/70 focus:outline-none 2xl:pl-[30px] pl-5"
+                    placeholder="Date Pickup"
+                  />
+                  <input
+                    type="text"
+                    className="h-[60px] w-full border border-primary/15 placeholder:text-[16px] placeholder:font-normal placeholder:leading-[26px] placeholder:text-primary/70 focus:outline-none 2xl:pl-[30px] pl-5"
+                    placeholder="Time Pickup"
+                  />
+                </div>
+              </FadeUpAnimationProvider>
+              <FadeUpAnimationProvider>
+                <textarea
+                  placeholder="message"
+                  className="h-[170px] w-full border border-primary/15 placeholder:text-[16px] placeholder:font-normal placeholder:leading-[26px] placeholder:text-primary/70 focus:outline-none 2xl:pl-[30px] pl-5 pt-[25px]"
+                ></textarea>
+              </FadeUpAnimationProvider>
+              <FadeUpAnimationProvider>
+                {" "}
+                <button
+                  type="submit"
+                  className="mt-10 group border border-[#ffffff24] rounded-[50px] w-[165px] h-[44px] flex justify-between items-center pl-[30px] pr-[5px] font-poppins font-medium text-[15px] bg-primary text-white hover:border hover:border-primary/70 hover:bg-white hover:text-primary  transition-all duration-500 ease-out "
+                >
+                  Order Now
+                  <span className="rounded-[50px] grid place-content-center w-[34px] h-[34px] bg-white transition-all duration-500  border border-white text-[#142137] leading-[34px] text-center  group-hover:border group-hover:border-primary/70  ">
+                    <svg
+                      width="19"
+                      height="18"
+                      viewBox="0 0 19 18"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="text-primary group-hover:rotate-[45deg]"
+                    >
+                      <path
+                        d="M4.90405 13.5967L13.3893 5.1114"
+                        stroke="currentColor"
+                        strokeWidth="1.5"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                      <path
+                        d="M14.0962 12.8892V4.40388H5.61091"
+                        stroke="currentColor"
+                        strokeWidth="1.5"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </button>
+              </FadeUpAnimationProvider>
             </form>
           </div>
         </div>

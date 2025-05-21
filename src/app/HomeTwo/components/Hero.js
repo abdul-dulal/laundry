@@ -11,19 +11,19 @@ const Hero = () => {
   const [swiperInstance, setSwiperInstance] = useState(null);
   const [activeIndex, setActiveIndex] = useState(1);
   return (
-    <section className="relatvie bg-[#0b103e] relative overflow-hidden w-full bg-[url('/img/homeTwo/rounded-circle-02.png')]">
-      <div className=" bg-center bg-no-repeat bg-cover relative">
-        <div className=" w-full h-full absolute left-0 top-0 bg-no-repeat bg-[url('/img/homeTwo/rounded-circle.png')] "></div>
+    <section className="relatvie pt-12 bg-[#0b103e] relative overflow-hidden w-full bg-[url('/img/homeTwo/rounded-circle-02.png')]">
+      <div className="bg-center bg-no-repeat bg-cover relative">
+        <div className="w-full h-full absolute left-0 top-0 bg-no-repeat bg-[url('/img/homeTwo/rounded-circle.png')] "></div>
         <div
-          className=" w-full h-full bg-no-repeat"
+          className="w-full h-full bg-no-repeat"
           style={{
             background:
               "linear-gradient(90deg, #142137 0%, rgba(20, 33, 55, 0.1) 89.82%)",
           }}
         >
           <div>
-            <div className=" absolute top-[-245px] left-[-445px] w-[1502px] h-[1502px] rounded-full bg-[#ffffff08] overflow-hidden"></div>
-            <div className=" absolute top-1/2 left-[0px] w-[812px] h-[812px] rounded-full bg-[#ffffff08] translate-y-[-50%]"></div>
+            <div className="absolute top-[-245px] left-[-445px] w-[1502px] h-[1502px] rounded-full bg-[#ffffff08] overflow-hidden"></div>
+            <div className="absolute top-1/2 left-[0px] w-[812px] h-[812px] rounded-full bg-[#ffffff08] translate-y-[-50%]"></div>
           </div>
           <div className="container relative">
             <Swiper
@@ -34,6 +34,7 @@ const Hero = () => {
               }}
               onSlideChange={(swiper) => setActiveIndex(swiper.realIndex + 1)}
               slidesPerView={1}
+              speed={1000}
               loop={true}
               className="rounded-lg overflow-hidden"
             >
@@ -42,7 +43,7 @@ const Hero = () => {
                   <SwiperSlide key={index}>
                     <div className="">
                       <div className="">
-                        <div className="  relative z-[100]">
+                        <div className=" relative z-[100]">
                           <div className="absolute right-0 bottom-0">
                             <Image
                               className="block"
@@ -52,8 +53,8 @@ const Hero = () => {
                               alt="Laundry hero"
                             />
                           </div>
-                          <div className=" lg:h-[840px] md:h-[740px] h-[650px] flex flex-col justify-center items-start gap-[48px]">
-                            <div className=" z-[10]">
+                          <div className="lg:h-[840px] md:h-[740px] h-[650px] flex flex-col justify-center items-start gap-[48px]">
+                            <div className="z-[10]">
                               <div className="">
                                 <h2 className="font-semibold lg:text-[100px] md:text-[70px] sm:text-[55px] text-[40px] leading-[110%] tracking-[-0.02em] text-white">
                                   {item.title}
@@ -61,7 +62,7 @@ const Hero = () => {
                                   {item.titleTwo}
                                 </h2>
                               </div>
-                              <div className=" mt-8">
+                              <div className="mt-8">
                                 <p className="font-medium md:text-[18px] text-[16px]  leading-[167%] text-[#ffffffb3] mt-[12px] ">
                                   Nonstop Laundry & Dry Cleaning, we provide
                                   fast, reliable, and hassle-free laundry{" "}
@@ -74,10 +75,10 @@ const Hero = () => {
                                 </p>
                               </div>
                             </div>
-                            <div className=" flex flex-wrap flex-row justify-start items-center gap-[10px] z-10">
+                            <div className="flex flex-wrap flex-row justify-start items-center gap-[10px] z-10">
                               <Link
                                 href="/"
-                                className=" group  rounded-[100px] bg-white relative overflow-hidden transition-all duration-[0.7s] ease-in-out z-10 text-center leading-[54px] border border-transparent before:content-[''] before:absolute before:top-[-80px] before:right-[-60px] before:w-0 before:h-[200px] before:bg-[#142137] before:transition-all before:duration-[1.2s] before:ease-in-out before:z-[-1] before:rotate-[-20deg] after:content-[''] after:absolute after:top-[-70px] after:left-[-60px] after:w-0 after:h-[200px] after:bg-[#142137] after:transition-all after:duration-[1.2s] after:ease-in-out after:z-[-1] after:rotate-[-20deg] hover:after:w-full hover:before:w-full"
+                                className="group  rounded-[100px] bg-white relative overflow-hidden transition-all duration-[0.7s] ease-in-out z-10 text-center leading-[54px] border border-transparent before:content-[''] before:absolute before:top-[-80px] before:right-[-60px] before:w-0 before:h-[200px] before:bg-[#142137] before:transition-all before:duration-[1.2s] before:ease-in-out before:z-[-1] before:rotate-[-20deg] after:content-[''] after:absolute after:top-[-70px] after:left-[-60px] after:w-0 after:h-[200px] after:bg-[#142137] after:transition-all after:duration-[1.2s] after:ease-in-out after:z-[-1] after:rotate-[-20deg] hover:after:w-full hover:before:w-full"
                               >
                                 <span className="flex items-center gap-[10px] px-6 text-[#142137] group-hover:text-white group-hover:delay-300 group-hover:transition-all text-[15px] font-medium transition-all duration-[.4s]">
                                   <span>
@@ -112,7 +113,7 @@ const Hero = () => {
                               </Link>
                               <Link
                                 href="/"
-                                className=" group  rounded-[100px] bg-primary relative overflow-hidden transition-all duration-[0.7s] ease-in-out z-10 text-center leading-[54px] border border-transparent before:content-[''] before:absolute before:top-[-80px] before:right-[-60px] before:w-0 before:h-[200px] before:bg-white before:transition-all before:duration-[1.2s] before:ease-in-out before:z-[-1] before:rotate-[-20deg] after:content-[''] after:absolute after:top-[-70px] after:left-[-60px] after:w-0 after:h-[200px] after:bg-white after:transition-all after:duration-[1.2s] after:ease-in-out after:z-[-1] after:rotate-[-20deg] hover:after:w-full hover:before:w-full"
+                                className="group  rounded-[100px] bg-primary relative overflow-hidden transition-all duration-[0.7s] ease-in-out z-10 text-center leading-[54px] border border-transparent before:content-[''] before:absolute before:top-[-80px] before:right-[-60px] before:w-0 before:h-[200px] before:bg-white before:transition-all before:duration-[1.2s] before:ease-in-out before:z-[-1] before:rotate-[-20deg] after:content-[''] after:absolute after:top-[-70px] after:left-[-60px] after:w-0 after:h-[200px] after:bg-white after:transition-all after:duration-[1.2s] after:ease-in-out after:z-[-1] after:rotate-[-20deg] hover:after:w-full hover:before:w-full"
                               >
                                 <span className="flex gap-[10px] items-center px-6 text-white group-hover:text-primary group-hover:delay-300 group-hover:transition-all text-[15px] font-medium transition-all duration-[.4s]">
                                   <span>

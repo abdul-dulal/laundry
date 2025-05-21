@@ -4,6 +4,7 @@ import HeaderTop from "@/components/header/HeaderTop";
 import React from "react";
 import BreadCumb from "../About/components/BreadCumb";
 import Details from "./components/Details";
+import SmoothScrollerProvider from "@/utils/SmoothScrollWrapper";
 
 const SerViceDetails = () => {
   return (
@@ -11,10 +12,12 @@ const SerViceDetails = () => {
       <HeaderTop />
       <HeaderOne />
       <main>
-        <BreadCumb currentPage="Service Details" />
-        <Details />
+        <SmoothScrollerProvider>
+          <BreadCumb currentPage="Service Details" />
+          <Details />
+          <FooterOne />
+        </SmoothScrollerProvider>
       </main>
-      <FooterOne />
     </>
   );
 };

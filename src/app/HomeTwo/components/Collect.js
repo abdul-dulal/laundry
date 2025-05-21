@@ -1,6 +1,6 @@
 "use client";
 import React, { useRef, useState } from "react";
-import collect from "@/public/img/homeTwo/collect-01.png";
+
 import icon from "@/public/img/homeTwo/collect-icon.png";
 import Image from "next/image";
 import Link from "next/link";
@@ -145,7 +145,6 @@ const Collect = () => {
               );
             })}
           </Swiper>
-          <div className="custom-pagination2 z-[99]  flex gap-2 items-center absolute left-40 bottom-20" />
         </div>
       </div>
     </section>

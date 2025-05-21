@@ -48,12 +48,6 @@ body {
   color: #fff;
 }
 
-/* .hero_section_area .hero_contains .sub_heading {
-  opacity: 0;
-  transform: translateX(200px);
-  transition: 0.6s ease-in-out;
-} */
-
 .is_sticky {
   animation: 0.95s ease-in-out 0s normal none 1 running fadeInDown;
   transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -70,40 +64,7 @@ body {
   }
 }
 
-.btn_wrapper_area.style_5:hover::after {
-  width: 100%;
-}
-.btn_wrapper_area.style_5:hover::before {
-  width: 100%;
-}
-
-.btn_wrapper_area.style_5::before {
-  content: "";
-  width: 0%;
-  height: 200px;
-  position: absolute;
-  top: -80px;
-  right: -60px;
-  background-color: rgb(67, 117, 231);
-  z-index: -1;
-  transform: rotate(-20deg);
-  transition: 1.2s;
-}
-
-.btn_wrapper_area.style_5::after {
-  content: "";
-  width: 0%;
-  height: 200px;
-  position: absolute;
-  top: -70px;
-  left: -60px;
-  background-color: rgb(67, 117, 231);
-  z-index: -1;
-  transform: rotate(-20deg);
-  transition: 1.2s;
-}
-
-/* slider start */
+/* hero */
 
 .custom-bullet {
   width: 26px;
@@ -141,17 +102,37 @@ body {
   border-radius: 9999px;
   transform: translate(-50%, -50%);
 }
+.zoomIn {
+  animation: zoomIn 1.5s ease forwards;
+}
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale3d(1.5, 1.5, 1.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+  }
+}
 
+/* hero end */
 .headng-rotate h6 {
   transform: translateX(-50%);
   transform: rotate(-90deg);
 }
+@media (max-width: 768px) {
+  .headng-rotate h6 {
+    transform: translateX(50%);
+    transform: rotate(-0deg);
+  }
+}
 
 /* marque */
-.marque {
+.marque-left {
   animation: Scroll 40s linear infinite;
 }
-.marque_right {
+.marque-right {
   animation: rightToLeft 40s linear infinite;
 }
 @keyframes Scroll {
@@ -170,6 +151,23 @@ body {
 
   100% {
     transform: translateX(-50vw);
+  }
+}
+
+/* circle */
+
+.move:hover {
+  animation: 2s ease 0s infinite normal none running movetext;
+}
+@keyframes movetext {
+  0% {
+    transform: translateX(-20px);
+  }
+  50% {
+    transform: translateX(20px);
+  }
+  100% {
+    transform: translateX(-20px);
   }
 }
 
@@ -216,6 +214,25 @@ body {
   }
   100% {
     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    opacity: 1;
+  }
+}
+
+.revealToptoBottom {
+  animation: revealToptoBottom 1.6s forwards
+    cubic-bezier(0.645, 0.045, 0.355, 1) 0.4s;
+  opacity: 0;
+}
+
+@keyframes revealToptoBottom {
+  0% {
+    transform: translateY(-5%);
+    clip-path: inset(0 0 100% 0);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    clip-path: inset(0 0 0 0);
     opacity: 1;
   }
 }

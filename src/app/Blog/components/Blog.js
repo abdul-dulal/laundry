@@ -21,6 +21,9 @@ import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 import SideBar from "./SideBar";
 import Quote from "./Quote";
+import RevealLefToRight from "@/components/ul/RevealLefToRight";
+import RevealRightToLeft from "@/components/ul/RevealRightToLeft";
+import FadeUpAnimationProvider from "@/components/ul/FadeUpAnimationProvider ";
 const Blog = () => {
   const swiperRef = useRef(null);
   const [isEnd, setIsEnd] = useState(false);
@@ -41,7 +44,7 @@ const Blog = () => {
             <div className="">
               <article className="pb-[58px]">
                 <div className="">
-                  <Image src={blog1} alt="Laundry Blog" />
+                  <RevealLefToRight img={blog1} title="Laundry Blog" />
                 </div>
                 <AuthorDetails
                   author={author}
@@ -50,10 +53,14 @@ const Blog = () => {
                   showButton={true}
                 />
               </article>
-              <Quote />
+              <FadeUpAnimationProvider>
+                {" "}
+                <Quote />
+              </FadeUpAnimationProvider>
               <article className="mt-[60px] pb-[58px]">
                 <div className="relative">
-                  <Image className="" src={blog2} alt="Laundry blog" />
+                  <RevealRightToLeft img={blog2} />
+                  {/* <Image className="" src={blog2} alt="Laundry blog" /> */}
                   <button
                     onClick={togglePopup}
                     className="grid place-content-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 
