@@ -78,7 +78,7 @@ const About = () => {
                     </FadeUpAnimationProvider>
                     <FadeUpAnimationProvider>
                       <div className="pt-[39px]">
-                        <button
+                        <div
                           className="group w-[188px] pl-[30px] text-center text-[15px]  font-medium leading-[54px] border border-[#d9dbdf] transition-all duration-700 ease-in-out relative z-[1] overflow-hidden cursor-pointer  hover:text-white  before:content-[''] before:w-0 before:h-[200px] before:absolute before:top-[-80px] before:right-[-60px] 
 before:bg-[#4375e7] before:transition-all before:duration-[1200ms] before:ease-in-out 
 before:z-[-1] before:rotate-[-20deg] hover:before:w-[250px] hover:before:text-white   after:content-[''] after:w-0 after:h-[200px] after:absolute 
@@ -119,7 +119,7 @@ after:z-[-1] after:rotate-[-20deg] hover:after:w-[250px] hover:after:text-white
                               </svg>
                             </span>
                           </Link>
-                        </button>
+                        </div>
                       </div>
                     </FadeUpAnimationProvider>
                   </div>

@@ -293,7 +293,7 @@ const Details = () => {
                       <Link
                         className="leading-[34px]  font-semibold tracking-[-0.02em] xs:text-lg text-base text-white
 "
-                        href="tel:(629) 555-0129"
+                        href="tel:(629)555-0129"
                       >
                         (234) 987 - 354 - 3670
                       </Link>

@@ -147,7 +147,7 @@ const HeaderTop = () => {
                       </span>
                     </Link>
                     <Link
-                      href="tel:(629) 555-0129"
+                      href="tel:(629)555-0129"
                       className="text-[15px] font-medium text-white/70"
                     >
                       (234) 987 - 354 - 3670

@@ -23,7 +23,7 @@ module.exports = {
       md: "768px",
       lg: "1024px",
       xl: "1200px",
-      xxl: "1300",
+      xxl: "1300px",
       "2xl": "1640px",
     },
     container: {
@@ -34,7 +34,7 @@ module.exports = {
         md: "768px",
         lg: "1024px",
         xl: "1200px",
-        xxl: "1300",
+        xxl: "1300px",
         "2xl": "1640px",
       },
     },
