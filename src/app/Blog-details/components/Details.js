@@ -106,10 +106,10 @@ const Details = () => {
             </FadeUpAnimationProvider>
             <FadeUpAnimationProvider>
               <p className="text-base font-normal leading-[26px] text-primary/70 mt-11">
-                Cleaning is more than just visiting places—it's about creating
-                lasting memories, discovering new cultures, and experiencing the
-                extrinary. From breathtaking landscapes to immersive local
-                adventures, we curate seamless trave.
+                Cleaning is more than just visiting places—it&apos;s about
+                creating lasting memories, discovering new cultures, and
+                experiencing the extrinary. From breathtaking landscapes to
+                immersive local adventures, we curate seamless trave.
               </p>
             </FadeUpAnimationProvider>
             <FadeUpAnimationProvider>
@@ -136,7 +136,7 @@ const Details = () => {
                   <FadeUpAnimationProvider>
                     {" "}
                     <p className="text-base font-normal text-primary/70 leading-[26px]">
-                      Cleaning is more than just visiting places—it's about
+                      Cleaning is more than just visiting places—it&apos;s about
                       creating lasting memories, discovering new cultures, and
                       expencing the extrinary. From breathtaking landscapes to
                       immersiveal adventures, we curate seamless travel
@@ -150,12 +150,13 @@ const Details = () => {
               <FadeUpAnimationProvider>
                 {" "}
                 <p className="text-base font-normal leading-[26px] text-primary/70 mt-11">
-                  Cleaning is more than just visiting places—it's about creating
-                  lasting memories, discovering new cultures, and experiencing
-                  the extrinary. From breathtaking landscapes to immersive local
-                  adventures, we curate seamless travel experiences tailored to
-                  your dreams. Whether you seek relaxation, adventure, or
-                  cultural exploration, we are here to turn your journey.
+                  Cleaning is more than just visiting places—it&apos;s about
+                  creating lasting memories, discovering new cultures, and
+                  experiencing the extrinary. From breathtaking landscapes to
+                  immersive local adventures, we curate seamless travel
+                  experiences tailored to your dreams. Whether you seek
+                  relaxation, adventure, or cultural exploration, we are here to
+                  turn your journey.
                 </p>
               </FadeUpAnimationProvider>
             </div>

@@ -18,9 +18,9 @@ const Quote = () => {
         </svg>
       </div>
       <p className="text-base font-normal leading-[28px] text-primary/70">
-        Cleaning is more than just visiting places—it's about creating lasting
-        memories, discovering new cultures periencing the extrinary. From
-        breathtaking landscapes to immercal advres, ate seamless travel
+        Cleaning is more than just visiting places—it`&lsquo;`s about creating
+        lasting memories, discovering new cultures periencing the extrinary.
+        From breathtaking landscapes to immercal advres, ate seamless travel
         experiences tailored to your dreams. Whether adventure exploration, we
         are here to turn your journey.
       </p>

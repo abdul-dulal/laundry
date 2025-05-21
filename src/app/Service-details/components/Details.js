@@ -52,12 +52,13 @@ const Details = () => {
                       >
                         Scheduling a pickup is as easy as visiting our website
                         or using our mobile app. You can choose a convenient
-                        time slot, and we'll be at your doorstep. We're happy
-                        accommodate your preferences. You can let know about any
-                        special instructions when scheduling your service, and
-                        we'll make sure to follow them. we take every man
-                        precaution to ensure their safety to accommodate your
-                        preferences. your service, and we'll make sure
+                        time slot, and we&apos;ll be at your doorstep.
+                        We&apos;re happy accommodate your preferences. You can
+                        let know about any special instructions when scheduling
+                        your service, and we&apos;ll make sure to follow them.
+                        we take every man precaution to ensure their safety to
+                        accommodate your preferences. your service, and
+                        we&apos;ll make sure
                       </p>
                     </FadeUpAnimationProvider>
                     <FadeUpAnimationProvider>

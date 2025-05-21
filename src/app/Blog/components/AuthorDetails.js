@@ -178,12 +178,12 @@ const AuthorDetails = ({ author, name, title, showButton }) => {
         <div className="lg:pt-[34px] pt-3">
           <FadeUpAnimationProvider>
             <p className="text-base font-normal leading-[26px] text-primary/70">
-              Cleaning is more than just visiting places—it's about creating
-              lasting memories, discovering new cultures, and experiencing the
-              extrinary. From breathtaking landscapes to immersive local
-              adventures, we curate seamless travel experiences tailored to your
-              dreams. Whether you seek relaxation, adventure, or cultural
-              exploration.
+              Cleaning is more than just visiting places—it&apos;s about
+              creating lasting memories, discovering new cultures, and
+              experiencing the extrinary. From breathtaking landscapes to
+              immersive local adventures, we curate seamless travel experiences
+              tailored to your dreams. Whether you seek relaxation, adventure,
+              or cultural exploration.
             </p>
           </FadeUpAnimationProvider>
 

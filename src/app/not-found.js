@@ -15,7 +15,7 @@ const NotFount = () => {
             <Image src={notfound} className="" alt="Luandy not found" />
             <h2 className="mb-[34px] mt-[58px]">Oops... Page Not Found!</h2>
             <p className="text-base font-normal leading-[26px] text-primary/70">
-              The page you are looking for doesn't exist or <br /> has been
+              The page you are looking for doesn&apos;t exist or <br /> has been
               moved
             </p>
             <Link

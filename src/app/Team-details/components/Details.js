@@ -205,13 +205,13 @@ const Details = () => {
             <FadeUpAnimationProvider>
               {" "}
               <p className="text-[16px] leading-[26px] text-primary/70">
-                As of my last knowledge update in January 2025, I don't have
-                specific information about Kristin Watson, as it's a relatively
-                common name and details about individuals <br /> may not be
-                readily available in my training data. It's possible that
-                Kristin Watson is not a widely recognized public figure or that
-                any relevant information about them has <br /> emerged since my
-                last update.{" "}
+                As of my last knowledge update in January 2025, I don&apos;t
+                have specific information about Kristin Watson, as it&apos;s a
+                relatively common name and details about individuals <br /> may
+                not be readily available in my training data. It&apos;s possible
+                that Kristin Watson is not a widely recognized public figure or
+                that any relevant information about them has <br /> emerged
+                since my last update.{" "}
               </p>
             </FadeUpAnimationProvider>
             <FadeUpAnimationProvider>
@@ -220,9 +220,9 @@ const Details = () => {
                 prominence after 2022, I recommend checking more recent sources
                 such as social media profiles, news <br /> articles, or other
                 online platforms for the latest information about them. If
-                there's a specific context or field you're referring to,
-                providing additional details may help me <br /> provide a more
-                accurate and relevant response.
+                there&apos;s a specific context or field you&apos;re referring
+                to, providing additional details may help me <br /> provide a
+                more accurate and relevant response.
               </p>
             </FadeUpAnimationProvider>
           </div>
@@ -235,7 +235,6 @@ const Details = () => {
                 </h2>
               </FadeUpAnimationProvider>
               <FadeUpAnimationProvider>
-                {" "}
                 <p className="text-base font-normal leading-[26px] text-primary/70 2xl:pb-8 pb-4">
                   Our team of skilled dry cleaning professionals ensures your
                   items receive the highest level of care. Get in touch today to
