@@ -161,9 +161,9 @@ after:z-[-1] after:rotate-[-20deg] hover:after:w-[250px] hover:after:text-white
             <div className="">
               <div className="flex flex-col justify-end items-center gap-[108px]">
                 <div className="about_counting_card_area flex  items-center justify-center flex-wrap gap-[24px]">
-                  <AboutCounter count={86} sufix="k" />
-                  <AboutCounter count={140} sufix="+" />
-                  <AboutCounter count={98} sufix="%" />
+                  <AboutCounter count="86" sufix="k" />
+                  <AboutCounter count="140" sufix="+" />
+                  <AboutCounter count="98" sufix="%" />
                 </div>
 
                 <div ref={ref1}>
