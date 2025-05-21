@@ -23,8 +23,8 @@ const Trends = () => {
               <AnimatedHeading text="Explore The Latest Trends & Updates." />
             </div>
           </div>
-
-          <div className="overflow-y-auto scrollbar-hide max-h-[100vh]">
+          {/* overflow-y-auto scrollbar-hide max-h-[100vh] */}
+          <div className="">
             {trends.map((trend, index) => {
               return (
                 <div key={index} className="">

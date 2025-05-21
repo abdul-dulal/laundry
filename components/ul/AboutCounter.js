@@ -15,7 +15,11 @@ const AboutCounter = ({ count, sufix }) => {
         className="w-[210px] h-[210px] flex flex-col justify-center items-center text-center relative border border-[#142137] border-opacity-14 rounded-full overflow-hidden"
       >
         <h2 className="text-primary">
-          {inView && <CountUp end={count} duration={3} suffix={sufix} />}
+          {inView ? (
+            <CountUp end={count} duration={3} suffix={sufix} />
+          ) : (
+            { count }
+          )}
         </h2>
         <p className="text-[16px] font-medium leading-[22px] text-primary/70 mt-2">
           Free Pickup & <br />

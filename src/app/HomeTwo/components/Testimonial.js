@@ -224,7 +224,7 @@ const Testimonial = () => {
           <button
             onClick={() => swiperRef.current?.slideNext()}
             disabled={isEnd}
-            className={`absolute xs:right-0 sm:-top-[105px] right-0 top-[103%]   size-[60]   rounded-full cursor-pointer  z-10 ${
+            className={`absolute xs:right-0 sm:-top-[105px] right-0 top-[103%]   size-[60px]   rounded-full cursor-pointer  z-10 ${
               isEnd
                 ? "border border-primary/15  text-primary"
                 : " text-white bg-secondary"

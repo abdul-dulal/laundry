@@ -20,7 +20,7 @@ const HeaderOne = () => {
           </div>
           <div className="xl:block hidden">
             <div className="main-menu">
-              <nav id="">
+              <nav>
                 <ul className="relative">
                   <li className="inline-block  relative">
                     <Link
