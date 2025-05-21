@@ -5,8 +5,10 @@ import { laundryStep } from "@/utils/data";
 import icon from "@/public/img/home/work-icon.png";
 import AnimatedHeading from "./AnimatedHeading";
 import FadeUpAnimationProvider from "./FadeUpAnimationProvider ";
+
 const LaundryProcess = () => {
   const [active, setActive] = useState(3);
+
   return (
     <section className="">
       <div className="container">

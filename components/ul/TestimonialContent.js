@@ -5,7 +5,6 @@ import Image from "next/image";
 import React from "react";
 
 const TestimonialContent = ({ anim }) => {
-  console.log(anim);
   return (
     <div className="flex flex-col overflow-hidden pb-[30px]">
       <div className={`flex items-center justify-center gap-[88px] ${anim}`}>

@@ -6,11 +6,13 @@ import Link from "next/link";
 import AnimatedHeading from "./AnimatedHeading";
 import FadeUpAnimationProvider from "./FadeUpAnimationProvider ";
 import { useInView } from "react-intersection-observer";
+
 const QualitryClean = () => {
   const { ref, inView } = useInView({
     triggerOnce: true,
     threshold: 0.3,
   });
+
   return (
     <section className="lg:pt-[150px] md:pt-[100px] pt-20">
       <div className="container">

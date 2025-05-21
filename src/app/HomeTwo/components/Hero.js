@@ -1,19 +1,29 @@
 "use client";
-import { useRef, useState } from "react";
+import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import Image from "next/image";
+
 import Link from "next/link";
 import { heroSlider } from "../data";
+import circle02 from "@/public/img/homeTwo/rounded-circle-02.png";
+import circle from "@/public/img/homeTwo/rounded-circle.png";
+
 const Hero = () => {
   const [swiperInstance, setSwiperInstance] = useState(null);
   const [activeIndex, setActiveIndex] = useState(1);
   return (
-    <section className="relatvie pt-12 bg-[#0b103e] relative overflow-hidden w-full bg-[url('/img/homeTwo/rounded-circle-02.png')]">
+    <section
+      className="relatvie pt-12 bg-[#0b103e] relative overflow-hidden w-full "
+      style={{ backgroundImage: `url('${circle02.src}')` }}
+    >
       <div className="bg-center bg-no-repeat bg-cover relative">
-        <div className="w-full h-full absolute left-0 top-0 bg-no-repeat bg-[url('/img/homeTwo/rounded-circle.png')] "></div>
+        <div
+          className="w-full h-full absolute left-0 top-0 bg-no-repeat "
+          style={{ backgroundImage: `url('${circle.src}')` }}
+        ></div>
         <div
           className="w-full h-full bg-no-repeat"
           style={{

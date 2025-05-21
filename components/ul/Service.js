@@ -8,6 +8,7 @@ import FadeUpAnimationProvider from "./FadeUpAnimationProvider ";
 
 import { useInView } from "react-intersection-observer";
 import gsap from "gsap";
+
 const Service = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
   const { ref, inView } = useInView({

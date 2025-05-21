@@ -2,6 +2,7 @@
 import Image from "next/image";
 import React, { useEffect, useRef } from "react";
 import { useInView } from "react-intersection-observer";
+
 const RevealLefToRight = ({ img, title }) => {
   const revealRef = useRef(null);
   const imageRef = useRef(null);

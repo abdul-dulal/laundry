@@ -2,6 +2,7 @@ import React from "react";
 import CountUp from "react-countup";
 import FadeUpAnimationProvider from "./FadeUpAnimationProvider ";
 import { useInView } from "react-intersection-observer";
+
 const AboutCounter = ({ count, sufix }) => {
   const { ref, inView } = useInView({
     triggerOnce: true,

@@ -9,10 +9,14 @@ import moon from "@/public/img/home/moon-down.png";
 import youtubeIcon from "@/public/img/home/youtube-icon.png";
 import moonUp from "@/public/img/home/moon-up.png";
 import AnimatedHeading from "./AnimatedHeading";
+
+import thumb from "@/public/img/home/video-thumb.png";
+
 import FadeUpAnimationProvider from "./FadeUpAnimationProvider ";
 import VideoPopup from "./VideoPopup";
 import { gsap } from "gsap";
 import { useInView } from "react-intersection-observer";
+
 const WorkProcess = () => {
   const revealRef = useRef(null);
   const imageRef = useRef(null);
@@ -62,7 +66,10 @@ const WorkProcess = () => {
               className="absolute top-0 left-0 w-full h-full bg-white z-10"
             ></div>
 
-            <div className="flex items-center justify-center 2xl:h-[670px] lg:h-[500px] h-[350px]  w-full  p-0 relative mt-[60px] bg-[url('/img/home/video-thumb.png')] bg-cover ">
+            <div
+              className="flex items-center justify-center 2xl:h-[670px] lg:h-[500px] h-[350px]  w-full  p-0 relative mt-[60px]  bg-cover "
+              style={{ backgroundImage: `url('${thumb.src}')` }}
+            >
               <button onClick={togglePopup} className="">
                 <span className="text-[70px]">
                   <Image src={youtubeIcon} alt="Laundry icon" />

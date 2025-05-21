@@ -4,7 +4,6 @@ import { createPortal } from "react-dom";
 
 export default function VideoPopup({ isOpen, togglePopup }) {
   const [mounted, setMounted] = useState(false);
-
   useEffect(() => {
     setMounted(true);
   }, []);

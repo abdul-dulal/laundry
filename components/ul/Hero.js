@@ -17,6 +17,7 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import "swiper/css/autoplay";
 import { heroSlider } from "@/utils/data";
+
 const Hero = () => {
   const swiperRef = useRef(null);
   const prevRef = useRef(null);

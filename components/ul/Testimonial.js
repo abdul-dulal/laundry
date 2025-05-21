@@ -1,8 +1,8 @@
 import React from "react";
-
 import AnimatedHeading from "./AnimatedHeading";
 import FadeUpAnimationProvider from "./FadeUpAnimationProvider ";
 import TestimonialContent from "./TestimonialContent";
+
 const Testimonial = () => {
   return (
     <section className="bg-[#ECF2FE] lg:mt-[170px] md:mt-[100px] mt-20">

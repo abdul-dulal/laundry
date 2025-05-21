@@ -10,6 +10,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import "swiper/css/autoplay";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { teamMember } from "@/utils/data";
 import AnimatedHeading from "./AnimatedHeading";

@@ -1,17 +1,18 @@
 "use client";
 import React from "react";
-import blog from "@/public/img/home/blog-01.png";
 import Link from "next/link";
 import Image from "next/image";
 import { blogs } from "@/utils/data";
 import AnimatedHeading from "./AnimatedHeading";
 import FadeUpAnimationProvider from "./FadeUpAnimationProvider ";
 import { useInView } from "react-intersection-observer";
+
 const Blog = () => {
   const { ref, inView } = useInView({
     triggerOnce: true,
     threshold: 0.3,
   });
+
   return (
     <section className="lg:py-[150px] md:py-[100px] py-20">
       <div className="container">

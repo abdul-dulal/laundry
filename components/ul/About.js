@@ -6,10 +6,12 @@ import about from "@/public/img/home/about-company-01.png";
 import about2 from "@/public/img/home/about-company-02.png";
 import Image from "next/image";
 import Link from "next/link";
+
 import AboutCounter from "./AboutCounter";
 import AnimatedHeading from "./AnimatedHeading";
 import FadeUpAnimationProvider from "./FadeUpAnimationProvider ";
 import { useInView } from "react-intersection-observer";
+
 const About = () => {
   const boxRef = useRef(null);
   const handleMouseMove = (e) => {

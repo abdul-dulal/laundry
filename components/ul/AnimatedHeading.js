@@ -1,12 +1,14 @@
 "use client";
 import React from "react";
 import { useInView } from "react-intersection-observer";
+
 const AnimatedHeading = ({ text, showColor }) => {
   const { ref, inView } = useInView({
     triggerOnce: true,
     threshold: 0.8,
   });
   const words = text.split(" ");
+
   return (
     <div ref={ref}>
       {inView && (

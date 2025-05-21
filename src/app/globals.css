@@ -1,6 +1,26 @@
+/*******************************
+Template Name: Laundry 
+Author Name: SoftCrafty 
+--------------------------------
+<---table of content--->
+1.  common section
+2.  header section
+3.  hero section
+4.  about section
+5.  marque section
+6.  animation section
+
+********************************/
+
+/* default start */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* default end */
+
+/* common start */
 
 body {
   padding: 0;
@@ -29,6 +49,10 @@ body {
   padding-right: 20px;
   margin: auto;
 }
+
+/* common end */
+
+/* header start */
 
 .main-menu ul ul {
   transform-origin: top;
@@ -64,7 +88,9 @@ body {
   }
 }
 
-/* hero */
+/* header end */
+
+/* hero start */
 
 .custom-bullet {
   width: 26px;
@@ -102,6 +128,21 @@ body {
   border-radius: 9999px;
   transform: translate(-50%, -50%);
 }
+
+/* hero end */
+
+/* about start */
+.headng-rotate h6 {
+  transform: translateX(-50%);
+  transform: rotate(-90deg);
+}
+@media (max-width: 768px) {
+  .headng-rotate h6 {
+    transform: translateX(50%);
+    transform: rotate(-0deg);
+  }
+}
+
 .zoomIn {
   animation: zoomIn 1.5s ease forwards;
 }
@@ -116,19 +157,10 @@ body {
   }
 }
 
-/* hero end */
-.headng-rotate h6 {
-  transform: translateX(-50%);
-  transform: rotate(-90deg);
-}
-@media (max-width: 768px) {
-  .headng-rotate h6 {
-    transform: translateX(50%);
-    transform: rotate(-0deg);
-  }
-}
+/* about end */
 
-/* marque */
+/* marque start */
+
 .marque-left {
   animation: Scroll 40s linear infinite;
 }
@@ -154,7 +186,11 @@ body {
   }
 }
 
+/* marque end */
+
 /* circle */
+
+/* animation start */
 
 .move:hover {
   animation: 2s ease 0s infinite normal none running movetext;
@@ -236,3 +272,5 @@ body {
     opacity: 1;
   }
 }
+
+/* animation end */
