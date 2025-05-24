@@ -2,6 +2,7 @@ import Link from "next/link";
 import AnimatedHeading from "@/components/ul/AnimatedHeading";
 import FadeUpAnimationProvider from "@/components/ul/FadeUpAnimationProvider ";
 import FaqContent from "./FaqContentTwo";
+import FaqContentTwo from "./FaqContentTwo";
 
 const Faqs = () => {
   return (
@@ -65,7 +66,7 @@ const Faqs = () => {
           {/* Right Column */}
           <div className="lg:col-span-7 col-span-12 h-full w-full">
             <div className="h-full pb-[50px]">
-              <FaqContent />
+              <FaqContentTwo />
             </div>
           </div>
         </div>

@@ -21,7 +21,7 @@ const Services = () => {
           <Collect />
           <QualitryClean />
           <Testimonial />
-          <Faqs />
+          {/* <Faqs /> */}
           <FooterOne />
         </SmoothScrollerProvider>
       </main>
