@@ -5,7 +5,7 @@ import React from "react";
 
 import SmoothScrollerProvider from "@/utils/SmoothScrollWrapper";
 import BreadCumb from "@/components/ul/BreadCumb";
-import QuestionAndAnswer from "../services/components/QuestionAndAnswer";
+import QuestionAndAnswer from "@/components/ul/QuestionAndAnswer";
 
 const Faq = () => {
   return (

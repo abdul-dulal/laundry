@@ -9,7 +9,7 @@ import SmoothScrollerProvider from "@/utils/SmoothScrollWrapper";
 import Collect from "../home-two/components/Collect";
 import Service from "../home-two/components/Service";
 import BreadCumb from "@/components/ul/BreadCumb";
-import QuestionAndAnswer from "./components/QuestionAndAnswer";
+import QuestionAndAnswer from "@/components/ul/QuestionAndAnswer";
 
 const Services = () => {
   return (
