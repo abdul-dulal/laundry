@@ -4,10 +4,11 @@ import post from "@/public/img/blog/post-01.png";
 import post2 from "@/public/img/blog/post-02.png";
 import post3 from "@/public/img/blog/post-03.png";
 import Posts from "./Posts";
-import Category from "../../service-details/components/ServiceCategory";
+
 import Tag from "./Tag";
 import Link from "next/link";
 import FadeUpAnimationProvider from "@/components/ul/FadeUpAnimationProvider ";
+import ServiceCategory from "../../service-details/components/ServiceCategory";
 const SideBar = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -87,7 +88,7 @@ const SideBar = () => {
           <Posts img={post3} title="Complete Guide  Green  Natural Laundry." />
         </div>
       </div>
-      <Category />
+      <ServiceCategory />
       <div
         className="bg-[#ebeff3] w-full max-w-[380px] xs:px-[30px] px-[15px] pt-[30px] pb-[40px]
 "

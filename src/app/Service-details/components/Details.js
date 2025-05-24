@@ -3,13 +3,14 @@ import React from "react";
 import sd1 from "@/public/img/service-details/service-details-01.png";
 
 import Link from "next/link";
-import FaqContent from "../../services/components/FaqContentTwo";
+
 import FadeUpAnimationProvider from "@/components/ul/FadeUpAnimationProvider ";
 import sd2 from "@/public/img/service-details/service-details-02.png";
 import sd3 from "@/public/img/service-details/service-details-03.png";
 import RevealLefToRight from "@/components/ul/RevealLefToRight";
 import RevealRightToLeft from "@/components/ul/RevealRightToLeft";
 import ServiceCategory from "./ServiceCategory";
+import FaqContentTwo from "../../services/components/FaqContentTwo";
 
 const Details = () => {
   const handleSubmit = (e) => {
@@ -170,7 +171,7 @@ const Details = () => {
             </div>
 
             {/* faq */}
-            <FaqContent />
+            <FaqContentTwo />
           </div>
           <div className="2xl:col-span-3 lg:col-span-4 col-span-12 lg:mt-0 mt-14">
             <div

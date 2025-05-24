@@ -4,7 +4,7 @@ import { faMinus, faPlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
 
-const FaqContent = () => {
+const FaqContentTwo = () => {
   const [openIndex, setOpenIndex] = useState(1);
 
   const toggleIndex = (index) => {
@@ -79,4 +79,4 @@ const FaqContent = () => {
   );
 };
 
-export default FaqContent;
+export default FaqContentTwo;
