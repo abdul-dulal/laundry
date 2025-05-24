@@ -8,7 +8,7 @@ import Testimonial from "@/components/ul/Testimonial";
 import SmoothScrollerProvider from "@/utils/SmoothScrollWrapper";
 import Collect from "../home-two/components/Collect";
 import Service from "../home-two/components/Service";
-import Faqs from "./components/Faqs";
+// import Faqs from "./components/Faqs";
 
 const Services = () => {
   return (

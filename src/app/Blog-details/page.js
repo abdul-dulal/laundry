@@ -13,7 +13,6 @@ const BlogDetails = () => {
       <HeaderOne />
       <main>
         <SmoothScrollerProvider>
-          <BreadCumb currentPage="Blog Details" />
           <Details />
           <FooterOne />
         </SmoothScrollerProvider>
