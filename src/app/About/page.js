@@ -15,7 +15,7 @@ const AboutUs = () => {
       <HeaderOne />
       <main>
         <SmoothScrollerProvider>
-          <BreadCumb currentPage="AboutUs" />
+          <BreadCumb currentPage="hello" />
           <About />
           <Service showItem={4} />
           <Price />
