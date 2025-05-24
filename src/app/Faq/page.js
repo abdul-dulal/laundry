@@ -3,17 +3,15 @@ import HeaderOne from "@/components/header/HeaderOne";
 import HeaderTop from "@/components/header/HeaderTop";
 import React from "react";
 
-import Faq from "../services/components/Faqs";
 import SmoothScrollerProvider from "@/utils/SmoothScrollWrapper";
 
-const Faqs = () => {
+const Faq = () => {
   return (
     <>
       <HeaderTop />
       <HeaderOne />
       <main>
         <SmoothScrollerProvider>
-          <Faq />
           <FooterOne />
         </SmoothScrollerProvider>
       </main>
@@ -21,4 +19,4 @@ const Faqs = () => {
   );
 };
 
-export default Faqs;
+export default Faq;

@@ -167,9 +167,6 @@ const Details = () => {
                 </div>
               </div>
             </div>
-
-            {/* faq */}
-            <FaqContentTwo />
           </div>
           <div className="2xl:col-span-3 lg:col-span-4 col-span-12 lg:mt-0 mt-14">
             <div
