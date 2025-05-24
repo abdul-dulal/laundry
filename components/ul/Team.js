@@ -88,7 +88,7 @@ const Team = () => {
                         <div className="flex justify-between">
                           <div>
                             <Link
-                              href="/Team-details"
+                              href="/team-details"
                               className="text-[18px] text-primary font-semibold leading-[100%] mb-[10px]"
                             >
                               {team.name}

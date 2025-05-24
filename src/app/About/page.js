@@ -3,12 +3,12 @@ import HeaderOne from "@/components/header/HeaderOne";
 import HeaderTop from "@/components/header/HeaderTop";
 import React from "react";
 import BreadCumb from "./components/BreadCumb";
-
-import Service from "../HomeTwo/components/Service";
 import About from "@/components/ul/About";
-import Price from "../HomeTwo/components/Price";
+
 import Contact from "./components/Contact";
 import SmoothScrollerProvider from "@/utils/SmoothScrollWrapper";
+import Price from "../home-two/components/Price";
+import Service from "../home-two/components/Service";
 
 const AboutUs = () => {
   return (

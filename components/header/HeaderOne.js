@@ -47,7 +47,7 @@ const HeaderOne = () => {
                       <li className="float-none min-w-[210px] m-0">
                         <Link
                           className="block leading-[120%] px-[20px] py-[10px] text-primary border-b border-[#e3e3e3] ml-0 text-[18px] font-medium transition-all duration-400 ease-in-out  "
-                          href="/HomeTwo"
+                          href="/home-two"
                         >
                           Home 02
                         </Link>
@@ -57,7 +57,7 @@ const HeaderOne = () => {
                   <li className="inline-block p-0 relative">
                     <Link
                       className="block px-[24px] capitalize transition-all duration-300 ease-in-out relative text-black group-hover:text-secondary   text-[18px] font-medium py-[34px]"
-                      href="/About"
+                      href="/about"
                     >
                       About Us
                     </Link>
@@ -79,7 +79,7 @@ const HeaderOne = () => {
                       <li className="float-none min-w-[210px] m-0">
                         <Link
                           className="block leading-[120%] px-[20px] py-[10px] text-primary border-b border-[#e3e3e3] ml-0 text-[18px] font-medium transition-all duration-400 ease-in-out  "
-                          href="/Services"
+                          href="/services"
                         >
                           Service
                         </Link>
@@ -87,7 +87,7 @@ const HeaderOne = () => {
                       <li className="float-none min-w-[210px] m-0">
                         <Link
                           className="block leading-[120%] px-[20px] py-[10px] text-primary border-b border-[#e3e3e3] ml-0 text-[18px] font-medium transition-all duration-400 ease-in-out  "
-                          href="/Service-details"
+                          href="/service-details"
                         >
                           Service Details
                         </Link>
@@ -112,7 +112,7 @@ const HeaderOne = () => {
                       <li className="float-none min-w-[210px] m-0">
                         <Link
                           className="block leading-[120%] px-[20px] py-[10px] text-primary border-b border-[#e3e3e3] ml-0 text-[18px] font-medium transition-all duration-400 ease-in-out  "
-                          href="/Team"
+                          href="/team"
                         >
                           Team
                         </Link>
@@ -120,7 +120,7 @@ const HeaderOne = () => {
                       <li className="float-none min-w-[210px] m-0">
                         <Link
                           className="block leading-[120%] px-[20px] py-[10px] text-primary border-b border-[#e3e3e3] ml-0 text-[18px] font-medium transition-all duration-400 ease-in-out  "
-                          href="/Team-details"
+                          href="/team-details"
                         >
                           Team Details
                         </Link>
@@ -128,7 +128,7 @@ const HeaderOne = () => {
                       <li className="float-none min-w-[210px] m-0">
                         <Link
                           className="block leading-[120%] px-[20px] py-[10px] text-primary border-b border-[#e3e3e3] ml-0 text-[18px] font-medium transition-all duration-400 ease-in-out  "
-                          href="/Faq"
+                          href="/faq"
                         >
                           FAQ
                         </Link>
@@ -136,7 +136,7 @@ const HeaderOne = () => {
                       <li className="float-none min-w-[210px] m-0">
                         <Link
                           className="block leading-[120%] px-[20px] py-[10px] text-primary border-b border-[#e3e3e3] ml-0 text-[18px] font-medium transition-all duration-400 ease-in-out  "
-                          href="/Price"
+                          href="/price"
                         >
                           Price Packages
                         </Link>
@@ -168,7 +168,7 @@ const HeaderOne = () => {
                       <li className="float-none min-w-[210px] m-0">
                         <Link
                           className="block leading-[120%] px-[20px] py-[10px] text-primary border-b border-[#e3e3e3] ml-0  text-[18px] font-medium transition-all duration-400 ease-in-out  "
-                          href="/Blog"
+                          href="/blog"
                         >
                           Blog
                         </Link>
@@ -176,7 +176,7 @@ const HeaderOne = () => {
                       <li className="float-none min-w-[210px] m-0">
                         <Link
                           className="block leading-[120%] px-[20px] py-[10px] text-primary border-b border-[#e3e3e3] ml-0 text-[18px] font-medium transition-all duration-400 ease-in-out  "
-                          href="/Blog-details"
+                          href="/blog-details"
                         >
                           Blog Details
                         </Link>
@@ -186,7 +186,7 @@ const HeaderOne = () => {
                   <li className="group inline-block p-0 relative">
                     <Link
                       className="block px-[24px] capitalize transition-all duration-300 ease-in-out relative text-black group-hover:text-secondary   text-[18px] font-medium py-[34px]"
-                      href="/Contact"
+                      href="/contact"
                     >
                       Contact
                     </Link>
@@ -199,7 +199,7 @@ const HeaderOne = () => {
             <div className="">
               <Link
                 className="flex items-center gap-2 justify-center font-medium text-[15px] text-[#142137] border border-[rgba(20,33,55,0.14)] w-[220px] h-[44px] leading-[44px]  text-center"
-                href="/Contact"
+                href="/contact"
               >
                 Schedule a Pickup
                 <span>

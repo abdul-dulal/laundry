@@ -4,7 +4,7 @@ import React from "react";
 import BreadCumb from "../About/components/BreadCumb";
 import FooterOne from "@/components/footer/FooterOne";
 import Contact from "../About/components/Contact";
-import Faq from "../Services/components/Faq";
+import Faq from "../services/components/Faqs";
 import SmoothScrollerProvider from "@/utils/SmoothScrollWrapper";
 
 const ContactUs = () => {

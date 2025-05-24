@@ -2,13 +2,14 @@ import FooterOne from "@/components/footer/FooterOne";
 import HeaderOne from "@/components/header/HeaderOne";
 import HeaderTop from "@/components/header/HeaderTop";
 import React from "react";
-import Service from "../HomeTwo/components/Service";
-import BreadCumb from "../About/components/BreadCumb";
-import Collect from "../HomeTwo/components/Collect";
+
 import QualitryClean from "@/components/ul/QualitryClean";
 import Testimonial from "@/components/ul/Testimonial";
-import Faq from "./components/Faq";
 import SmoothScrollerProvider from "@/utils/SmoothScrollWrapper";
+import BreadCumb from "../about/components/BreadCumb";
+import Collect from "../home-two/components/Collect";
+import Service from "../home-two/components/Service";
+import Faq from "./components/Faqs";
 
 const Services = () => {
   return (

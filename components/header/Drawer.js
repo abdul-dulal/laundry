@@ -89,7 +89,7 @@ const Drawer = ({ bgColor }) => {
                   </li>
                   <li>
                     <Link
-                      href="/homeTwo"
+                      href="/home-two"
                       className={`capitalize text-[16px] leading-[50px] font-normal text-primary  border-b  border-solid border-[#00000036] flex items-center justify-between`}
                     >
                       Home 02
@@ -122,7 +122,7 @@ const Drawer = ({ bgColor }) => {
                 >
                   <li>
                     <Link
-                      href="/Services"
+                      href="/services"
                       className={`capitalize text-[16px] leading-[50px] font-normal text-primary  border-b  border-solid border-[#00000036]  flex items-center justify-between`}
                     >
                       Service
@@ -130,7 +130,7 @@ const Drawer = ({ bgColor }) => {
                   </li>
                   <li>
                     <Link
-                      href="/Service-details"
+                      href="/service-details"
                       className={`capitalize text-[16px] leading-[50px] font-normal text-primary  border-b  border-solid border-[#00000036] flex items-center justify-between`}
                     >
                       Service Details
@@ -161,7 +161,7 @@ const Drawer = ({ bgColor }) => {
                 >
                   <li>
                     <Link
-                      href="/Team"
+                      href="/team"
                       className={`capitalize text-[16px] leading-[50px] font-normal text-primary  border-b  border-solid border-[#00000036]  flex items-center justify-between`}
                     >
                       Team
@@ -169,7 +169,7 @@ const Drawer = ({ bgColor }) => {
                   </li>
                   <li>
                     <Link
-                      href="/Team-details"
+                      href="/team-details"
                       className={`capitalize text-[16px] leading-[50px] font-normal text-primary  border-b  border-solid border-[#00000036] flex items-center justify-between`}
                     >
                       Team Details
@@ -177,7 +177,7 @@ const Drawer = ({ bgColor }) => {
                   </li>
                   <li>
                     <Link
-                      href="/Faq"
+                      href="/faq"
                       className={`capitalize text-[16px] leading-[50px] font-normal text-primary  border-b  border-solid border-[#00000036] flex items-center justify-between`}
                     >
                       FAQ
@@ -185,7 +185,7 @@ const Drawer = ({ bgColor }) => {
                   </li>
                   <li>
                     <Link
-                      href="/Price"
+                      href="/price"
                       className={`capitalize text-[16px] leading-[50px] font-normal text-primary  border-b  border-solid border-[#00000036] flex items-center justify-between`}
                     >
                       Price Packages
@@ -224,7 +224,7 @@ const Drawer = ({ bgColor }) => {
                 >
                   <li>
                     <Link
-                      href="/Blog"
+                      href="/blog"
                       className={`capitalize text-[16px] leading-[50px] font-normal text-primary  border-b  border-solid border-[#00000036]  flex items-center justify-between`}
                     >
                       Blog
@@ -232,7 +232,7 @@ const Drawer = ({ bgColor }) => {
                   </li>
                   <li>
                     <Link
-                      href="/Blog-details"
+                      href="/blog-details"
                       className={`capitalize text-[16px] leading-[50px] font-normal text-primary  border-b  border-solid border-[#00000036] flex items-center justify-between`}
                     >
                       Blog Details
@@ -241,7 +241,7 @@ const Drawer = ({ bgColor }) => {
                 </ul>
               </li>
               <li className="mt-3 border-b  border-solid border-[#00000036] pb-5">
-                <Link href="/Contact">Contact</Link>
+                <Link href="/contact">Contact</Link>
               </li>
             </ul>
 

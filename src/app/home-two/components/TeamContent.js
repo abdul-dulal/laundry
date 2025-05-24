@@ -21,7 +21,7 @@ const TeamContent = ({ showItem }) => {
             {inView && (
               <div className="zoomIn group border border-primary/15 py-11 xl:px-10 px-5 bg-transparent transition-all ease-out duration-[.4s] hover:bg-[#EBEFF3] hover:-mt-3">
                 <Link
-                  href="/Team-details"
+                  href="/team-details"
                   className="text-[18px] font-semibold leading-[100%] "
                 >
                   {team.name}

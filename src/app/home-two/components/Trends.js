@@ -88,7 +88,7 @@ const Trends = () => {
                       </div>
                       <div>
                         <Link
-                          href="/Blog-details"
+                          href="/blog-details"
                           className="text-2xl font-semibold text-primary leading-[34px] "
                         >
                           {trend.title}
@@ -98,7 +98,7 @@ const Trends = () => {
                           cleaning & laundry services tailored to your needs.
                         </p>
                         <Link
-                          href="/Blog-details"
+                          href="/blog-details"
                           className="mt-10 group border border-primary/20 rounded-[50px] w-[161px] h-[44px] flex justify-between items-center pl-[30px] pr-[5px] font-poppins font-medium text-[15px] text-primary bg-white transition-all duration-500 hover:bg-primary hover:text-white"
                         >
                           Read More

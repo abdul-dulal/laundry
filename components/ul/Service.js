@@ -73,7 +73,7 @@ const Service = () => {
                 <div className="xs:mt-[50px] mt-10 mb-[16px]">
                   <Link
                     className="font-semibold xs:text-[30px] text-[26px] tracking-[-0.02em] text-primary"
-                    href="/Service-details"
+                    href="/service-details"
                   >
                     {service.title}
                   </Link>
@@ -87,7 +87,7 @@ const Service = () => {
                 </div>
                 <div className="inline-block">
                   <Link
-                    href="/Service-details"
+                    href="/service-details"
                     className="flex  items-center gap-[10px] xs:mt-20 mt-10 text-[15px] font-medium text-primary leading-[100%]"
                   >
                     Read More{" "}

@@ -163,7 +163,7 @@ const AuthorDetails = ({ author, name, title, showButton }) => {
         <div ref={ref}>
           {inView && (
             <Link
-              href="/Blog-details"
+              href="/blog-details"
               className={`font-semibold md:text-[34px] sm:text-[28px] text-2xl leading-[119%] tracking-[-0.02em] text-[#142137] mb-[14px] transition-all duration-400 ease-in-out move-right`}
             >
               {words.map((word, index) => (
@@ -190,7 +190,7 @@ const AuthorDetails = ({ author, name, title, showButton }) => {
           {showButton && (
             <FadeUpAnimationProvider>
               <div className="mt-[50px]">
-                <Button title="Read More" path="Blog-details" />
+                <Button title="Read More" path="blog-details" />
               </div>
             </FadeUpAnimationProvider>
           )}

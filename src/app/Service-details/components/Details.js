@@ -4,7 +4,7 @@ import sd1 from "@/public/img/service-details/service-details-01.png";
 
 import Image from "next/image";
 import Link from "next/link";
-import FaqContent from "../../Services/components/FaqContent";
+import FaqContent from "../../services/components/FaqContentTwo";
 import Category from "./Category";
 import FadeUpAnimationProvider from "@/components/ul/FadeUpAnimationProvider ";
 

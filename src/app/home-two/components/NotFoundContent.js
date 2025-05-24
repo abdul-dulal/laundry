@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const NotFoundContent = () => {
   return (
-    <section>
+    <section className="pt-[120px] lg:pb-[120px] md:pb-[100px] pb-20">
       <div className="container">
         <div className="flex items-center justify-center mt-20">
           <div className="text-center">

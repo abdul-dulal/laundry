@@ -95,7 +95,7 @@ const Vision = () => {
                     </div>
                   </FadeUpAnimationProvider>
                   <FadeUpAnimationProvider>
-                    <Button title="Discover More" path="About" />
+                    <Button title="Discover More" path="about" />
                   </FadeUpAnimationProvider>
                 </div>
               </div>

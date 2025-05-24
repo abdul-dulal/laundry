@@ -1,12 +1,14 @@
 import HeaderOne from "@/components/header/HeaderOne";
 import HeaderTop from "@/components/header/HeaderTop";
 import React from "react";
-import BreadCumb from "../About/components/BreadCumb";
+
 import FooterOne from "@/components/footer/FooterOne";
-import Price from "../HomeTwo/components/Price";
-import Trends from "../HomeTwo/components/Trends";
+
 import Clean from "./components/Clean";
 import SmoothScrollerProvider from "@/utils/SmoothScrollWrapper";
+import BreadCumb from "../about/components/BreadCumb";
+import Price from "../home-two/components/Price";
+import Trends from "../home-two/components/Trends";
 
 const PricePackage = () => {
   return (

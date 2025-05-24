@@ -1,13 +1,13 @@
 "use client";
-import React, { useState } from "react";
-import { Navigation, Autoplay } from "swiper/modules";
+import React, { useState, useRef } from "react";
+import { Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import "swiper/css/autoplay";
-import { useRef } from "react";
+
 import blog1 from "@/public/img/blog/blog-01.png";
 import blog2 from "@/public/img/blog/blog-2.png";
 import author from "@/public/img/blog/author-01.jpg";
@@ -24,6 +24,7 @@ import Quote from "./Quote";
 import RevealLefToRight from "@/components/ul/RevealLefToRight";
 import RevealRightToLeft from "@/components/ul/RevealRightToLeft";
 import FadeUpAnimationProvider from "@/components/ul/FadeUpAnimationProvider ";
+
 const Blog = () => {
   const swiperRef = useRef(null);
   const [isEnd, setIsEnd] = useState(false);
@@ -54,7 +55,6 @@ const Blog = () => {
                 />
               </article>
               <FadeUpAnimationProvider>
-                {" "}
                 <Quote />
               </FadeUpAnimationProvider>
               <article className="mt-[60px] pb-[58px]">

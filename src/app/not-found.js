@@ -2,8 +2,9 @@ import React from "react";
 
 import HeaderTop from "@/components/header/HeaderTop";
 import HeaderOne from "@/components/header/HeaderOne";
-import NotFoundContent from "./HomeTwo/components/NotFoundContent";
+
 import SmoothScrollerProvider from "@/utils/SmoothScrollWrapper";
+import NotFoundContent from "./home-two/components/NotFoundContent";
 
 const NotFount = () => {
   return (

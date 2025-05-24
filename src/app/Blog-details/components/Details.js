@@ -187,7 +187,7 @@ const Details = () => {
                     <div className="flex flex-wrap gap-6 justify-between  items-center mt-10">
                       <Link
                         className="flex  gap-2 items-center text-base font-medium "
-                        href="/Blog"
+                        href="/blog"
                       >
                         See All Post{" "}
                         <svg

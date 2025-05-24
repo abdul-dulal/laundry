@@ -72,7 +72,7 @@ const Service = ({ showItem, showTop }) => {
                       alt={service.title}
                     />
                     <Link
-                      href="/Service-details"
+                      href="/service-details"
                       className="block xs:text-[30px] text-[26px] font-semibold text-primary leading-[100%] -tracking-[2%] xs:mb-[34px] mb-6"
                     >
                       {service.title}
@@ -82,7 +82,7 @@ const Service = ({ showItem, showTop }) => {
                       cleaning & laundry services tailored to your needs.
                     </p>
                     <Link
-                      href="/Service-details"
+                      href="/service-details"
                       className="block   rounded-[100px] w-full bg-white relative overflow-hidden transition-all duration-[0.7s] ease-in-out z-10 text-center leading-[54px] border border-primary/70 before:content-[''] before:absolute before:top-[-80px] before:right-[-60px] before:w-0 before:h-[200px] before:bg-primary before:transition-all before:duration-[1.2s] before:ease-in-out before:z-[-1] before:rotate-[-20deg] after:content-[''] after:absolute after:top-[-70px] after:left-[-60px] after:w-0 after:h-[200px] after:bg-primary after:transition-all after:duration-[1.2s] after:ease-in-out after:z-[-1] after:rotate-[-20deg] group-hover:after:w-full group-hover:before:w-full"
                     >
                       <div className="flex  gap-[16px] justify-between items-center pl-6  text-primary group-hover:text-white group-hover:delay-300 group-hover:transition-all text-[15px] font-medium transition-all duration-[.4s]">

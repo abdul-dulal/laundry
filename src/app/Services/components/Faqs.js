@@ -1,7 +1,7 @@
 import Link from "next/link";
-import FaqContent from "./FaqContent";
 import AnimatedHeading from "@/components/ul/AnimatedHeading";
 import FadeUpAnimationProvider from "@/components/ul/FadeUpAnimationProvider ";
+import FaqContent from "./FaqContentTwo";
 
 const Faq = () => {
   return (
@@ -25,7 +25,7 @@ const Faq = () => {
               <div className="group mt-auto">
                 <FadeUpAnimationProvider>
                   <Link
-                    href="/Contact"
+                    href="/contact"
                     className="block rounded-[100px] 2xl:w-[56%] lg:w-[80%] sm:w-[50%] w-full bg-primary relative overflow-hidden transition-all duration-[0.7s] ease-in-out z-10 text-center leading-[54px] before:content-[''] before:absolute before:top-[-80px] before:right-[-60px] before:w-0 before:h-[200px] before:bg-secondary before:transition-all before:duration-[1.2s] before:ease-in-out before:z-[-1] before:rotate-[-20deg] after:content-[''] after:absolute after:top-[-70px] after:left-[-60px] after:w-0 after:h-[200px] after:bg-secondary after:transition-all after:duration-[1.2s] after:ease-in-out after:z-[-1] after:rotate-[-20deg] group-hover:after:w-full group-hover:before:w-full"
                   >
                     <div className="flex  gap-[16px] justify-between items-center pl-6 text-white group-hover:text-white group-hover:delay-300 group-hover:transition-all text-[15px] font-medium transition-all duration-[.4s]">

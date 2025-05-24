@@ -139,7 +139,7 @@ const FooterOne = () => {
               <ul className="text-[16px] font-medium leading-[44px] text-white/70">
                 <li className="">
                   <Link
-                    href="/Services"
+                    href="/services"
                     className="transition-all duration-500 hover:ml-[13px]"
                   >
                     Laundry Service
@@ -147,7 +147,7 @@ const FooterOne = () => {
                 </li>
                 <li>
                   <Link
-                    href="/Services"
+                    href="/services"
                     className="transition-all duration-500 hover:ml-[13px]"
                   >
                     Dry Cleaning
@@ -155,7 +155,7 @@ const FooterOne = () => {
                 </li>
                 <li>
                   <Link
-                    href="/Services"
+                    href="/services"
                     className="transition-all duration-500 hover:ml-[13px]"
                   >
                     Ironing
@@ -163,7 +163,7 @@ const FooterOne = () => {
                 </li>
                 <li>
                   <Link
-                    href="/Services"
+                    href="/services"
                     className="transition-all duration-500 hover:ml-[13px]"
                   >
                     Alteration & Repairs
@@ -171,7 +171,7 @@ const FooterOne = () => {
                 </li>
                 <li>
                   <Link
-                    href="/Services"
+                    href="/services"
                     className="transition-all duration-500 hover:ml-[13px]"
                   >
                     Dry Cleaners
@@ -179,7 +179,7 @@ const FooterOne = () => {
                 </li>
                 <li>
                   <Link
-                    href="/Services"
+                    href="/services"
                     className="transition-all duration-500 hover:ml-[13px]"
                   >
                     Shirt Service
@@ -203,7 +203,7 @@ const FooterOne = () => {
                 </li>
                 <li>
                   <Link
-                    href="/Price"
+                    href="/price"
                     className="transition-all duration-500 hover:ml-[13px]"
                   >
                     Pricing
@@ -211,7 +211,7 @@ const FooterOne = () => {
                 </li>
                 <li>
                   <Link
-                    href="/Services"
+                    href="/services"
                     className="transition-all duration-500 hover:ml-[13px]"
                   >
                     Our Services
@@ -219,7 +219,7 @@ const FooterOne = () => {
                 </li>
                 <li>
                   <Link
-                    href="/Faq"
+                    href="/faq"
                     className="transition-all duration-500 hover:ml-[13px]"
                   >
                     FAQs
@@ -251,7 +251,7 @@ const FooterOne = () => {
               <ul className="text-[16px] font-medium leading-[44px] text-white/70">
                 <li>
                   <Link
-                    href="/Services"
+                    href="/services"
                     className="transition-all duration-500 hover:ml-[13px]"
                   >
                     Airbnb Laundry
@@ -259,7 +259,7 @@ const FooterOne = () => {
                 </li>
                 <li>
                   <Link
-                    href="/Services"
+                    href="/services"
                     className="transition-all duration-500 hover:ml-[13px]"
                   >
                     Restaurant Laundry
@@ -267,7 +267,7 @@ const FooterOne = () => {
                 </li>
                 <li>
                   <Link
-                    href="/Services"
+                    href="/services"
                     className="transition-all duration-500 hover:ml-[13px]"
                   >
                     Workwear Laundry
@@ -275,7 +275,7 @@ const FooterOne = () => {
                 </li>
                 <li>
                   <Link
-                    href="/Services"
+                    href="/services"
                     className="transition-all duration-500 hover:ml-[13px]"
                   >
                     Cafe Laundry
@@ -283,7 +283,7 @@ const FooterOne = () => {
                 </li>
                 <li>
                   <Link
-                    href="/Services"
+                    href="/services"
                     className="transition-all duration-500 hover:ml-[13px]"
                   >
                     Hotel Laundry
@@ -291,7 +291,7 @@ const FooterOne = () => {
                 </li>
                 <li>
                   <Link
-                    href="/Services"
+                    href="/services"
                     className="transition-all duration-500 hover:ml-[13px]"
                   >
                     Gym Laundry

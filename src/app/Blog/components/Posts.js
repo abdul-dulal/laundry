@@ -69,7 +69,7 @@ const Posts = ({ img, title }) => {
             <h5>
               <Link
                 className="font-medium text-[18px] leading-[156%] tracking-[-0.02em] text-[#142137] max-w-[190px]"
-                href="/Blog-details"
+                href="/blog-details"
               >
                 {title}
               </Link>

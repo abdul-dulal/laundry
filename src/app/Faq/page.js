@@ -3,7 +3,7 @@ import HeaderOne from "@/components/header/HeaderOne";
 import HeaderTop from "@/components/header/HeaderTop";
 import React from "react";
 import BreadCumb from "../About/components/BreadCumb";
-import Faq from "../Services/components/Faq";
+import Faq from "../services/components/Faqs";
 import SmoothScrollerProvider from "@/utils/SmoothScrollWrapper";
 
 const Faqs = () => {

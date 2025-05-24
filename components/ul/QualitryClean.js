@@ -241,22 +241,22 @@ const QualitryClean = () => {
           </FadeUpAnimationProvider>
           <FadeUpAnimationProvider>
             <div className="flex gap-5 flex-wrap items-center justify-center mt-[34px]">
-              <div className="text-center leading-[54px] transition-all duration-400 ease-in-out relative h-[54px] w-[212px] bg-[#142137] z-[1] overflow-hidden cursor-pointer before:content-[''] before:absolute before:w-full before:h-[200px] before:top-[-80px] before:right-[-60px] before:bg-[#4375e7] before:transition-all before:duration-[1200ms] before:ease-in-out before:z-[-1] before:rotate-[-20deg]  after:content-[''] after:absolute after:w-full after:h-[200px] after:top-[-70px] after:left-[-60px] after:bg-[#4375e7] after:transition-all after:duration-[1200ms] after:ease-in-out after:z-[-1] after:rotate-[-20deg] hover:after:w-0 hover:before:w-0">
-                <Link
-                  className="font-medium text-[15px] text-white transition-all duration-500 ease-in-out"
-                  href="/Contact"
-                >
+              <Link
+                href="/contact"
+                className="text-center leading-[54px] transition-all duration-400 ease-in-out relative h-[54px] w-[212px] bg-[#142137] z-[1] overflow-hidden cursor-pointer before:content-[''] before:absolute before:w-full before:h-[200px] before:top-[-80px] before:right-[-60px] before:bg-[#4375e7] before:transition-all before:duration-[1200ms] before:ease-in-out before:z-[-1] before:rotate-[-20deg]  after:content-[''] after:absolute after:w-full after:h-[200px] after:top-[-70px] after:left-[-60px] after:bg-[#4375e7] after:transition-all after:duration-[1200ms] after:ease-in-out after:z-[-1] after:rotate-[-20deg] hover:after:w-0 hover:before:w-0"
+              >
+                <span className="font-medium text-[15px] text-white transition-all duration-500 ease-in-out">
                   Book a Pick Up
-                </Link>
-              </div>
-              <div className="text-center leading-[54px] transition-all duration-400 ease-in-out relative h-[54px] w-[212px] bg-[#142137] z-[1] overflow-hidden cursor-pointer before:content-[''] before:absolute before:w-full before:h-[200px] before:top-[-80px] before:right-[-60px] before:bg-[#4375e7] before:transition-all before:duration-[1200ms] before:ease-in-out before:z-[-1] before:rotate-[-20deg]  after:content-[''] after:absolute after:w-full after:h-[200px] after:top-[-70px] after:left-[-60px] after:bg-[#4375e7] after:transition-all after:duration-[1200ms] after:ease-in-out after:z-[-1] after:rotate-[-20deg] hover:after:w-0 hover:before:w-0">
-                <Link
-                  className="font-medium text-[15px] text-white transition-all duration-500 ease-in-out"
-                  href="/Contact"
-                >
+                </span>
+              </Link>
+              <Link
+                href="/contact"
+                className="text-center leading-[54px] transition-all duration-400 ease-in-out relative h-[54px] w-[212px] bg-[#142137] z-[1] overflow-hidden cursor-pointer before:content-[''] before:absolute before:w-full before:h-[200px] before:top-[-80px] before:right-[-60px] before:bg-[#4375e7] before:transition-all before:duration-[1200ms] before:ease-in-out before:z-[-1] before:rotate-[-20deg]  after:content-[''] after:absolute after:w-full after:h-[200px] after:top-[-70px] after:left-[-60px] after:bg-[#4375e7] after:transition-all after:duration-[1200ms] after:ease-in-out after:z-[-1] after:rotate-[-20deg] hover:after:w-0 hover:before:w-0"
+              >
+                <span className="font-medium text-[15px] text-white transition-all duration-500 ease-in-out">
                   Get a Price Estimation
-                </Link>
-              </div>
+                </span>
+              </Link>
             </div>
           </FadeUpAnimationProvider>
         </div>

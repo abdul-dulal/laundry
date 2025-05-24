@@ -47,7 +47,7 @@ const HeaderTwo = () => {
                       <li className="float-none min-w-[210px] m-0">
                         <Link
                           className="block leading-[120%] px-[20px] py-[10px] text-primary border-b border-[#e3e3e3] ml-0 text-[18px] font-medium transition-all duration-400 ease-in-out  "
-                          href="/HomeTwo"
+                          href="/home-two"
                         >
                           Home 02
                         </Link>
@@ -57,7 +57,7 @@ const HeaderTwo = () => {
                   <li className="group  inline-block p-0 relative">
                     <Link
                       className="block px-[24px] capitalize transition-all duration-300 ease-in-out relative text-white group-hover:text-[#ffc107]   text-[18px] font-medium  py-[34px]"
-                      href="/About"
+                      href="/about"
                     >
                       About Us
                     </Link>
@@ -65,7 +65,7 @@ const HeaderTwo = () => {
                   <li className="group inline-block p-0 relative">
                     <Link
                       className="flex  items-center gap-1 px-[24px] capitalize transition-all duration-300 ease-in-out relative text-white group-hover:text-[#ffc107]   text-[18px] font-medium  py-[34px]"
-                      href="/Services"
+                      href="/services"
                     >
                       Service
                       <span>
@@ -79,7 +79,7 @@ const HeaderTwo = () => {
                       <li className="float-none min-w-[210px] m-0">
                         <Link
                           className="block leading-[120%] px-[20px] py-[10px] text-primary border-b border-[#e3e3e3] ml-0 text-[18px] font-medium transition-all duration-400 ease-in-out  "
-                          href="/Services"
+                          href="/services"
                         >
                           Service
                         </Link>
@@ -87,7 +87,7 @@ const HeaderTwo = () => {
                       <li className="float-none min-w-[210px] m-0">
                         <Link
                           className="block leading-[120%] px-[20px] py-[10px] text-primary border-b border-[#e3e3e3] ml-0 text-[18px] font-medium transition-all duration-400 ease-in-out  "
-                          href="/Service-details"
+                          href="/service-details"
                         >
                           Service Details
                         </Link>
@@ -112,7 +112,7 @@ const HeaderTwo = () => {
                       <li className="float-none min-w-[210px] m-0">
                         <Link
                           className="block leading-[120%] px-[20px] py-[10px] text-primary border-b border-[#e3e3e3] ml-0 text-[18px] font-medium transition-all duration-400 ease-in-out  "
-                          href="/Team"
+                          href="/team"
                         >
                           Team
                         </Link>
@@ -120,7 +120,7 @@ const HeaderTwo = () => {
                       <li className="float-none min-w-[210px] m-0">
                         <Link
                           className="block leading-[120%] px-[20px] py-[10px] text-primary border-b border-[#e3e3e3] ml-0 text-[18px] font-medium transition-all duration-400 ease-in-out  "
-                          href="/Team-details"
+                          href="/team-details"
                         >
                           Team Details
                         </Link>
@@ -128,7 +128,7 @@ const HeaderTwo = () => {
                       <li className="float-none min-w-[210px] m-0">
                         <Link
                           className="block leading-[120%] px-[20px] py-[10px] text-primary border-b border-[#e3e3e3] ml-0 text-[18px] font-medium transition-all duration-400 ease-in-out  "
-                          href="/Faq"
+                          href="/faq"
                         >
                           FAQ
                         </Link>
@@ -136,7 +136,7 @@ const HeaderTwo = () => {
                       <li className="float-none min-w-[210px] m-0">
                         <Link
                           className="block leading-[120%] px-[20px] py-[10px] text-primary border-b border-[#e3e3e3] ml-0 text-[18px] font-medium transition-all duration-400 ease-in-out  "
-                          href="/Price"
+                          href="/price"
                         >
                           Price Packages
                         </Link>
@@ -154,7 +154,7 @@ const HeaderTwo = () => {
                   <li className="group inline-block p-0 relative">
                     <Link
                       className="flex items-center gap-1 px-[24px] capitalize transition-all duration-300 ease-in-out relative text-white group-hover:text-[#ffc107]   text-[18px] font-medium  py-[34px]"
-                      href="/Blog"
+                      href="/blog"
                     >
                       Blog
                       <span>
@@ -168,7 +168,7 @@ const HeaderTwo = () => {
                       <li className="float-none min-w-[210px] ">
                         <Link
                           className="block leading-[120%] px-[20px] py-[10px] text-primary border-b border-[#e3e3e3] ml-0  text-[18px] font-medium transition-all duration-400 ease-in-out  "
-                          href="/Blog"
+                          href="/blog"
                         >
                           Blog
                         </Link>
@@ -176,7 +176,7 @@ const HeaderTwo = () => {
                       <li className="float-none min-w-[210px] m-0">
                         <Link
                           className="block leading-[120%] px-[20px] py-[10px] text-primary border-b border-[#e3e3e3] ml-0 text-[18px] font-medium transition-all duration-400 ease-in-out  "
-                          href="/Blog-details"
+                          href="/blog-details"
                         >
                           Blog Details
                         </Link>
@@ -186,7 +186,7 @@ const HeaderTwo = () => {
                   <li className="group inline-block p-0 relative">
                     <Link
                       className="block px-[24px] capitalize transition-all duration-300 ease-in-out relative text-white group-hover:text-[#ffc107]   text-[18px] font-medium"
-                      href="/Contact"
+                      href="/contact"
                     >
                       Contact
                     </Link>

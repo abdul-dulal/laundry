@@ -41,7 +41,7 @@ after:z-[-1] after:rotate-[-20deg] hover:after:w-[250px] hover:after:text-white
 
 "
               >
-                <Link href="/Blog" className="flex items-center gap-2">
+                <Link href="/blog" className="flex items-center gap-2">
                   See More Blog
                   <span>
                     <svg
@@ -137,7 +137,7 @@ after:z-[-1] after:rotate-[-20deg] hover:after:w-[250px] hover:after:text-white
                           </p>
                           <p className="font-medium text-[15px] leading-[173%] text-[#142137b3] ">
                             <Link
-                              href="/Blog-details"
+                              href="/blog-details"
                               className="flex items-center gap-[6px]"
                             >
                               <span>
@@ -176,7 +176,7 @@ after:z-[-1] after:rotate-[-20deg] hover:after:w-[250px] hover:after:text-white
 
                         <div className="block">
                           <Link
-                            href="/Blog-details"
+                            href="/blog-details"
                             className="text-2xl font-semibold leading-[34px] text-primary -tracking-[2%]   bg-no-repeat bg-[linear-gradient(transparent_calc(100%-1px),currentColor_2px)] transition-all duration-[900ms] ease-[cubic-bezier(0.32,0.32,0.15,1.17)] bg-[size:0_100%] capitalize hover:bg-[size:100%_100%] hover:text-secondary"
                           >
                             {blog.blogTitle} <br className="2xl:block hidden" />

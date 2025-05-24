@@ -1,6 +1,5 @@
 import { Poppins } from "next/font/google";
 import "./globals.css";
-import SmoothScrollWrapper from "@/utils/SmoothScrollWrapper";
 
 export const popin = Poppins({
   weight: ["300", "400", "500", "600", "700"],
