@@ -60,7 +60,7 @@ const Blog = () => {
               <article className="mt-[60px] pb-[58px]">
                 <div className="relative">
                   <RevealRightToLeft img={blog2} />
-                  {/* <Image className="" src={blog2} alt="Laundry blog" /> */}
+
                   <button
                     onClick={togglePopup}
                     className="grid place-content-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 

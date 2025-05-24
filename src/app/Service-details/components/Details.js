@@ -9,8 +9,8 @@ import sd2 from "@/public/img/service-details/service-details-02.png";
 import sd3 from "@/public/img/service-details/service-details-03.png";
 import RevealLefToRight from "@/components/ul/RevealLefToRight";
 import RevealRightToLeft from "@/components/ul/RevealRightToLeft";
-import ServiceCategory from "./ServiceCategory";
 import FaqContentTwo from "../../services/components/FaqContentTwo";
+import LaundryCategory from "./LaundryCategory";
 
 const Details = () => {
   const handleSubmit = (e) => {
@@ -235,7 +235,7 @@ const Details = () => {
                   </div>
                 </div>
               </FadeUpAnimationProvider>
-              <ServiceCategory />
+              <LaundryCategory />
               <FadeUpAnimationProvider>
                 <div
                   className="bg-secondary mb-[30px] w-full max-w-[380px] xs:px-[30px] px-[15px] pt-[30px] pb-[40px]
