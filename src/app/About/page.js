@@ -17,7 +17,7 @@ const AboutUs = () => {
           <About />
           <Service showItem={4} />
           <Price />
-          {/* <Contact showBottom={true} showTop={true} /> */}
+
           <FooterOne />
         </SmoothScrollerProvider>
       </main>
