@@ -8,6 +8,7 @@ import Testimonial from "@/components/ul/Testimonial";
 import SmoothScrollerProvider from "@/utils/SmoothScrollWrapper";
 import Collect from "../home-two/components/Collect";
 import Service from "../home-two/components/Service";
+import BreadCumb from "@/components/ul/BreadCumb";
 
 const Services = () => {
   return (
@@ -16,6 +17,7 @@ const Services = () => {
       <HeaderOne />
       <main>
         <SmoothScrollerProvider>
+          <BreadCumb currentPage="Service" />
           <Service showItem={8} showTop={true} />
           <Collect />
           <QualitryClean />

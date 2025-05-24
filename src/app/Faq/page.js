@@ -4,6 +4,7 @@ import HeaderTop from "@/components/header/HeaderTop";
 import React from "react";
 
 import SmoothScrollerProvider from "@/utils/SmoothScrollWrapper";
+import BreadCumb from "@/components/ul/BreadCumb";
 
 const Faq = () => {
   return (
@@ -12,6 +13,7 @@ const Faq = () => {
       <HeaderOne />
       <main>
         <SmoothScrollerProvider>
+          <BreadCumb currentPage="Faq" />
           <FooterOne />
         </SmoothScrollerProvider>
       </main>

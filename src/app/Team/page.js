@@ -6,6 +6,7 @@ import FooterOne from "@/components/footer/FooterOne";
 import Hero from "./components/Hero";
 import Team from "./components/Team";
 import SmoothScrollerProvider from "@/utils/SmoothScrollWrapper";
+import BreadCumb from "@/components/ul/BreadCumb";
 
 const OurTeam = () => {
   return (
@@ -14,6 +15,7 @@ const OurTeam = () => {
       <HeaderOne />
       <main>
         <SmoothScrollerProvider>
+          <BreadCumb currentPage="Team" />
           <Hero />
           <Team />
           <FooterOne />

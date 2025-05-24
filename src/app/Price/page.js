@@ -9,6 +9,7 @@ import SmoothScrollerProvider from "@/utils/SmoothScrollWrapper";
 
 import Price from "../home-two/components/Price";
 import Trends from "../home-two/components/Trends";
+import BreadCumb from "@/components/ul/BreadCumb";
 
 const PricePackage = () => {
   return (
@@ -17,6 +18,7 @@ const PricePackage = () => {
       <HeaderOne />
       <main>
         <SmoothScrollerProvider>
+          <BreadCumb />
           <Clean />
           <Price />
           <Trends />
