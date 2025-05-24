@@ -7,7 +7,8 @@ import SmoothScrollerProvider from "@/utils/SmoothScrollWrapper";
 import Price from "../home-two/components/Price";
 import Service from "../home-two/components/Service";
 import BreadCumb from "@/components/ul/BreadCumb";
-
+import Solutaion from "./components/Solutaion";
+import GetService from "./components/GetService";
 
 const Aboutus = () => {
   return (
@@ -19,8 +20,9 @@ const Aboutus = () => {
           <BreadCumb currentPage="About Us" />
           <About />
           <Service showItem={4} />
+          <Solutaion />
           <Price />
-
+          <GetService showBottom={true} showTop={true} />
           <FooterOne />
         </SmoothScrollerProvider>
       </main>
