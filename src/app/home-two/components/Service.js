@@ -67,7 +67,7 @@ const Service = ({ showItem, showTop }) => {
                     <Image
                       className="mb-[63px]"
                       width={65}
-                      height={74}
+                      height={70}
                       src={service.icon}
                       alt={service.title}
                     />
