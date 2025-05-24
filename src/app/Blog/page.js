@@ -4,7 +4,7 @@ import HeaderTop from "@/components/header/HeaderTop";
 import React from "react";
 import Blog from "./components/Blog";
 import SmoothScrollerProvider from "@/utils/SmoothScrollWrapper";
-import BreadCumb from "../about/components/BreadCumb";
+import BreadCumb from "@/components/ul/BreadCumb";
 
 const OurBlog = () => {
   return (

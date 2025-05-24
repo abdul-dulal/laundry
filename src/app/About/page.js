@@ -6,16 +6,17 @@ import About from "@/components/ul/About";
 import SmoothScrollerProvider from "@/utils/SmoothScrollWrapper";
 import Price from "../home-two/components/Price";
 import Service from "../home-two/components/Service";
-import BreadCumb from "./components/BreadCumb";
+import BreadCumb from "@/components/ul/BreadCumb";
 
-const AboutUs = () => {
+
+const Aboutus = () => {
   return (
     <>
       <HeaderTop />
       <HeaderOne />
       <main>
         <SmoothScrollerProvider>
-          <BreadCumb currentPage="hello" />
+          <BreadCumb currentPage="About Us" />
           <About />
           <Service showItem={4} />
           <Price />
@@ -27,4 +28,4 @@ const AboutUs = () => {
   );
 };
 
-export default AboutUs;
+export default Aboutus;
