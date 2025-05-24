@@ -9,7 +9,8 @@ import sd2 from "@/public/img/service-details/service-details-02.png";
 import sd3 from "@/public/img/service-details/service-details-03.png";
 import RevealLefToRight from "@/components/ul/RevealLefToRight";
 import RevealRightToLeft from "@/components/ul/RevealRightToLeft";
-import Category from "./ServiceCategory";
+import ServiceCategory from "./ServiceCategory";
+
 const Details = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -233,7 +234,7 @@ const Details = () => {
                   </div>
                 </div>
               </FadeUpAnimationProvider>
-              <Category />
+              <ServiceCategory />
               <FadeUpAnimationProvider>
                 <div
                   className="bg-secondary mb-[30px] w-full max-w-[380px] xs:px-[30px] px-[15px] pt-[30px] pb-[40px]

@@ -3,7 +3,7 @@ import AnimatedHeading from "@/components/ul/AnimatedHeading";
 import FadeUpAnimationProvider from "@/components/ul/FadeUpAnimationProvider ";
 import FaqContent from "./FaqContentTwo";
 
-const Faq = () => {
+const Faqs = () => {
   return (
     <section className="lg:py-[150px] md:py-[100px] py-20">
       <div className="container">
@@ -74,4 +74,4 @@ const Faq = () => {
   );
 };
 
-export default Faq;
+export default Faqs;

@@ -9,7 +9,7 @@ import SmoothScrollerProvider from "@/utils/SmoothScrollWrapper";
 import BreadCumb from "../about/components/BreadCumb";
 import Collect from "../home-two/components/Collect";
 import Service from "../home-two/components/Service";
-import Faq from "./components/Faqs";
+import Faqs from "./components/Faqs";
 
 const Services = () => {
   return (
@@ -23,7 +23,7 @@ const Services = () => {
           <Collect />
           <QualitryClean />
           <Testimonial />
-          <Faq />
+          <Faqs />
           <FooterOne />
         </SmoothScrollerProvider>
       </main>

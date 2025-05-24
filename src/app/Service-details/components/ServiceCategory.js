@@ -2,7 +2,7 @@ import FadeUpAnimationProvider from "@/components/ul/FadeUpAnimationProvider ";
 import Link from "next/link";
 import React from "react";
 
-const Category = () => {
+const ServiceCategory = () => {
   const category = [
     { title: "Laundry Services", amaount: "6" },
     { title: "Professional Dry Cleaning", amaount: "8" },
@@ -51,4 +51,4 @@ const Category = () => {
   );
 };
 
-export default Category;
+export default ServiceCategory;
