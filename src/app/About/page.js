@@ -6,6 +6,7 @@ import About from "@/components/ul/About";
 import SmoothScrollerProvider from "@/utils/SmoothScrollWrapper";
 import Price from "../home-two/components/Price";
 import Service from "../home-two/components/Service";
+import BreadCumb from "./components/BreadCumb";
 
 const AboutUs = () => {
   return (
@@ -14,6 +15,7 @@ const AboutUs = () => {
       <HeaderOne />
       <main>
         <SmoothScrollerProvider>
+          <BreadCumb currentPage="AboutUs" />
           <About />
           <Service showItem={4} />
           <Price />
