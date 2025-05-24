@@ -8,7 +8,6 @@ import Testimonial from "@/components/ul/Testimonial";
 import SmoothScrollerProvider from "@/utils/SmoothScrollWrapper";
 import Collect from "../home-two/components/Collect";
 import Service from "../home-two/components/Service";
-// import Faqs from "./components/Faqs";
 
 const Services = () => {
   return (
@@ -21,7 +20,8 @@ const Services = () => {
           <Collect />
           <QualitryClean />
           <Testimonial />
-          {/* <Faqs /> */}
+          {/* f hobe
+           */}
           <FooterOne />
         </SmoothScrollerProvider>
       </main>
