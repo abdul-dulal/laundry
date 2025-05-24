@@ -6,7 +6,7 @@ import FooterOne from "@/components/footer/FooterOne";
 
 import Faq from "../services/components/Faqs";
 import SmoothScrollerProvider from "@/utils/SmoothScrollWrapper";
-import BreadCumb from "../about/components/BreadCumb";
+
 import Contact from "../about/components/Contact";
 
 const ContactUs = () => {
@@ -16,7 +16,6 @@ const ContactUs = () => {
       <HeaderOne />
       <main>
         <SmoothScrollerProvider>
-          <BreadCumb currentPage="Contact" />
           <Contact showBottom={false} />
           <Faq />
           <FooterOne />

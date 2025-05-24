@@ -2,7 +2,7 @@ import FooterOne from "@/components/footer/FooterOne";
 import HeaderOne from "@/components/header/HeaderOne";
 import HeaderTop from "@/components/header/HeaderTop";
 import React from "react";
-import BreadCumb from "./components/BreadCumb";
+
 import About from "@/components/ul/About";
 
 import Contact from "./components/Contact";
@@ -17,7 +17,6 @@ const AboutUs = () => {
       <HeaderOne />
       <main>
         <SmoothScrollerProvider>
-          <BreadCumb currentPage="About Us" />
           <About />
           <Service showItem={4} />
           <Price />

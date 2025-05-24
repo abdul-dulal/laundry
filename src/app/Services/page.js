@@ -6,7 +6,6 @@ import React from "react";
 import QualitryClean from "@/components/ul/QualitryClean";
 import Testimonial from "@/components/ul/Testimonial";
 import SmoothScrollerProvider from "@/utils/SmoothScrollWrapper";
-import BreadCumb from "../about/components/BreadCumb";
 import Collect from "../home-two/components/Collect";
 import Service from "../home-two/components/Service";
 import Faqs from "./components/Faqs";
@@ -18,7 +17,6 @@ const Services = () => {
       <HeaderOne />
       <main>
         <SmoothScrollerProvider>
-          <BreadCumb currentPage="Service" />
           <Service showItem={8} showTop={true} />
           <Collect />
           <QualitryClean />
