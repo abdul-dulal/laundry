@@ -1,11 +1,13 @@
 import HeaderOne from "@/components/header/HeaderOne";
 import HeaderTop from "@/components/header/HeaderTop";
 import React from "react";
-import BreadCumb from "../About/components/BreadCumb";
+
 import FooterOne from "@/components/footer/FooterOne";
-import Contact from "../About/components/Contact";
+
 import Faq from "../services/components/Faqs";
 import SmoothScrollerProvider from "@/utils/SmoothScrollWrapper";
+import BreadCumb from "../about/components/BreadCumb";
+import Contact from "../about/components/Contact";
 
 const ContactUs = () => {
   return (

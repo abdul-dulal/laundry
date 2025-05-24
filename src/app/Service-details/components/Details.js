@@ -1,17 +1,15 @@
 "use client";
-import { useRef, useEffect } from "react";
+import React from "react";
 import sd1 from "@/public/img/service-details/service-details-01.png";
 
-import Image from "next/image";
 import Link from "next/link";
 import FaqContent from "../../services/components/FaqContentTwo";
-import Category from "./Category";
 import FadeUpAnimationProvider from "@/components/ul/FadeUpAnimationProvider ";
-
 import sd2 from "@/public/img/service-details/service-details-02.png";
 import sd3 from "@/public/img/service-details/service-details-03.png";
 import RevealLefToRight from "@/components/ul/RevealLefToRight";
 import RevealRightToLeft from "@/components/ul/RevealRightToLeft";
+import Category from "./ServiceCategory";
 const Details = () => {
   const handleSubmit = (e) => {
     e.preventDefault();

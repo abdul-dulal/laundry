@@ -4,7 +4,7 @@ import post from "@/public/img/blog/post-01.png";
 import post2 from "@/public/img/blog/post-02.png";
 import post3 from "@/public/img/blog/post-03.png";
 import Posts from "./Posts";
-import Category from "../../Service-details/components/Category";
+import Category from "../../service-details/components/ServiceCategory";
 import Tag from "./Tag";
 import Link from "next/link";
 import FadeUpAnimationProvider from "@/components/ul/FadeUpAnimationProvider ";
