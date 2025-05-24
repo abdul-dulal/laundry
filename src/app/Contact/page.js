@@ -4,6 +4,8 @@ import React from "react";
 import FooterOne from "@/components/footer/FooterOne";
 import SmoothScrollerProvider from "@/utils/SmoothScrollWrapper";
 import BreadCumb from "@/components/ul/BreadCumb";
+import GetService from "../about/components/GetService";
+import QuestionAndAnswer from "../services/components/QuestionAndAnswer";
 const ContactUs = () => {
   return (
     <>
@@ -12,8 +14,8 @@ const ContactUs = () => {
       <main>
         <SmoothScrollerProvider>
           <BreadCumb currentPage="Contact" />
-          {/* <Contact showBottom={false} />
-          <Faq /> */}
+          <GetService showBottom={false} />
+          <QuestionAndAnswer />
           <FooterOne />
         </SmoothScrollerProvider>
       </main>
