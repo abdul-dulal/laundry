@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import Address from "./Address";
+import Address from "../../src/app/about/components/Address";
 import FadeUpAnimationProvider from "@/components/ul/FadeUpAnimationProvider ";
 import AnimatedHeading from "@/components/ul/AnimatedHeading";
 

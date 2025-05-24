@@ -8,7 +8,7 @@ import Price from "../home-two/components/Price";
 import Service from "../home-two/components/Service";
 import BreadCumb from "@/components/ul/BreadCumb";
 import Solutaion from "./components/Solutaion";
-import GetService from "./components/GetService";
+import GetService from "../../../components/ul/GetService";
 
 const Aboutus = () => {
   return (
